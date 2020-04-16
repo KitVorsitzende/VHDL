@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Faltungscodierer">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Faltungscodierer_v|lpm_mux:Mux0" CBX_FILE_NAME="mux_3nc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Faltungscodierer_v|lpm_mux:Mux1" CBX_FILE_NAME="mux_umc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

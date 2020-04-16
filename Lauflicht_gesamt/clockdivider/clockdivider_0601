@@ -1,0 +1,42 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY clockdivider IS
+  PORT (
+  quicker,slower,clk_basis,reset:IN STD_Logic;
+  clk:OUT STD_LOGIC
+
+  );
+END clockdivider;
+
+ARCHITECTURE Behavior OF clockdivider IS
+  --SIGNAL counter:INTEGER RANGE 0 TO 255;
+  --SIGNAL slower_now:STD_LOGIC;
+  --SIGNAL quicker_now:STD_LOGIC;
+  SIGNAL clk_now:STD_LOGIC;
+  
+  BEGIN 	
+	 PROCESS:PROCESS(reset,quicker,slower,clk_basis)
+	 BEGIN  	  
+	  IF reset='1' THEN
+	      clk<=clk_basis;
+         counter_slower<=0;
+	      counter_quicker<=0;
+  		ELSIF slower='1' THEN
+		counter_slower<=counter_slower+1;
+		
+		ELSIF clk_basis='1' and clk_basis'event and counter<=2**(counter_slower-1) THEN
+	      clk<='1';
+	      counter<=counter+1;
+	     ELSIF clk_basis='1' and clk_basis'event and counter>2**(counter_slower-1) THEN
+	      clk<='0';
+	      counter<=counter+1;
+		  END IF;
+	 END PROCESS;
+	
+END Behavior;
+	 
+	  
+
+			  

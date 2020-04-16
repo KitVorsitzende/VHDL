@@ -1,0 +1,9 @@
+|clockdivider
+clk_basis => div[0].CLK
+clk_basis => div[1].CLK
+clk_basis => div[2].CLK
+clk_basis => div[3].CLK
+clk_basis => div[4].CLK
+clk_div <= div[4].DB_MAX_OUTPUT_PORT_TYPE
+
+

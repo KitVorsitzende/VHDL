@@ -1,0 +1,45 @@
+To,                    Location
+
+
+clk_original,          PIN_N25
+
+taster1,               PIN_AE14
+taster2,               PIN_AE22
+taster3,               PIN_AE16
+taster4,               PIN_AC18
+
+dip_schalter[7],       PIN_AE19
+dip_schalter[6],       PIN_AE18
+dip_schalter[5],       PIN_AC20
+dip_schalter[4],       PIN_AF4
+dip_schalter[3],       PIN_C23
+dip_schalter[2],       PIN_C21
+dip_schalter[1],       PIN_A19
+dip_schalter[0],       PIN_AC13
+
+leds[7],               PIN_AA7
+leds[6],               PIN_AA6
+leds[5],               PIN_AB4
+leds[4],               PIN_AC3
+leds[3],               PIN_E22
+leds[2],               PIN_F20
+leds[1],               PIN_B3
+leds[0],               PIN_E5
+
+output_high[7],        PIN_Y21
+output_high[6],        PIN_T7
+output_high[5],        PIN_AB23
+output_high[4],        PIN_Y5
+output_high[3],        PIN_E1
+output_high[2],        PIN_U1
+output_high[1],        PIN_W21
+output_high[0],        PIN_V3
+
+output_low[7],         PIN_K2
+output_low[6],         PIN_U25
+output_low[5],         PIN_AA3
+output_low[4],         PIN_V1
+output_low[3],         PIN_V7
+output_low[2],         PIN_U23
+output_low[1],         PIN_AC2
+output_low[0],         PIN_P7

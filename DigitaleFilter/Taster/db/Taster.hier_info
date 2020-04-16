@@ -1,0 +1,7 @@
+|Taster
+change => tmp[0].CLK
+change => tmp[1].CLK
+filter_type[0] <= tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+filter_type[1] <= tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

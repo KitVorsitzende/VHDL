@@ -1,0 +1,1200 @@
+TimeQuest Timing Analyzer report for Anzeige
+Tue Jun 04 15:51:51 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                       ;
++--------------------+--------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version ;
+; Revision Name      ; Anzeige                                                            ;
+; Device Family      ; Cyclone II                                                         ;
+; Device Name        ; EP2C70F672C6                                                       ;
+; Timing Models      ; Final                                                              ;
+; Delay Model        ; Combined                                                           ;
+; Rise/Fall Delays   ; Unavailable                                                        ;
++--------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------------------+
+; Propagation Delay                                                      ;
++-----------------+------------------+--------+--------+--------+--------+
+; Input Port      ; Output Port      ; RR     ; RF     ; FR     ; FF     ;
++-----------------+------------------+--------+--------+--------+--------+
+; counter_run1[0] ; counter_test[0]  ; 4.754  ;        ;        ; 4.754  ;
+; counter_run1[0] ; counter_testl[0] ; 5.228  ;        ;        ; 5.228  ;
+; counter_run1[0] ; output_low[0]    ; 7.536  ; 7.446  ; 7.446  ; 7.536  ;
+; counter_run1[0] ; output_low[1]    ; 5.953  ;        ;        ; 5.953  ;
+; counter_run1[0] ; output_low[2]    ; 5.960  ;        ;        ; 5.960  ;
+; counter_run1[0] ; output_low[3]    ; 7.723  ;        ;        ; 7.723  ;
+; counter_run1[0] ; output_low[4]    ; 6.156  ; 6.156  ; 6.156  ; 6.156  ;
+; counter_run1[0] ; output_low[5]    ;        ; 5.949  ; 5.949  ;        ;
+; counter_run1[0] ; output_low[6]    ; 6.154  ; 6.154  ; 6.154  ; 6.154  ;
+; counter_run1[0] ; output_low[7]    ; 5.958  ; 5.958  ; 5.958  ; 5.958  ;
+; counter_run1[1] ; counter_test[1]  ; 4.749  ;        ;        ; 4.749  ;
+; counter_run1[1] ; counter_testh[0] ; 11.199 ;        ;        ; 11.199 ;
+; counter_run1[1] ; counter_testl[1] ; 10.762 ; 10.762 ; 10.762 ; 10.762 ;
+; counter_run1[1] ; counter_testl[2] ; 10.497 ; 10.497 ; 10.497 ; 10.497 ;
+; counter_run1[1] ; counter_testl[3] ; 11.039 ; 11.039 ; 11.039 ; 11.039 ;
+; counter_run1[1] ; output_high[0]   ; 12.542 ; 12.601 ; 12.601 ; 12.542 ;
+; counter_run1[1] ; output_high[1]   ; 11.840 ;        ;        ; 11.840 ;
+; counter_run1[1] ; output_high[2]   ; 12.091 ;        ;        ; 12.091 ;
+; counter_run1[1] ; output_high[3]   ; 12.420 ;        ;        ; 12.420 ;
+; counter_run1[1] ; output_high[4]   ; 11.873 ; 11.873 ; 11.873 ; 11.873 ;
+; counter_run1[1] ; output_high[5]   ;        ; 11.885 ; 11.885 ;        ;
+; counter_run1[1] ; output_high[6]   ; 11.838 ; 11.838 ; 11.838 ; 11.838 ;
+; counter_run1[1] ; output_high[7]   ; 12.323 ; 12.323 ; 12.323 ; 12.323 ;
+; counter_run1[1] ; output_low[0]    ; 13.538 ; 13.538 ; 13.538 ; 13.538 ;
+; counter_run1[1] ; output_low[1]    ; 13.386 ; 13.301 ; 13.301 ; 13.386 ;
+; counter_run1[1] ; output_low[2]    ; 13.392 ; 13.307 ; 13.307 ; 13.392 ;
+; counter_run1[1] ; output_low[3]    ; 13.727 ; 13.727 ; 13.727 ; 13.727 ;
+; counter_run1[1] ; output_low[4]    ; 13.587 ; 13.502 ; 13.502 ; 13.587 ;
+; counter_run1[1] ; output_low[5]    ; 13.380 ; 13.295 ; 13.295 ; 13.380 ;
+; counter_run1[1] ; output_low[6]    ; 13.588 ; 13.503 ; 13.503 ; 13.588 ;
+; counter_run1[1] ; output_low[7]    ; 13.389 ; 13.304 ; 13.304 ; 13.389 ;
+; counter_run1[2] ; counter_test[2]  ; 8.659  ;        ;        ; 8.659  ;
+; counter_run1[2] ; counter_testh[0] ; 18.641 ; 18.699 ; 18.699 ; 18.641 ;
+; counter_run1[2] ; counter_testh[1] ; 18.657 ; 18.657 ; 18.657 ; 18.657 ;
+; counter_run1[2] ; counter_testh[2] ; 18.179 ; 18.179 ; 18.179 ; 18.179 ;
+; counter_run1[2] ; counter_testh[3] ; 17.767 ; 17.767 ; 17.767 ; 17.767 ;
+; counter_run1[2] ; counter_testl[1] ; 18.025 ; 18.025 ; 18.025 ; 18.025 ;
+; counter_run1[2] ; counter_testl[2] ; 17.760 ; 17.760 ; 17.760 ; 17.760 ;
+; counter_run1[2] ; counter_testl[3] ; 18.302 ; 18.302 ; 18.302 ; 18.302 ;
+; counter_run1[2] ; output_high[0]   ; 21.778 ; 22.194 ; 22.194 ; 21.778 ;
+; counter_run1[2] ; output_high[1]   ; 21.019 ; 21.435 ; 21.435 ; 21.019 ;
+; counter_run1[2] ; output_high[2]   ; 21.252 ; 21.668 ; 21.668 ; 21.252 ;
+; counter_run1[2] ; output_high[3]   ; 22.013 ; 21.944 ; 21.944 ; 22.013 ;
+; counter_run1[2] ; output_high[4]   ; 21.039 ; 21.455 ; 21.455 ; 21.039 ;
+; counter_run1[2] ; output_high[5]   ; 21.058 ; 21.474 ; 21.474 ; 21.058 ;
+; counter_run1[2] ; output_high[6]   ; 21.020 ; 21.436 ; 21.436 ; 21.020 ;
+; counter_run1[2] ; output_high[7]   ; 21.489 ; 21.905 ; 21.905 ; 21.489 ;
+; counter_run1[2] ; output_low[0]    ; 20.801 ; 20.801 ; 20.801 ; 20.801 ;
+; counter_run1[2] ; output_low[1]    ; 20.649 ; 20.564 ; 20.564 ; 20.649 ;
+; counter_run1[2] ; output_low[2]    ; 20.655 ; 20.570 ; 20.570 ; 20.655 ;
+; counter_run1[2] ; output_low[3]    ; 20.990 ; 20.990 ; 20.990 ; 20.990 ;
+; counter_run1[2] ; output_low[4]    ; 20.850 ; 20.765 ; 20.765 ; 20.850 ;
+; counter_run1[2] ; output_low[5]    ; 20.643 ; 20.558 ; 20.558 ; 20.643 ;
+; counter_run1[2] ; output_low[6]    ; 20.851 ; 20.766 ; 20.766 ; 20.851 ;
+; counter_run1[2] ; output_low[7]    ; 20.652 ; 20.567 ; 20.567 ; 20.652 ;
+; counter_run1[3] ; counter_test[3]  ; 9.192  ;        ;        ; 9.192  ;
+; counter_run1[3] ; counter_testh[0] ; 24.085 ; 24.047 ; 24.047 ; 24.085 ;
+; counter_run1[3] ; counter_testh[1] ; 24.043 ; 24.043 ; 24.043 ; 24.043 ;
+; counter_run1[3] ; counter_testh[2] ; 23.565 ; 23.565 ; 23.565 ; 23.565 ;
+; counter_run1[3] ; counter_testh[3] ; 23.153 ; 23.153 ; 23.153 ; 23.153 ;
+; counter_run1[3] ; counter_testl[1] ; 21.535 ; 21.535 ; 21.535 ; 21.535 ;
+; counter_run1[3] ; counter_testl[2] ; 21.270 ; 21.270 ; 21.270 ; 21.270 ;
+; counter_run1[3] ; counter_testl[3] ; 21.812 ; 21.812 ; 21.812 ; 21.812 ;
+; counter_run1[3] ; output_high[0]   ; 27.580 ; 27.542 ; 27.542 ; 27.580 ;
+; counter_run1[3] ; output_high[1]   ; 26.821 ; 26.783 ; 26.783 ; 26.821 ;
+; counter_run1[3] ; output_high[2]   ; 27.054 ; 27.016 ; 27.016 ; 27.054 ;
+; counter_run1[3] ; output_high[3]   ; 27.361 ; 27.399 ; 27.399 ; 27.361 ;
+; counter_run1[3] ; output_high[4]   ; 26.841 ; 26.803 ; 26.803 ; 26.841 ;
+; counter_run1[3] ; output_high[5]   ; 26.860 ; 26.822 ; 26.822 ; 26.860 ;
+; counter_run1[3] ; output_high[6]   ; 26.822 ; 26.784 ; 26.784 ; 26.822 ;
+; counter_run1[3] ; output_high[7]   ; 27.291 ; 27.253 ; 27.253 ; 27.291 ;
+; counter_run1[3] ; output_low[0]    ; 24.311 ; 24.311 ; 24.311 ; 24.311 ;
+; counter_run1[3] ; output_low[1]    ; 24.081 ; 24.159 ; 24.159 ; 24.081 ;
+; counter_run1[3] ; output_low[2]    ; 24.087 ; 24.165 ; 24.165 ; 24.087 ;
+; counter_run1[3] ; output_low[3]    ; 24.500 ; 24.500 ; 24.500 ; 24.500 ;
+; counter_run1[3] ; output_low[4]    ; 24.282 ; 24.360 ; 24.360 ; 24.282 ;
+; counter_run1[3] ; output_low[5]    ; 24.075 ; 24.153 ; 24.153 ; 24.075 ;
+; counter_run1[3] ; output_low[6]    ; 24.283 ; 24.361 ; 24.361 ; 24.283 ;
+; counter_run1[3] ; output_low[7]    ; 24.084 ; 24.162 ; 24.162 ; 24.084 ;
+; counter_run1[4] ; counter_test[4]  ; 8.915  ;        ;        ; 8.915  ;
+; counter_run1[4] ; counter_testh[0] ; 28.093 ; 28.061 ; 28.061 ; 28.093 ;
+; counter_run1[4] ; counter_testh[1] ; 28.051 ; 28.051 ; 28.051 ; 28.051 ;
+; counter_run1[4] ; counter_testh[2] ; 27.573 ; 27.573 ; 27.573 ; 27.573 ;
+; counter_run1[4] ; counter_testh[3] ; 27.161 ; 27.161 ; 27.161 ; 27.161 ;
+; counter_run1[4] ; counter_testl[1] ; 23.856 ; 23.856 ; 23.856 ; 23.856 ;
+; counter_run1[4] ; counter_testl[2] ; 23.591 ; 23.591 ; 23.591 ; 23.591 ;
+; counter_run1[4] ; counter_testl[3] ; 24.133 ; 24.133 ; 24.133 ; 24.133 ;
+; counter_run1[4] ; output_high[0]   ; 31.588 ; 31.556 ; 31.556 ; 31.588 ;
+; counter_run1[4] ; output_high[1]   ; 30.829 ; 30.797 ; 30.797 ; 30.829 ;
+; counter_run1[4] ; output_high[2]   ; 31.062 ; 31.030 ; 31.030 ; 31.062 ;
+; counter_run1[4] ; output_high[3]   ; 31.375 ; 31.407 ; 31.407 ; 31.375 ;
+; counter_run1[4] ; output_high[4]   ; 30.849 ; 30.817 ; 30.817 ; 30.849 ;
+; counter_run1[4] ; output_high[5]   ; 30.868 ; 30.836 ; 30.836 ; 30.868 ;
+; counter_run1[4] ; output_high[6]   ; 30.830 ; 30.798 ; 30.798 ; 30.830 ;
+; counter_run1[4] ; output_high[7]   ; 31.299 ; 31.267 ; 31.267 ; 31.299 ;
+; counter_run1[4] ; output_low[0]    ; 26.632 ; 26.632 ; 26.632 ; 26.632 ;
+; counter_run1[4] ; output_low[1]    ; 26.402 ; 26.480 ; 26.480 ; 26.402 ;
+; counter_run1[4] ; output_low[2]    ; 26.408 ; 26.486 ; 26.486 ; 26.408 ;
+; counter_run1[4] ; output_low[3]    ; 26.821 ; 26.821 ; 26.821 ; 26.821 ;
+; counter_run1[4] ; output_low[4]    ; 26.603 ; 26.681 ; 26.681 ; 26.603 ;
+; counter_run1[4] ; output_low[5]    ; 26.396 ; 26.474 ; 26.474 ; 26.396 ;
+; counter_run1[4] ; output_low[6]    ; 26.604 ; 26.682 ; 26.682 ; 26.604 ;
+; counter_run1[4] ; output_low[7]    ; 26.405 ; 26.483 ; 26.483 ; 26.405 ;
+; counter_run1[5] ; counter_test[5]  ; 8.870  ;        ;        ; 8.870  ;
+; counter_run1[5] ; counter_testh[0] ; 28.014 ; 27.982 ; 27.982 ; 28.014 ;
+; counter_run1[5] ; counter_testh[1] ; 27.972 ; 27.972 ; 27.972 ; 27.972 ;
+; counter_run1[5] ; counter_testh[2] ; 27.494 ; 27.494 ; 27.494 ; 27.494 ;
+; counter_run1[5] ; counter_testh[3] ; 27.082 ; 27.082 ; 27.082 ; 27.082 ;
+; counter_run1[5] ; counter_testl[1] ; 23.864 ; 23.864 ; 23.864 ; 23.864 ;
+; counter_run1[5] ; counter_testl[2] ; 23.599 ; 23.599 ; 23.599 ; 23.599 ;
+; counter_run1[5] ; counter_testl[3] ; 24.141 ; 24.141 ; 24.141 ; 24.141 ;
+; counter_run1[5] ; output_high[0]   ; 31.509 ; 31.477 ; 31.477 ; 31.509 ;
+; counter_run1[5] ; output_high[1]   ; 30.750 ; 30.718 ; 30.718 ; 30.750 ;
+; counter_run1[5] ; output_high[2]   ; 30.983 ; 30.951 ; 30.951 ; 30.983 ;
+; counter_run1[5] ; output_high[3]   ; 31.296 ; 31.328 ; 31.328 ; 31.296 ;
+; counter_run1[5] ; output_high[4]   ; 30.770 ; 30.738 ; 30.738 ; 30.770 ;
+; counter_run1[5] ; output_high[5]   ; 30.789 ; 30.757 ; 30.757 ; 30.789 ;
+; counter_run1[5] ; output_high[6]   ; 30.751 ; 30.719 ; 30.719 ; 30.751 ;
+; counter_run1[5] ; output_high[7]   ; 31.220 ; 31.188 ; 31.188 ; 31.220 ;
+; counter_run1[5] ; output_low[0]    ; 26.640 ; 26.640 ; 26.640 ; 26.640 ;
+; counter_run1[5] ; output_low[1]    ; 26.410 ; 26.488 ; 26.488 ; 26.410 ;
+; counter_run1[5] ; output_low[2]    ; 26.416 ; 26.494 ; 26.494 ; 26.416 ;
+; counter_run1[5] ; output_low[3]    ; 26.829 ; 26.829 ; 26.829 ; 26.829 ;
+; counter_run1[5] ; output_low[4]    ; 26.611 ; 26.689 ; 26.689 ; 26.611 ;
+; counter_run1[5] ; output_low[5]    ; 26.404 ; 26.482 ; 26.482 ; 26.404 ;
+; counter_run1[5] ; output_low[6]    ; 26.612 ; 26.690 ; 26.690 ; 26.612 ;
+; counter_run1[5] ; output_low[7]    ; 26.413 ; 26.491 ; 26.491 ; 26.413 ;
+; counter_run1[6] ; counter_test[6]  ; 9.175  ;        ;        ; 9.175  ;
+; counter_run1[6] ; counter_testh[0] ; 27.967 ; 27.935 ; 27.935 ; 27.967 ;
+; counter_run1[6] ; counter_testh[1] ; 27.925 ; 27.925 ; 27.925 ; 27.925 ;
+; counter_run1[6] ; counter_testh[2] ; 27.447 ; 27.447 ; 27.447 ; 27.447 ;
+; counter_run1[6] ; counter_testh[3] ; 27.035 ; 27.035 ; 27.035 ; 27.035 ;
+; counter_run1[6] ; counter_testl[1] ; 23.677 ; 23.677 ; 23.677 ; 23.677 ;
+; counter_run1[6] ; counter_testl[2] ; 23.412 ; 23.412 ; 23.412 ; 23.412 ;
+; counter_run1[6] ; counter_testl[3] ; 23.954 ; 23.954 ; 23.954 ; 23.954 ;
+; counter_run1[6] ; output_high[0]   ; 31.462 ; 31.430 ; 31.430 ; 31.462 ;
+; counter_run1[6] ; output_high[1]   ; 30.703 ; 30.671 ; 30.671 ; 30.703 ;
+; counter_run1[6] ; output_high[2]   ; 30.936 ; 30.904 ; 30.904 ; 30.936 ;
+; counter_run1[6] ; output_high[3]   ; 31.249 ; 31.281 ; 31.281 ; 31.249 ;
+; counter_run1[6] ; output_high[4]   ; 30.723 ; 30.691 ; 30.691 ; 30.723 ;
+; counter_run1[6] ; output_high[5]   ; 30.742 ; 30.710 ; 30.710 ; 30.742 ;
+; counter_run1[6] ; output_high[6]   ; 30.704 ; 30.672 ; 30.672 ; 30.704 ;
+; counter_run1[6] ; output_high[7]   ; 31.173 ; 31.141 ; 31.141 ; 31.173 ;
+; counter_run1[6] ; output_low[0]    ; 26.453 ; 26.453 ; 26.453 ; 26.453 ;
+; counter_run1[6] ; output_low[1]    ; 26.223 ; 26.301 ; 26.301 ; 26.223 ;
+; counter_run1[6] ; output_low[2]    ; 26.229 ; 26.307 ; 26.307 ; 26.229 ;
+; counter_run1[6] ; output_low[3]    ; 26.642 ; 26.642 ; 26.642 ; 26.642 ;
+; counter_run1[6] ; output_low[4]    ; 26.424 ; 26.502 ; 26.502 ; 26.424 ;
+; counter_run1[6] ; output_low[5]    ; 26.217 ; 26.295 ; 26.295 ; 26.217 ;
+; counter_run1[6] ; output_low[6]    ; 26.425 ; 26.503 ; 26.503 ; 26.425 ;
+; counter_run1[6] ; output_low[7]    ; 26.226 ; 26.304 ; 26.304 ; 26.226 ;
++-----------------+------------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------------------+
+; Minimum Propagation Delay                                              ;
++-----------------+------------------+--------+--------+--------+--------+
+; Input Port      ; Output Port      ; RR     ; RF     ; FR     ; FF     ;
++-----------------+------------------+--------+--------+--------+--------+
+; counter_run1[0] ; counter_test[0]  ; 4.754  ;        ;        ; 4.754  ;
+; counter_run1[0] ; counter_testl[0] ; 5.228  ;        ;        ; 5.228  ;
+; counter_run1[0] ; output_low[0]    ; 7.536  ; 7.446  ; 7.446  ; 7.536  ;
+; counter_run1[0] ; output_low[1]    ; 5.953  ;        ;        ; 5.953  ;
+; counter_run1[0] ; output_low[2]    ; 5.960  ;        ;        ; 5.960  ;
+; counter_run1[0] ; output_low[3]    ; 6.416  ;        ;        ; 6.416  ;
+; counter_run1[0] ; output_low[4]    ; 6.156  ; 6.156  ; 6.156  ; 6.156  ;
+; counter_run1[0] ; output_low[5]    ;        ; 5.949  ; 5.949  ;        ;
+; counter_run1[0] ; output_low[6]    ; 6.154  ; 6.154  ; 6.154  ; 6.154  ;
+; counter_run1[0] ; output_low[7]    ; 5.958  ; 5.958  ; 5.958  ; 5.958  ;
+; counter_run1[1] ; counter_test[1]  ; 4.749  ;        ;        ; 4.749  ;
+; counter_run1[1] ; counter_testh[0] ; 10.766 ;        ;        ; 10.766 ;
+; counter_run1[1] ; counter_testl[1] ; 6.342  ; 9.158  ; 9.158  ; 6.342  ;
+; counter_run1[1] ; counter_testl[2] ; 9.373  ; 9.373  ; 9.373  ; 9.373  ;
+; counter_run1[1] ; counter_testl[3] ; 10.161 ; 10.161 ; 10.161 ; 10.161 ;
+; counter_run1[1] ; output_high[0]   ; 12.109 ; 12.168 ; 12.168 ; 12.109 ;
+; counter_run1[1] ; output_high[1]   ; 11.407 ;        ;        ; 11.407 ;
+; counter_run1[1] ; output_high[2]   ; 11.658 ;        ;        ; 11.658 ;
+; counter_run1[1] ; output_high[3]   ; 11.243 ;        ;        ; 11.243 ;
+; counter_run1[1] ; output_high[4]   ; 11.440 ; 11.440 ; 11.440 ; 11.440 ;
+; counter_run1[1] ; output_high[5]   ;        ; 11.452 ; 11.452 ;        ;
+; counter_run1[1] ; output_high[6]   ; 11.405 ; 11.405 ; 11.405 ; 11.405 ;
+; counter_run1[1] ; output_high[7]   ; 11.890 ; 11.890 ; 11.890 ; 11.890 ;
+; counter_run1[1] ; output_low[0]    ; 8.385  ; 8.440  ; 8.440  ; 8.385  ;
+; counter_run1[1] ; output_low[1]    ; 6.842  ; 6.842  ; 6.842  ; 6.842  ;
+; counter_run1[1] ; output_low[2]    ; 6.883  ; 9.699  ; 9.699  ; 6.883  ;
+; counter_run1[1] ; output_low[3]    ; 8.646  ; 8.574  ; 8.574  ; 8.646  ;
+; counter_run1[1] ; output_low[4]    ; 7.068  ; 7.068  ; 7.068  ; 7.068  ;
+; counter_run1[1] ; output_low[5]    ; 6.875  ; 9.691  ; 9.691  ; 6.875  ;
+; counter_run1[1] ; output_low[6]    ; 7.093  ; 7.093  ; 7.093  ; 7.093  ;
+; counter_run1[1] ; output_low[7]    ; 9.671  ; 6.855  ; 6.855  ; 9.671  ;
+; counter_run1[2] ; counter_test[2]  ; 8.659  ;        ;        ; 8.659  ;
+; counter_run1[2] ; counter_testh[0] ; 14.812 ; 17.438 ; 17.438 ; 14.812 ;
+; counter_run1[2] ; counter_testh[1] ; 16.469 ; 17.436 ; 17.436 ; 16.469 ;
+; counter_run1[2] ; counter_testh[2] ; 17.759 ; 17.759 ; 17.759 ; 17.759 ;
+; counter_run1[2] ; counter_testh[3] ; 16.677 ; 16.677 ; 16.677 ; 16.677 ;
+; counter_run1[2] ; counter_testl[1] ; 14.225 ; 14.225 ; 14.225 ; 14.225 ;
+; counter_run1[2] ; counter_testl[2] ; 11.375 ; 12.713 ; 12.713 ; 11.375 ;
+; counter_run1[2] ; counter_testl[3] ; 13.840 ; 13.840 ; 13.840 ; 13.840 ;
+; counter_run1[2] ; output_high[0]   ; 16.155 ; 16.214 ; 16.214 ; 16.155 ;
+; counter_run1[2] ; output_high[1]   ; 15.453 ; 16.562 ; 16.562 ; 15.453 ;
+; counter_run1[2] ; output_high[2]   ; 15.704 ; 17.757 ; 17.757 ; 15.704 ;
+; counter_run1[2] ; output_high[3]   ; 15.289 ; 16.924 ; 16.924 ; 15.289 ;
+; counter_run1[2] ; output_high[4]   ; 15.486 ; 15.486 ; 15.486 ; 15.486 ;
+; counter_run1[2] ; output_high[5]   ; 16.602 ; 15.498 ; 15.498 ; 16.602 ;
+; counter_run1[2] ; output_high[6]   ; 15.451 ; 15.451 ; 15.451 ; 15.451 ;
+; counter_run1[2] ; output_high[7]   ; 15.936 ; 15.936 ; 15.936 ; 15.936 ;
+; counter_run1[2] ; output_low[0]    ; 13.943 ; 13.851 ; 13.851 ; 13.943 ;
+; counter_run1[2] ; output_low[1]    ; 12.185 ; 12.185 ; 12.185 ; 12.185 ;
+; counter_run1[2] ; output_low[2]    ; 13.531 ; 12.193 ; 12.193 ; 13.531 ;
+; counter_run1[2] ; output_low[3]    ; 14.040 ; 14.121 ; 14.121 ; 14.040 ;
+; counter_run1[2] ; output_low[4]    ; 12.389 ; 12.389 ; 12.389 ; 12.389 ;
+; counter_run1[2] ; output_low[5]    ; 13.519 ; 12.181 ; 12.181 ; 13.519 ;
+; counter_run1[2] ; output_low[6]    ; 12.387 ; 13.725 ; 13.725 ; 12.387 ;
+; counter_run1[2] ; output_low[7]    ; 12.189 ; 12.189 ; 12.189 ; 12.189 ;
+; counter_run1[3] ; counter_test[3]  ; 9.192  ;        ;        ; 9.192  ;
+; counter_run1[3] ; counter_testh[0] ; 14.769 ; 16.586 ; 16.586 ; 14.769 ;
+; counter_run1[3] ; counter_testh[1] ; 15.793 ; 16.760 ; 16.760 ; 15.793 ;
+; counter_run1[3] ; counter_testh[2] ; 15.396 ; 17.083 ; 17.083 ; 15.396 ;
+; counter_run1[3] ; counter_testh[3] ; 16.001 ; 16.001 ; 16.001 ; 16.001 ;
+; counter_run1[3] ; counter_testl[1] ; 13.777 ; 13.777 ; 13.777 ; 13.777 ;
+; counter_run1[3] ; counter_testl[2] ; 13.512 ; 13.512 ; 13.512 ; 13.512 ;
+; counter_run1[3] ; counter_testl[3] ; 11.432 ; 13.077 ; 13.077 ; 11.432 ;
+; counter_run1[3] ; output_high[0]   ; 16.112 ; 16.171 ; 16.171 ; 16.112 ;
+; counter_run1[3] ; output_high[1]   ; 15.410 ; 15.886 ; 15.886 ; 15.410 ;
+; counter_run1[3] ; output_high[2]   ; 15.661 ; 16.366 ; 16.366 ; 15.661 ;
+; counter_run1[3] ; output_high[3]   ; 15.246 ; 16.248 ; 16.248 ; 15.246 ;
+; counter_run1[3] ; output_high[4]   ; 15.443 ; 15.443 ; 15.443 ; 15.443 ;
+; counter_run1[3] ; output_high[5]   ; 15.926 ; 15.455 ; 15.455 ; 15.926 ;
+; counter_run1[3] ; output_high[6]   ; 15.408 ; 15.408 ; 15.408 ; 15.408 ;
+; counter_run1[3] ; output_high[7]   ; 15.893 ; 15.893 ; 15.893 ; 15.893 ;
+; counter_run1[3] ; output_low[0]    ; 13.561 ; 13.408 ; 13.408 ; 13.561 ;
+; counter_run1[3] ; output_low[1]    ; 14.277 ; 12.688 ; 12.688 ; 14.277 ;
+; counter_run1[3] ; output_low[2]    ; 14.318 ; 12.694 ; 12.694 ; 14.318 ;
+; counter_run1[3] ; output_low[3]    ; 13.597 ; 13.716 ; 13.716 ; 13.597 ;
+; counter_run1[3] ; output_low[4]    ; 14.503 ; 12.889 ; 12.889 ; 14.503 ;
+; counter_run1[3] ; output_low[5]    ; 14.310 ; 12.682 ; 12.682 ; 14.310 ;
+; counter_run1[3] ; output_low[6]    ; 14.524 ; 12.890 ; 12.890 ; 14.524 ;
+; counter_run1[3] ; output_low[7]    ; 14.290 ; 12.691 ; 12.691 ; 14.290 ;
+; counter_run1[4] ; counter_test[4]  ; 8.915  ;        ;        ; 8.915  ;
+; counter_run1[4] ; counter_testh[0] ; 14.763 ; 15.466 ; 15.466 ; 14.763 ;
+; counter_run1[4] ; counter_testh[1] ; 14.682 ; 15.628 ; 15.628 ; 14.682 ;
+; counter_run1[4] ; counter_testh[2] ; 14.264 ; 15.024 ; 15.024 ; 14.264 ;
+; counter_run1[4] ; counter_testh[3] ; 13.480 ; 13.868 ; 13.868 ; 13.480 ;
+; counter_run1[4] ; counter_testl[1] ; 14.702 ; 14.702 ; 14.702 ; 14.702 ;
+; counter_run1[4] ; counter_testl[2] ; 14.437 ; 14.437 ; 14.437 ; 14.437 ;
+; counter_run1[4] ; counter_testl[3] ; 14.650 ; 14.650 ; 14.650 ; 14.650 ;
+; counter_run1[4] ; output_high[0]   ; 15.526 ; 15.288 ; 15.288 ; 15.526 ;
+; counter_run1[4] ; output_high[1]   ; 14.775 ; 14.775 ; 14.775 ; 14.775 ;
+; counter_run1[4] ; output_high[2]   ; 15.003 ; 15.234 ; 15.234 ; 15.003 ;
+; counter_run1[4] ; output_high[3]   ; 15.137 ; 15.137 ; 15.137 ; 15.137 ;
+; counter_run1[4] ; output_high[4]   ; 14.789 ; 14.789 ; 14.789 ; 14.789 ;
+; counter_run1[4] ; output_high[5]   ; 14.815 ; 15.016 ; 15.016 ; 14.815 ;
+; counter_run1[4] ; output_high[6]   ; 14.773 ; 14.773 ; 14.773 ; 14.773 ;
+; counter_run1[4] ; output_high[7]   ; 15.493 ; 15.236 ; 15.236 ; 15.493 ;
+; counter_run1[4] ; output_low[0]    ; 14.580 ; 13.304 ; 13.304 ; 14.580 ;
+; counter_run1[4] ; output_low[1]    ; 14.604 ; 13.328 ; 13.328 ; 14.604 ;
+; counter_run1[4] ; output_low[2]    ; 14.610 ; 13.334 ; 13.334 ; 14.610 ;
+; counter_run1[4] ; output_low[3]    ; 13.493 ; 13.603 ; 13.603 ; 13.493 ;
+; counter_run1[4] ; output_low[4]    ; 14.805 ; 13.529 ; 13.529 ; 14.805 ;
+; counter_run1[4] ; output_low[5]    ; 14.598 ; 13.322 ; 13.322 ; 14.598 ;
+; counter_run1[4] ; output_low[6]    ; 14.806 ; 13.530 ; 13.530 ; 14.806 ;
+; counter_run1[4] ; output_low[7]    ; 14.607 ; 13.331 ; 13.331 ; 14.607 ;
+; counter_run1[5] ; counter_test[5]  ; 8.870  ;        ;        ; 8.870  ;
+; counter_run1[5] ; counter_testh[0] ; 15.166 ; 15.572 ; 15.572 ; 15.166 ;
+; counter_run1[5] ; counter_testh[1] ; 14.895 ; 15.301 ; 15.301 ; 14.895 ;
+; counter_run1[5] ; counter_testh[2] ; 14.570 ; 14.748 ; 14.748 ; 14.570 ;
+; counter_run1[5] ; counter_testh[3] ; 13.401 ; 13.789 ; 13.789 ; 13.401 ;
+; counter_run1[5] ; counter_testl[1] ; 15.094 ; 15.094 ; 15.094 ; 15.094 ;
+; counter_run1[5] ; counter_testl[2] ; 14.733 ; 14.700 ; 14.700 ; 14.733 ;
+; counter_run1[5] ; counter_testl[3] ; 14.779 ; 14.779 ; 14.779 ; 14.779 ;
+; counter_run1[5] ; output_high[0]   ; 15.695 ; 15.501 ; 15.501 ; 15.695 ;
+; counter_run1[5] ; output_high[1]   ; 14.988 ; 14.988 ; 14.988 ; 14.988 ;
+; counter_run1[5] ; output_high[2]   ; 15.216 ; 15.540 ; 15.540 ; 15.216 ;
+; counter_run1[5] ; output_high[3]   ; 15.350 ; 15.350 ; 15.350 ; 15.350 ;
+; counter_run1[5] ; output_high[4]   ; 15.002 ; 15.002 ; 15.002 ; 15.002 ;
+; counter_run1[5] ; output_high[5]   ; 15.028 ; 15.322 ; 15.322 ; 15.028 ;
+; counter_run1[5] ; output_high[6]   ; 14.986 ; 14.986 ; 14.986 ; 14.986 ;
+; counter_run1[5] ; output_high[7]   ; 15.799 ; 15.449 ; 15.449 ; 15.799 ;
+; counter_run1[5] ; output_low[0]    ; 15.312 ; 14.877 ; 14.877 ; 15.312 ;
+; counter_run1[5] ; output_low[1]    ; 15.310 ; 14.760 ; 14.760 ; 15.310 ;
+; counter_run1[5] ; output_low[2]    ; 15.316 ; 14.766 ; 14.766 ; 15.316 ;
+; counter_run1[5] ; output_low[3]    ; 15.066 ; 15.148 ; 15.148 ; 15.066 ;
+; counter_run1[5] ; output_low[4]    ; 15.511 ; 14.961 ; 14.961 ; 15.511 ;
+; counter_run1[5] ; output_low[5]    ; 15.304 ; 14.754 ; 14.754 ; 15.304 ;
+; counter_run1[5] ; output_low[6]    ; 15.512 ; 14.962 ; 14.962 ; 15.512 ;
+; counter_run1[5] ; output_low[7]    ; 15.313 ; 14.763 ; 14.763 ; 15.313 ;
+; counter_run1[6] ; counter_test[6]  ; 9.175  ;        ;        ; 9.175  ;
+; counter_run1[6] ; counter_testh[0] ; 15.538 ; 15.516 ; 15.516 ; 15.538 ;
+; counter_run1[6] ; counter_testh[1] ; 14.262 ; 15.229 ; 15.229 ; 14.262 ;
+; counter_run1[6] ; counter_testh[2] ; 13.865 ; 14.930 ; 14.930 ; 13.865 ;
+; counter_run1[6] ; counter_testh[3] ; 13.354 ; 13.742 ; 13.742 ; 13.354 ;
+; counter_run1[6] ; counter_testl[1] ; 14.851 ; 14.851 ; 14.851 ; 14.851 ;
+; counter_run1[6] ; counter_testl[2] ; 14.185 ; 14.152 ; 14.152 ; 14.185 ;
+; counter_run1[6] ; counter_testl[3] ; 14.587 ; 14.587 ; 14.587 ; 14.587 ;
+; counter_run1[6] ; output_high[0]   ; 15.106 ; 14.868 ; 14.868 ; 15.106 ;
+; counter_run1[6] ; output_high[1]   ; 14.355 ; 14.355 ; 14.355 ; 14.355 ;
+; counter_run1[6] ; output_high[2]   ; 14.583 ; 14.835 ; 14.835 ; 14.583 ;
+; counter_run1[6] ; output_high[3]   ; 14.717 ; 14.717 ; 14.717 ; 14.717 ;
+; counter_run1[6] ; output_high[4]   ; 14.369 ; 14.369 ; 14.369 ; 14.369 ;
+; counter_run1[6] ; output_high[5]   ; 14.395 ; 14.617 ; 14.617 ; 14.395 ;
+; counter_run1[6] ; output_high[6]   ; 14.353 ; 14.353 ; 14.353 ; 14.353 ;
+; counter_run1[6] ; output_high[7]   ; 15.094 ; 14.816 ; 14.816 ; 15.094 ;
+; counter_run1[6] ; output_low[0]    ; 15.125 ; 14.639 ; 14.639 ; 15.125 ;
+; counter_run1[6] ; output_low[1]    ; 14.962 ; 14.522 ; 14.522 ; 14.962 ;
+; counter_run1[6] ; output_low[2]    ; 14.970 ; 14.528 ; 14.528 ; 14.970 ;
+; counter_run1[6] ; output_low[3]    ; 14.828 ; 14.910 ; 14.910 ; 14.828 ;
+; counter_run1[6] ; output_low[4]    ; 15.166 ; 14.723 ; 14.723 ; 15.166 ;
+; counter_run1[6] ; output_low[5]    ; 14.958 ; 14.516 ; 14.516 ; 14.958 ;
+; counter_run1[6] ; output_low[6]    ; 15.197 ; 14.724 ; 14.724 ; 15.197 ;
+; counter_run1[6] ; output_low[7]    ; 14.966 ; 14.525 ; 14.525 ; 14.966 ;
++-----------------+------------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------------------------+
+; Propagation Delay                                                      ;
++-----------------+------------------+--------+--------+--------+--------+
+; Input Port      ; Output Port      ; RR     ; RF     ; FR     ; FF     ;
++-----------------+------------------+--------+--------+--------+--------+
+; counter_run1[0] ; counter_test[0]  ; 2.533  ;        ;        ; 2.533  ;
+; counter_run1[0] ; counter_testl[0] ; 2.776  ;        ;        ; 2.776  ;
+; counter_run1[0] ; output_low[0]    ; 3.834  ; 3.778  ; 3.778  ; 3.834  ;
+; counter_run1[0] ; output_low[1]    ; 3.130  ;        ;        ; 3.130  ;
+; counter_run1[0] ; output_low[2]    ; 3.139  ;        ;        ; 3.139  ;
+; counter_run1[0] ; output_low[3]    ; 3.904  ;        ;        ; 3.904  ;
+; counter_run1[0] ; output_low[4]    ; 3.212  ; 3.212  ; 3.212  ; 3.212  ;
+; counter_run1[0] ; output_low[5]    ;        ; 3.126  ; 3.126  ;        ;
+; counter_run1[0] ; output_low[6]    ; 3.214  ; 3.214  ; 3.214  ; 3.214  ;
+; counter_run1[0] ; output_low[7]    ; 3.136  ; 3.136  ; 3.136  ; 3.136  ;
+; counter_run1[1] ; counter_test[1]  ; 2.579  ;        ;        ; 2.579  ;
+; counter_run1[1] ; counter_testh[0] ; 5.467  ;        ;        ; 5.467  ;
+; counter_run1[1] ; counter_testl[1] ; 5.321  ; 5.321  ; 5.321  ; 5.321  ;
+; counter_run1[1] ; counter_testl[2] ; 5.208  ; 5.208  ; 5.208  ; 5.208  ;
+; counter_run1[1] ; counter_testl[3] ; 5.463  ; 5.463  ; 5.463  ; 5.463  ;
+; counter_run1[1] ; output_high[0]   ; 6.053  ; 6.077  ; 6.077  ; 6.053  ;
+; counter_run1[1] ; output_high[1]   ; 5.744  ;        ;        ; 5.744  ;
+; counter_run1[1] ; output_high[2]   ; 5.872  ;        ;        ; 5.872  ;
+; counter_run1[1] ; output_high[3]   ; 6.021  ;        ;        ; 6.021  ;
+; counter_run1[1] ; output_high[4]   ; 5.775  ; 5.775  ; 5.775  ; 5.775  ;
+; counter_run1[1] ; output_high[5]   ;        ; 5.783  ; 5.783  ;        ;
+; counter_run1[1] ; output_high[6]   ; 5.742  ; 5.742  ; 5.742  ; 5.742  ;
+; counter_run1[1] ; output_high[7]   ; 5.971  ; 5.971  ; 5.971  ; 5.971  ;
+; counter_run1[1] ; output_low[0]    ; 6.590  ; 6.567  ; 6.567  ; 6.590  ;
+; counter_run1[1] ; output_low[1]    ; 6.536  ; 6.461  ; 6.461  ; 6.536  ;
+; counter_run1[1] ; output_low[2]    ; 6.545  ; 6.470  ; 6.470  ; 6.545  ;
+; counter_run1[1] ; output_low[3]    ; 6.662  ; 6.662  ; 6.662  ; 6.662  ;
+; counter_run1[1] ; output_low[4]    ; 6.615  ; 6.540  ; 6.540  ; 6.615  ;
+; counter_run1[1] ; output_low[5]    ; 6.533  ; 6.458  ; 6.458  ; 6.533  ;
+; counter_run1[1] ; output_low[6]    ; 6.617  ; 6.542  ; 6.542  ; 6.617  ;
+; counter_run1[1] ; output_low[7]    ; 6.538  ; 6.463  ; 6.463  ; 6.538  ;
+; counter_run1[2] ; counter_test[2]  ; 4.950  ;        ;        ; 4.950  ;
+; counter_run1[2] ; counter_testh[0] ; 9.489  ; 9.489  ; 9.489  ; 9.489  ;
+; counter_run1[2] ; counter_testh[1] ; 9.512  ; 9.512  ; 9.512  ; 9.512  ;
+; counter_run1[2] ; counter_testh[2] ; 9.303  ; 9.303  ; 9.303  ; 9.303  ;
+; counter_run1[2] ; counter_testh[3] ; 9.122  ; 9.122  ; 9.122  ; 9.122  ;
+; counter_run1[2] ; counter_testl[1] ; 9.200  ; 9.200  ; 9.200  ; 9.200  ;
+; counter_run1[2] ; counter_testl[2] ; 9.087  ; 9.087  ; 9.087  ; 9.087  ;
+; counter_run1[2] ; counter_testl[3] ; 9.342  ; 9.342  ; 9.342  ; 9.342  ;
+; counter_run1[2] ; output_high[0]   ; 10.838 ; 11.041 ; 11.041 ; 10.838 ;
+; counter_run1[2] ; output_high[1]   ; 10.518 ; 10.721 ; 10.721 ; 10.518 ;
+; counter_run1[2] ; output_high[2]   ; 10.628 ; 10.831 ; 10.831 ; 10.628 ;
+; counter_run1[2] ; output_high[3]   ; 10.985 ; 10.959 ; 10.959 ; 10.985 ;
+; counter_run1[2] ; output_high[4]   ; 10.532 ; 10.735 ; 10.735 ; 10.532 ;
+; counter_run1[2] ; output_high[5]   ; 10.551 ; 10.754 ; 10.754 ; 10.551 ;
+; counter_run1[2] ; output_high[6]   ; 10.516 ; 10.719 ; 10.719 ; 10.516 ;
+; counter_run1[2] ; output_high[7]   ; 10.727 ; 10.930 ; 10.930 ; 10.727 ;
+; counter_run1[2] ; output_low[0]    ; 10.469 ; 10.446 ; 10.446 ; 10.469 ;
+; counter_run1[2] ; output_low[1]    ; 10.415 ; 10.372 ; 10.372 ; 10.415 ;
+; counter_run1[2] ; output_low[2]    ; 10.424 ; 10.381 ; 10.381 ; 10.424 ;
+; counter_run1[2] ; output_low[3]    ; 10.541 ; 10.541 ; 10.541 ; 10.541 ;
+; counter_run1[2] ; output_low[4]    ; 10.494 ; 10.451 ; 10.451 ; 10.494 ;
+; counter_run1[2] ; output_low[5]    ; 10.412 ; 10.369 ; 10.369 ; 10.412 ;
+; counter_run1[2] ; output_low[6]    ; 10.496 ; 10.453 ; 10.453 ; 10.496 ;
+; counter_run1[2] ; output_low[7]    ; 10.417 ; 10.374 ; 10.374 ; 10.417 ;
+; counter_run1[3] ; counter_test[3]  ; 5.233  ;        ;        ; 5.233  ;
+; counter_run1[3] ; counter_testh[0] ; 11.843 ; 11.843 ; 11.843 ; 11.843 ;
+; counter_run1[3] ; counter_testh[1] ; 11.866 ; 11.866 ; 11.866 ; 11.866 ;
+; counter_run1[3] ; counter_testh[2] ; 11.657 ; 11.657 ; 11.657 ; 11.657 ;
+; counter_run1[3] ; counter_testh[3] ; 11.476 ; 11.476 ; 11.476 ; 11.476 ;
+; counter_run1[3] ; counter_testl[1] ; 10.698 ; 10.698 ; 10.698 ; 10.698 ;
+; counter_run1[3] ; counter_testl[2] ; 10.585 ; 10.585 ; 10.585 ; 10.585 ;
+; counter_run1[3] ; counter_testl[3] ; 10.840 ; 10.840 ; 10.840 ; 10.840 ;
+; counter_run1[3] ; output_high[0]   ; 13.395 ; 13.382 ; 13.382 ; 13.395 ;
+; counter_run1[3] ; output_high[1]   ; 13.075 ; 13.062 ; 13.062 ; 13.075 ;
+; counter_run1[3] ; output_high[2]   ; 13.185 ; 13.172 ; 13.172 ; 13.185 ;
+; counter_run1[3] ; output_high[3]   ; 13.326 ; 13.339 ; 13.339 ; 13.326 ;
+; counter_run1[3] ; output_high[4]   ; 13.089 ; 13.076 ; 13.076 ; 13.089 ;
+; counter_run1[3] ; output_high[5]   ; 13.108 ; 13.095 ; 13.095 ; 13.108 ;
+; counter_run1[3] ; output_high[6]   ; 13.073 ; 13.060 ; 13.060 ; 13.073 ;
+; counter_run1[3] ; output_high[7]   ; 13.284 ; 13.271 ; 13.271 ; 13.284 ;
+; counter_run1[3] ; output_low[0]    ; 11.949 ; 11.967 ; 11.967 ; 11.949 ;
+; counter_run1[3] ; output_low[1]    ; 11.895 ; 11.913 ; 11.913 ; 11.895 ;
+; counter_run1[3] ; output_low[2]    ; 11.904 ; 11.922 ; 11.922 ; 11.904 ;
+; counter_run1[3] ; output_low[3]    ; 12.039 ; 12.039 ; 12.039 ; 12.039 ;
+; counter_run1[3] ; output_low[4]    ; 11.974 ; 11.992 ; 11.992 ; 11.974 ;
+; counter_run1[3] ; output_low[5]    ; 11.892 ; 11.910 ; 11.910 ; 11.892 ;
+; counter_run1[3] ; output_low[6]    ; 11.976 ; 11.994 ; 11.994 ; 11.976 ;
+; counter_run1[3] ; output_low[7]    ; 11.897 ; 11.915 ; 11.915 ; 11.897 ;
+; counter_run1[4] ; counter_test[4]  ; 5.055  ;        ;        ; 5.055  ;
+; counter_run1[4] ; counter_testh[0] ; 13.671 ; 13.671 ; 13.671 ; 13.671 ;
+; counter_run1[4] ; counter_testh[1] ; 13.694 ; 13.694 ; 13.694 ; 13.694 ;
+; counter_run1[4] ; counter_testh[2] ; 13.485 ; 13.485 ; 13.485 ; 13.485 ;
+; counter_run1[4] ; counter_testh[3] ; 13.304 ; 13.304 ; 13.304 ; 13.304 ;
+; counter_run1[4] ; counter_testl[1] ; 11.785 ; 11.785 ; 11.785 ; 11.785 ;
+; counter_run1[4] ; counter_testl[2] ; 11.672 ; 11.672 ; 11.672 ; 11.672 ;
+; counter_run1[4] ; counter_testl[3] ; 11.927 ; 11.927 ; 11.927 ; 11.927 ;
+; counter_run1[4] ; output_high[0]   ; 15.223 ; 15.212 ; 15.212 ; 15.223 ;
+; counter_run1[4] ; output_high[1]   ; 14.903 ; 14.892 ; 14.892 ; 14.903 ;
+; counter_run1[4] ; output_high[2]   ; 15.013 ; 15.002 ; 15.002 ; 15.013 ;
+; counter_run1[4] ; output_high[3]   ; 15.156 ; 15.167 ; 15.167 ; 15.156 ;
+; counter_run1[4] ; output_high[4]   ; 14.917 ; 14.906 ; 14.906 ; 14.917 ;
+; counter_run1[4] ; output_high[5]   ; 14.936 ; 14.925 ; 14.925 ; 14.936 ;
+; counter_run1[4] ; output_high[6]   ; 14.901 ; 14.890 ; 14.890 ; 14.901 ;
+; counter_run1[4] ; output_high[7]   ; 15.112 ; 15.101 ; 15.101 ; 15.112 ;
+; counter_run1[4] ; output_low[0]    ; 13.036 ; 13.054 ; 13.054 ; 13.036 ;
+; counter_run1[4] ; output_low[1]    ; 12.982 ; 13.000 ; 13.000 ; 12.982 ;
+; counter_run1[4] ; output_low[2]    ; 12.991 ; 13.009 ; 13.009 ; 12.991 ;
+; counter_run1[4] ; output_low[3]    ; 13.126 ; 13.126 ; 13.126 ; 13.126 ;
+; counter_run1[4] ; output_low[4]    ; 13.061 ; 13.079 ; 13.079 ; 13.061 ;
+; counter_run1[4] ; output_low[5]    ; 12.979 ; 12.997 ; 12.997 ; 12.979 ;
+; counter_run1[4] ; output_low[6]    ; 13.063 ; 13.081 ; 13.081 ; 13.063 ;
+; counter_run1[4] ; output_low[7]    ; 12.984 ; 13.002 ; 13.002 ; 12.984 ;
+; counter_run1[5] ; counter_test[5]  ; 5.029  ;        ;        ; 5.029  ;
+; counter_run1[5] ; counter_testh[0] ; 13.625 ; 13.625 ; 13.625 ; 13.625 ;
+; counter_run1[5] ; counter_testh[1] ; 13.648 ; 13.648 ; 13.648 ; 13.648 ;
+; counter_run1[5] ; counter_testh[2] ; 13.439 ; 13.439 ; 13.439 ; 13.439 ;
+; counter_run1[5] ; counter_testh[3] ; 13.258 ; 13.258 ; 13.258 ; 13.258 ;
+; counter_run1[5] ; counter_testl[1] ; 11.799 ; 11.799 ; 11.799 ; 11.799 ;
+; counter_run1[5] ; counter_testl[2] ; 11.686 ; 11.686 ; 11.686 ; 11.686 ;
+; counter_run1[5] ; counter_testl[3] ; 11.941 ; 11.941 ; 11.941 ; 11.941 ;
+; counter_run1[5] ; output_high[0]   ; 15.177 ; 15.166 ; 15.166 ; 15.177 ;
+; counter_run1[5] ; output_high[1]   ; 14.857 ; 14.846 ; 14.846 ; 14.857 ;
+; counter_run1[5] ; output_high[2]   ; 14.967 ; 14.956 ; 14.956 ; 14.967 ;
+; counter_run1[5] ; output_high[3]   ; 15.110 ; 15.121 ; 15.121 ; 15.110 ;
+; counter_run1[5] ; output_high[4]   ; 14.871 ; 14.860 ; 14.860 ; 14.871 ;
+; counter_run1[5] ; output_high[5]   ; 14.890 ; 14.879 ; 14.879 ; 14.890 ;
+; counter_run1[5] ; output_high[6]   ; 14.855 ; 14.844 ; 14.844 ; 14.855 ;
+; counter_run1[5] ; output_high[7]   ; 15.066 ; 15.055 ; 15.055 ; 15.066 ;
+; counter_run1[5] ; output_low[0]    ; 13.050 ; 13.068 ; 13.068 ; 13.050 ;
+; counter_run1[5] ; output_low[1]    ; 12.996 ; 13.014 ; 13.014 ; 12.996 ;
+; counter_run1[5] ; output_low[2]    ; 13.005 ; 13.023 ; 13.023 ; 13.005 ;
+; counter_run1[5] ; output_low[3]    ; 13.140 ; 13.140 ; 13.140 ; 13.140 ;
+; counter_run1[5] ; output_low[4]    ; 13.075 ; 13.093 ; 13.093 ; 13.075 ;
+; counter_run1[5] ; output_low[5]    ; 12.993 ; 13.011 ; 13.011 ; 12.993 ;
+; counter_run1[5] ; output_low[6]    ; 13.077 ; 13.095 ; 13.095 ; 13.077 ;
+; counter_run1[5] ; output_low[7]    ; 12.998 ; 13.016 ; 13.016 ; 12.998 ;
+; counter_run1[6] ; counter_test[6]  ; 5.216  ;        ;        ; 5.216  ;
+; counter_run1[6] ; counter_testh[0] ; 13.598 ; 13.598 ; 13.598 ; 13.598 ;
+; counter_run1[6] ; counter_testh[1] ; 13.621 ; 13.621 ; 13.621 ; 13.621 ;
+; counter_run1[6] ; counter_testh[2] ; 13.412 ; 13.412 ; 13.412 ; 13.412 ;
+; counter_run1[6] ; counter_testh[3] ; 13.231 ; 13.231 ; 13.231 ; 13.231 ;
+; counter_run1[6] ; counter_testl[1] ; 11.698 ; 11.698 ; 11.698 ; 11.698 ;
+; counter_run1[6] ; counter_testl[2] ; 11.585 ; 11.585 ; 11.585 ; 11.585 ;
+; counter_run1[6] ; counter_testl[3] ; 11.840 ; 11.840 ; 11.840 ; 11.840 ;
+; counter_run1[6] ; output_high[0]   ; 15.150 ; 15.139 ; 15.139 ; 15.150 ;
+; counter_run1[6] ; output_high[1]   ; 14.830 ; 14.819 ; 14.819 ; 14.830 ;
+; counter_run1[6] ; output_high[2]   ; 14.940 ; 14.929 ; 14.929 ; 14.940 ;
+; counter_run1[6] ; output_high[3]   ; 15.083 ; 15.094 ; 15.094 ; 15.083 ;
+; counter_run1[6] ; output_high[4]   ; 14.844 ; 14.833 ; 14.833 ; 14.844 ;
+; counter_run1[6] ; output_high[5]   ; 14.863 ; 14.852 ; 14.852 ; 14.863 ;
+; counter_run1[6] ; output_high[6]   ; 14.828 ; 14.817 ; 14.817 ; 14.828 ;
+; counter_run1[6] ; output_high[7]   ; 15.039 ; 15.028 ; 15.028 ; 15.039 ;
+; counter_run1[6] ; output_low[0]    ; 12.949 ; 12.967 ; 12.967 ; 12.949 ;
+; counter_run1[6] ; output_low[1]    ; 12.895 ; 12.913 ; 12.913 ; 12.895 ;
+; counter_run1[6] ; output_low[2]    ; 12.904 ; 12.922 ; 12.922 ; 12.904 ;
+; counter_run1[6] ; output_low[3]    ; 13.039 ; 13.039 ; 13.039 ; 13.039 ;
+; counter_run1[6] ; output_low[4]    ; 12.974 ; 12.992 ; 12.992 ; 12.974 ;
+; counter_run1[6] ; output_low[5]    ; 12.892 ; 12.910 ; 12.910 ; 12.892 ;
+; counter_run1[6] ; output_low[6]    ; 12.976 ; 12.994 ; 12.994 ; 12.976 ;
+; counter_run1[6] ; output_low[7]    ; 12.897 ; 12.915 ; 12.915 ; 12.897 ;
++-----------------+------------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------------+
+; Minimum Propagation Delay                                          ;
++-----------------+------------------+-------+-------+-------+-------+
+; Input Port      ; Output Port      ; RR    ; RF    ; FR    ; FF    ;
++-----------------+------------------+-------+-------+-------+-------+
+; counter_run1[0] ; counter_test[0]  ; 2.533 ;       ;       ; 2.533 ;
+; counter_run1[0] ; counter_testl[0] ; 2.776 ;       ;       ; 2.776 ;
+; counter_run1[0] ; output_low[0]    ; 3.834 ; 3.778 ; 3.778 ; 3.834 ;
+; counter_run1[0] ; output_low[1]    ; 3.130 ;       ;       ; 3.130 ;
+; counter_run1[0] ; output_low[2]    ; 3.139 ;       ;       ; 3.139 ;
+; counter_run1[0] ; output_low[3]    ; 3.337 ;       ;       ; 3.337 ;
+; counter_run1[0] ; output_low[4]    ; 3.212 ; 3.212 ; 3.212 ; 3.212 ;
+; counter_run1[0] ; output_low[5]    ;       ; 3.126 ; 3.126 ;       ;
+; counter_run1[0] ; output_low[6]    ; 3.214 ; 3.214 ; 3.214 ; 3.214 ;
+; counter_run1[0] ; output_low[7]    ; 3.136 ; 3.136 ; 3.136 ; 3.136 ;
+; counter_run1[1] ; counter_test[1]  ; 2.579 ;       ;       ; 2.579 ;
+; counter_run1[1] ; counter_testh[0] ; 5.288 ;       ;       ; 5.288 ;
+; counter_run1[1] ; counter_testl[1] ; 3.289 ; 4.549 ; 4.549 ; 3.289 ;
+; counter_run1[1] ; counter_testl[2] ; 4.617 ; 4.617 ; 4.617 ; 4.617 ;
+; counter_run1[1] ; counter_testl[3] ; 4.984 ; 4.984 ; 4.984 ; 4.984 ;
+; counter_run1[1] ; output_high[0]   ; 5.874 ; 5.898 ; 5.898 ; 5.874 ;
+; counter_run1[1] ; output_high[1]   ; 5.565 ;       ;       ; 5.565 ;
+; counter_run1[1] ; output_high[2]   ; 5.693 ;       ;       ; 5.693 ;
+; counter_run1[1] ; output_high[3]   ; 5.522 ;       ;       ; 5.522 ;
+; counter_run1[1] ; output_high[4]   ; 5.596 ; 5.596 ; 5.596 ; 5.596 ;
+; counter_run1[1] ; output_high[5]   ;       ; 5.604 ; 5.604 ;       ;
+; counter_run1[1] ; output_high[6]   ; 5.563 ; 5.563 ; 5.563 ; 5.563 ;
+; counter_run1[1] ; output_high[7]   ; 5.792 ; 5.792 ; 5.792 ; 5.792 ;
+; counter_run1[1] ; output_low[0]    ; 4.188 ; 4.241 ; 4.241 ; 4.188 ;
+; counter_run1[1] ; output_low[1]    ; 3.526 ; 3.526 ; 3.526 ; 3.526 ;
+; counter_run1[1] ; output_low[2]    ; 3.539 ; 4.799 ; 4.799 ; 3.539 ;
+; counter_run1[1] ; output_low[3]    ; 4.327 ; 4.261 ; 4.261 ; 4.327 ;
+; counter_run1[1] ; output_low[4]    ; 3.628 ; 3.628 ; 3.628 ; 3.628 ;
+; counter_run1[1] ; output_low[5]    ; 3.532 ; 4.792 ; 4.792 ; 3.532 ;
+; counter_run1[1] ; output_low[6]    ; 3.627 ; 3.627 ; 3.627 ; 3.627 ;
+; counter_run1[1] ; output_low[7]    ; 4.811 ; 3.551 ; 3.551 ; 4.811 ;
+; counter_run1[2] ; counter_test[2]  ; 4.950 ;       ;       ; 4.950 ;
+; counter_run1[2] ; counter_testh[0] ; 7.700 ; 8.875 ; 8.875 ; 7.700 ;
+; counter_run1[2] ; counter_testh[1] ; 8.528 ; 8.946 ; 8.946 ; 8.528 ;
+; counter_run1[2] ; counter_testh[2] ; 9.034 ; 9.034 ; 9.034 ; 9.034 ;
+; counter_run1[2] ; counter_testh[3] ; 8.581 ; 8.581 ; 8.581 ; 8.581 ;
+; counter_run1[2] ; counter_testl[1] ; 7.495 ; 7.495 ; 7.495 ; 7.495 ;
+; counter_run1[2] ; counter_testl[2] ; 6.215 ; 6.801 ; 6.801 ; 6.215 ;
+; counter_run1[2] ; counter_testl[3] ; 7.271 ; 7.271 ; 7.271 ; 7.271 ;
+; counter_run1[2] ; output_high[0]   ; 8.286 ; 8.310 ; 8.310 ; 8.286 ;
+; counter_run1[2] ; output_high[1]   ; 7.977 ; 8.555 ; 8.555 ; 7.977 ;
+; counter_run1[2] ; output_high[2]   ; 8.105 ; 9.078 ; 9.078 ; 8.105 ;
+; counter_run1[2] ; output_high[3]   ; 7.934 ; 8.723 ; 8.723 ; 7.934 ;
+; counter_run1[2] ; output_high[4]   ; 8.008 ; 8.008 ; 8.008 ; 8.008 ;
+; counter_run1[2] ; output_high[5]   ; 8.615 ; 8.016 ; 8.016 ; 8.615 ;
+; counter_run1[2] ; output_high[6]   ; 7.975 ; 7.975 ; 7.975 ; 7.975 ;
+; counter_run1[2] ; output_high[7]   ; 8.204 ; 8.204 ; 8.204 ; 8.204 ;
+; counter_run1[2] ; output_low[0]    ; 7.363 ; 7.306 ; 7.306 ; 7.363 ;
+; counter_run1[2] ; output_low[1]    ; 6.578 ; 6.578 ; 6.578 ; 6.578 ;
+; counter_run1[2] ; output_low[2]    ; 7.173 ; 6.587 ; 6.587 ; 7.173 ;
+; counter_run1[2] ; output_low[3]    ; 7.379 ; 7.442 ; 7.442 ; 7.379 ;
+; counter_run1[2] ; output_low[4]    ; 6.661 ; 6.661 ; 6.661 ; 6.661 ;
+; counter_run1[2] ; output_low[5]    ; 7.165 ; 6.579 ; 6.579 ; 7.165 ;
+; counter_run1[2] ; output_low[6]    ; 6.689 ; 7.275 ; 7.275 ; 6.689 ;
+; counter_run1[2] ; output_low[7]    ; 6.583 ; 6.583 ; 6.583 ; 6.583 ;
+; counter_run1[3] ; counter_test[3]  ; 5.233 ;       ;       ; 5.233 ;
+; counter_run1[3] ; counter_testh[0] ; 7.671 ; 8.453 ; 8.453 ; 7.671 ;
+; counter_run1[3] ; counter_testh[1] ; 8.154 ; 8.572 ; 8.572 ; 8.154 ;
+; counter_run1[3] ; counter_testh[2] ; 7.937 ; 8.660 ; 8.660 ; 7.937 ;
+; counter_run1[3] ; counter_testh[3] ; 8.207 ; 8.207 ; 8.207 ; 8.207 ;
+; counter_run1[3] ; counter_testl[1] ; 7.209 ; 7.209 ; 7.209 ; 7.209 ;
+; counter_run1[3] ; counter_testl[2] ; 7.096 ; 7.096 ; 7.096 ; 7.096 ;
+; counter_run1[3] ; counter_testl[3] ; 6.169 ; 6.880 ; 6.880 ; 6.169 ;
+; counter_run1[3] ; output_high[0]   ; 8.257 ; 8.281 ; 8.281 ; 8.257 ;
+; counter_run1[3] ; output_high[1]   ; 7.948 ; 8.181 ; 8.181 ; 7.948 ;
+; counter_run1[3] ; output_high[2]   ; 8.076 ; 8.374 ; 8.374 ; 8.076 ;
+; counter_run1[3] ; output_high[3]   ; 7.905 ; 8.349 ; 8.349 ; 7.905 ;
+; counter_run1[3] ; output_high[4]   ; 7.979 ; 7.979 ; 7.979 ; 7.979 ;
+; counter_run1[3] ; output_high[5]   ; 8.241 ; 7.987 ; 7.987 ; 8.241 ;
+; counter_run1[3] ; output_high[6]   ; 7.946 ; 7.946 ; 7.946 ; 7.946 ;
+; counter_run1[3] ; output_high[7]   ; 8.175 ; 8.175 ; 8.175 ; 8.175 ;
+; counter_run1[3] ; output_low[0]    ; 7.116 ; 7.023 ; 7.023 ; 7.116 ;
+; counter_run1[3] ; output_low[1]    ; 7.410 ; 6.699 ; 6.699 ; 7.410 ;
+; counter_run1[3] ; output_low[2]    ; 7.419 ; 6.708 ; 6.708 ; 7.419 ;
+; counter_run1[3] ; output_low[3]    ; 7.096 ; 7.149 ; 7.149 ; 7.096 ;
+; counter_run1[3] ; output_low[4]    ; 7.489 ; 6.778 ; 6.778 ; 7.489 ;
+; counter_run1[3] ; output_low[5]    ; 7.407 ; 6.696 ; 6.696 ; 7.407 ;
+; counter_run1[3] ; output_low[6]    ; 7.491 ; 6.780 ; 6.780 ; 7.491 ;
+; counter_run1[3] ; output_low[7]    ; 7.412 ; 6.701 ; 6.701 ; 7.412 ;
+; counter_run1[4] ; counter_test[4]  ; 5.055 ;       ;       ; 5.055 ;
+; counter_run1[4] ; counter_testh[0] ; 7.643 ; 7.926 ; 7.926 ; 7.643 ;
+; counter_run1[4] ; counter_testh[1] ; 7.655 ; 8.065 ; 8.065 ; 7.655 ;
+; counter_run1[4] ; counter_testh[2] ; 7.428 ; 7.746 ; 7.746 ; 7.428 ;
+; counter_run1[4] ; counter_testh[3] ; 7.117 ; 7.280 ; 7.280 ; 7.117 ;
+; counter_run1[4] ; counter_testl[1] ; 7.641 ; 7.641 ; 7.641 ; 7.641 ;
+; counter_run1[4] ; counter_testl[2] ; 7.528 ; 7.528 ; 7.528 ; 7.528 ;
+; counter_run1[4] ; counter_testl[3] ; 7.666 ; 7.666 ; 7.666 ; 7.666 ;
+; counter_run1[4] ; output_high[0]   ; 8.006 ; 7.906 ; 7.906 ; 8.006 ;
+; counter_run1[4] ; output_high[1]   ; 7.682 ; 7.682 ; 7.682 ; 7.682 ;
+; counter_run1[4] ; output_high[2]   ; 7.787 ; 7.865 ; 7.865 ; 7.787 ;
+; counter_run1[4] ; output_high[3]   ; 7.850 ; 7.850 ; 7.850 ; 7.850 ;
+; counter_run1[4] ; output_high[4]   ; 7.693 ; 7.693 ; 7.693 ; 7.693 ;
+; counter_run1[4] ; output_high[5]   ; 7.742 ; 7.782 ; 7.782 ; 7.742 ;
+; counter_run1[4] ; output_high[6]   ; 7.680 ; 7.680 ; 7.680 ; 7.680 ;
+; counter_run1[4] ; output_high[7]   ; 7.964 ; 7.886 ; 7.886 ; 7.964 ;
+; counter_run1[4] ; output_low[0]    ; 7.565 ; 6.996 ; 6.996 ; 7.565 ;
+; counter_run1[4] ; output_low[1]    ; 7.596 ; 7.027 ; 7.027 ; 7.596 ;
+; counter_run1[4] ; output_low[2]    ; 7.605 ; 7.036 ; 7.036 ; 7.605 ;
+; counter_run1[4] ; output_low[3]    ; 7.069 ; 7.139 ; 7.139 ; 7.069 ;
+; counter_run1[4] ; output_low[4]    ; 7.675 ; 7.106 ; 7.106 ; 7.675 ;
+; counter_run1[4] ; output_low[5]    ; 7.593 ; 7.024 ; 7.024 ; 7.593 ;
+; counter_run1[4] ; output_low[6]    ; 7.677 ; 7.108 ; 7.108 ; 7.677 ;
+; counter_run1[4] ; output_low[7]    ; 7.598 ; 7.029 ; 7.029 ; 7.598 ;
+; counter_run1[5] ; counter_test[5]  ; 5.029 ;       ;       ; 5.029 ;
+; counter_run1[5] ; counter_testh[0] ; 7.800 ; 7.985 ; 7.985 ; 7.800 ;
+; counter_run1[5] ; counter_testh[1] ; 7.739 ; 7.924 ; 7.924 ; 7.739 ;
+; counter_run1[5] ; counter_testh[2] ; 7.563 ; 7.651 ; 7.651 ; 7.563 ;
+; counter_run1[5] ; counter_testh[3] ; 7.071 ; 7.234 ; 7.234 ; 7.071 ;
+; counter_run1[5] ; counter_testl[1] ; 7.828 ; 7.828 ; 7.828 ; 7.828 ;
+; counter_run1[5] ; counter_testl[2] ; 7.663 ; 7.656 ; 7.656 ; 7.663 ;
+; counter_run1[5] ; counter_testl[3] ; 7.725 ; 7.725 ; 7.725 ; 7.725 ;
+; counter_run1[5] ; output_high[0]   ; 8.069 ; 7.990 ; 7.990 ; 8.069 ;
+; counter_run1[5] ; output_high[1]   ; 7.766 ; 7.766 ; 7.766 ; 7.766 ;
+; counter_run1[5] ; output_high[2]   ; 7.871 ; 8.000 ; 8.000 ; 7.871 ;
+; counter_run1[5] ; output_high[3]   ; 7.934 ; 7.934 ; 7.934 ; 7.934 ;
+; counter_run1[5] ; output_high[4]   ; 7.777 ; 7.777 ; 7.777 ; 7.777 ;
+; counter_run1[5] ; output_high[5]   ; 7.826 ; 7.917 ; 7.917 ; 7.826 ;
+; counter_run1[5] ; output_high[6]   ; 7.764 ; 7.764 ; 7.764 ; 7.764 ;
+; counter_run1[5] ; output_high[7]   ; 8.099 ; 7.970 ; 7.970 ; 8.099 ;
+; counter_run1[5] ; output_low[0]    ; 7.912 ; 7.701 ; 7.701 ; 7.912 ;
+; counter_run1[5] ; output_low[1]    ; 7.915 ; 7.666 ; 7.666 ; 7.915 ;
+; counter_run1[5] ; output_low[2]    ; 7.924 ; 7.675 ; 7.675 ; 7.924 ;
+; counter_run1[5] ; output_low[3]    ; 7.774 ; 7.825 ; 7.825 ; 7.774 ;
+; counter_run1[5] ; output_low[4]    ; 7.994 ; 7.745 ; 7.745 ; 7.994 ;
+; counter_run1[5] ; output_low[5]    ; 7.912 ; 7.663 ; 7.663 ; 7.912 ;
+; counter_run1[5] ; output_low[6]    ; 7.996 ; 7.747 ; 7.747 ; 7.996 ;
+; counter_run1[5] ; output_low[7]    ; 7.917 ; 7.668 ; 7.668 ; 7.917 ;
+; counter_run1[6] ; counter_test[6]  ; 5.216 ;       ;       ; 5.216 ;
+; counter_run1[6] ; counter_testh[0] ; 7.928 ; 7.924 ; 7.924 ; 7.928 ;
+; counter_run1[6] ; counter_testh[1] ; 7.465 ; 7.883 ; 7.883 ; 7.465 ;
+; counter_run1[6] ; counter_testh[2] ; 7.245 ; 7.699 ; 7.699 ; 7.245 ;
+; counter_run1[6] ; counter_testh[3] ; 7.044 ; 7.207 ; 7.207 ; 7.044 ;
+; counter_run1[6] ; counter_testl[1] ; 7.716 ; 7.716 ; 7.716 ; 7.716 ;
+; counter_run1[6] ; counter_testl[2] ; 7.413 ; 7.406 ; 7.406 ; 7.413 ;
+; counter_run1[6] ; counter_testl[3] ; 7.611 ; 7.611 ; 7.611 ; 7.611 ;
+; counter_run1[6] ; output_high[0]   ; 7.816 ; 7.716 ; 7.716 ; 7.816 ;
+; counter_run1[6] ; output_high[1]   ; 7.492 ; 7.492 ; 7.492 ; 7.492 ;
+; counter_run1[6] ; output_high[2]   ; 7.597 ; 7.682 ; 7.682 ; 7.597 ;
+; counter_run1[6] ; output_high[3]   ; 7.660 ; 7.660 ; 7.660 ; 7.660 ;
+; counter_run1[6] ; output_high[4]   ; 7.503 ; 7.503 ; 7.503 ; 7.503 ;
+; counter_run1[6] ; output_high[5]   ; 7.552 ; 7.599 ; 7.599 ; 7.552 ;
+; counter_run1[6] ; output_high[6]   ; 7.490 ; 7.490 ; 7.490 ; 7.490 ;
+; counter_run1[6] ; output_high[7]   ; 7.781 ; 7.696 ; 7.696 ; 7.781 ;
+; counter_run1[6] ; output_low[0]    ; 7.811 ; 7.578 ; 7.578 ; 7.811 ;
+; counter_run1[6] ; output_low[1]    ; 7.769 ; 7.543 ; 7.543 ; 7.769 ;
+; counter_run1[6] ; output_low[2]    ; 7.778 ; 7.552 ; 7.552 ; 7.778 ;
+; counter_run1[6] ; output_low[3]    ; 7.651 ; 7.702 ; 7.702 ; 7.651 ;
+; counter_run1[6] ; output_low[4]    ; 7.852 ; 7.622 ; 7.622 ; 7.852 ;
+; counter_run1[6] ; output_low[5]    ; 7.770 ; 7.540 ; 7.540 ; 7.770 ;
+; counter_run1[6] ; output_low[6]    ; 7.887 ; 7.624 ; 7.624 ; 7.887 ;
+; counter_run1[6] ; output_low[7]    ; 7.774 ; 7.545 ; 7.545 ; 7.774 ;
++-----------------+------------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------+
+; Progagation Delay                                                      ;
++-----------------+------------------+--------+--------+--------+--------+
+; Input Port      ; Output Port      ; RR     ; RF     ; FR     ; FF     ;
++-----------------+------------------+--------+--------+--------+--------+
+; counter_run1[0] ; counter_test[0]  ; 4.754  ;        ;        ; 4.754  ;
+; counter_run1[0] ; counter_testl[0] ; 5.228  ;        ;        ; 5.228  ;
+; counter_run1[0] ; output_low[0]    ; 7.536  ; 7.446  ; 7.446  ; 7.536  ;
+; counter_run1[0] ; output_low[1]    ; 5.953  ;        ;        ; 5.953  ;
+; counter_run1[0] ; output_low[2]    ; 5.960  ;        ;        ; 5.960  ;
+; counter_run1[0] ; output_low[3]    ; 7.723  ;        ;        ; 7.723  ;
+; counter_run1[0] ; output_low[4]    ; 6.156  ; 6.156  ; 6.156  ; 6.156  ;
+; counter_run1[0] ; output_low[5]    ;        ; 5.949  ; 5.949  ;        ;
+; counter_run1[0] ; output_low[6]    ; 6.154  ; 6.154  ; 6.154  ; 6.154  ;
+; counter_run1[0] ; output_low[7]    ; 5.958  ; 5.958  ; 5.958  ; 5.958  ;
+; counter_run1[1] ; counter_test[1]  ; 4.749  ;        ;        ; 4.749  ;
+; counter_run1[1] ; counter_testh[0] ; 11.199 ;        ;        ; 11.199 ;
+; counter_run1[1] ; counter_testl[1] ; 10.762 ; 10.762 ; 10.762 ; 10.762 ;
+; counter_run1[1] ; counter_testl[2] ; 10.497 ; 10.497 ; 10.497 ; 10.497 ;
+; counter_run1[1] ; counter_testl[3] ; 11.039 ; 11.039 ; 11.039 ; 11.039 ;
+; counter_run1[1] ; output_high[0]   ; 12.542 ; 12.601 ; 12.601 ; 12.542 ;
+; counter_run1[1] ; output_high[1]   ; 11.840 ;        ;        ; 11.840 ;
+; counter_run1[1] ; output_high[2]   ; 12.091 ;        ;        ; 12.091 ;
+; counter_run1[1] ; output_high[3]   ; 12.420 ;        ;        ; 12.420 ;
+; counter_run1[1] ; output_high[4]   ; 11.873 ; 11.873 ; 11.873 ; 11.873 ;
+; counter_run1[1] ; output_high[5]   ;        ; 11.885 ; 11.885 ;        ;
+; counter_run1[1] ; output_high[6]   ; 11.838 ; 11.838 ; 11.838 ; 11.838 ;
+; counter_run1[1] ; output_high[7]   ; 12.323 ; 12.323 ; 12.323 ; 12.323 ;
+; counter_run1[1] ; output_low[0]    ; 13.538 ; 13.538 ; 13.538 ; 13.538 ;
+; counter_run1[1] ; output_low[1]    ; 13.386 ; 13.301 ; 13.301 ; 13.386 ;
+; counter_run1[1] ; output_low[2]    ; 13.392 ; 13.307 ; 13.307 ; 13.392 ;
+; counter_run1[1] ; output_low[3]    ; 13.727 ; 13.727 ; 13.727 ; 13.727 ;
+; counter_run1[1] ; output_low[4]    ; 13.587 ; 13.502 ; 13.502 ; 13.587 ;
+; counter_run1[1] ; output_low[5]    ; 13.380 ; 13.295 ; 13.295 ; 13.380 ;
+; counter_run1[1] ; output_low[6]    ; 13.588 ; 13.503 ; 13.503 ; 13.588 ;
+; counter_run1[1] ; output_low[7]    ; 13.389 ; 13.304 ; 13.304 ; 13.389 ;
+; counter_run1[2] ; counter_test[2]  ; 8.659  ;        ;        ; 8.659  ;
+; counter_run1[2] ; counter_testh[0] ; 18.641 ; 18.699 ; 18.699 ; 18.641 ;
+; counter_run1[2] ; counter_testh[1] ; 18.657 ; 18.657 ; 18.657 ; 18.657 ;
+; counter_run1[2] ; counter_testh[2] ; 18.179 ; 18.179 ; 18.179 ; 18.179 ;
+; counter_run1[2] ; counter_testh[3] ; 17.767 ; 17.767 ; 17.767 ; 17.767 ;
+; counter_run1[2] ; counter_testl[1] ; 18.025 ; 18.025 ; 18.025 ; 18.025 ;
+; counter_run1[2] ; counter_testl[2] ; 17.760 ; 17.760 ; 17.760 ; 17.760 ;
+; counter_run1[2] ; counter_testl[3] ; 18.302 ; 18.302 ; 18.302 ; 18.302 ;
+; counter_run1[2] ; output_high[0]   ; 21.778 ; 22.194 ; 22.194 ; 21.778 ;
+; counter_run1[2] ; output_high[1]   ; 21.019 ; 21.435 ; 21.435 ; 21.019 ;
+; counter_run1[2] ; output_high[2]   ; 21.252 ; 21.668 ; 21.668 ; 21.252 ;
+; counter_run1[2] ; output_high[3]   ; 22.013 ; 21.944 ; 21.944 ; 22.013 ;
+; counter_run1[2] ; output_high[4]   ; 21.039 ; 21.455 ; 21.455 ; 21.039 ;
+; counter_run1[2] ; output_high[5]   ; 21.058 ; 21.474 ; 21.474 ; 21.058 ;
+; counter_run1[2] ; output_high[6]   ; 21.020 ; 21.436 ; 21.436 ; 21.020 ;
+; counter_run1[2] ; output_high[7]   ; 21.489 ; 21.905 ; 21.905 ; 21.489 ;
+; counter_run1[2] ; output_low[0]    ; 20.801 ; 20.801 ; 20.801 ; 20.801 ;
+; counter_run1[2] ; output_low[1]    ; 20.649 ; 20.564 ; 20.564 ; 20.649 ;
+; counter_run1[2] ; output_low[2]    ; 20.655 ; 20.570 ; 20.570 ; 20.655 ;
+; counter_run1[2] ; output_low[3]    ; 20.990 ; 20.990 ; 20.990 ; 20.990 ;
+; counter_run1[2] ; output_low[4]    ; 20.850 ; 20.765 ; 20.765 ; 20.850 ;
+; counter_run1[2] ; output_low[5]    ; 20.643 ; 20.558 ; 20.558 ; 20.643 ;
+; counter_run1[2] ; output_low[6]    ; 20.851 ; 20.766 ; 20.766 ; 20.851 ;
+; counter_run1[2] ; output_low[7]    ; 20.652 ; 20.567 ; 20.567 ; 20.652 ;
+; counter_run1[3] ; counter_test[3]  ; 9.192  ;        ;        ; 9.192  ;
+; counter_run1[3] ; counter_testh[0] ; 24.085 ; 24.047 ; 24.047 ; 24.085 ;
+; counter_run1[3] ; counter_testh[1] ; 24.043 ; 24.043 ; 24.043 ; 24.043 ;
+; counter_run1[3] ; counter_testh[2] ; 23.565 ; 23.565 ; 23.565 ; 23.565 ;
+; counter_run1[3] ; counter_testh[3] ; 23.153 ; 23.153 ; 23.153 ; 23.153 ;
+; counter_run1[3] ; counter_testl[1] ; 21.535 ; 21.535 ; 21.535 ; 21.535 ;
+; counter_run1[3] ; counter_testl[2] ; 21.270 ; 21.270 ; 21.270 ; 21.270 ;
+; counter_run1[3] ; counter_testl[3] ; 21.812 ; 21.812 ; 21.812 ; 21.812 ;
+; counter_run1[3] ; output_high[0]   ; 27.580 ; 27.542 ; 27.542 ; 27.580 ;
+; counter_run1[3] ; output_high[1]   ; 26.821 ; 26.783 ; 26.783 ; 26.821 ;
+; counter_run1[3] ; output_high[2]   ; 27.054 ; 27.016 ; 27.016 ; 27.054 ;
+; counter_run1[3] ; output_high[3]   ; 27.361 ; 27.399 ; 27.399 ; 27.361 ;
+; counter_run1[3] ; output_high[4]   ; 26.841 ; 26.803 ; 26.803 ; 26.841 ;
+; counter_run1[3] ; output_high[5]   ; 26.860 ; 26.822 ; 26.822 ; 26.860 ;
+; counter_run1[3] ; output_high[6]   ; 26.822 ; 26.784 ; 26.784 ; 26.822 ;
+; counter_run1[3] ; output_high[7]   ; 27.291 ; 27.253 ; 27.253 ; 27.291 ;
+; counter_run1[3] ; output_low[0]    ; 24.311 ; 24.311 ; 24.311 ; 24.311 ;
+; counter_run1[3] ; output_low[1]    ; 24.081 ; 24.159 ; 24.159 ; 24.081 ;
+; counter_run1[3] ; output_low[2]    ; 24.087 ; 24.165 ; 24.165 ; 24.087 ;
+; counter_run1[3] ; output_low[3]    ; 24.500 ; 24.500 ; 24.500 ; 24.500 ;
+; counter_run1[3] ; output_low[4]    ; 24.282 ; 24.360 ; 24.360 ; 24.282 ;
+; counter_run1[3] ; output_low[5]    ; 24.075 ; 24.153 ; 24.153 ; 24.075 ;
+; counter_run1[3] ; output_low[6]    ; 24.283 ; 24.361 ; 24.361 ; 24.283 ;
+; counter_run1[3] ; output_low[7]    ; 24.084 ; 24.162 ; 24.162 ; 24.084 ;
+; counter_run1[4] ; counter_test[4]  ; 8.915  ;        ;        ; 8.915  ;
+; counter_run1[4] ; counter_testh[0] ; 28.093 ; 28.061 ; 28.061 ; 28.093 ;
+; counter_run1[4] ; counter_testh[1] ; 28.051 ; 28.051 ; 28.051 ; 28.051 ;
+; counter_run1[4] ; counter_testh[2] ; 27.573 ; 27.573 ; 27.573 ; 27.573 ;
+; counter_run1[4] ; counter_testh[3] ; 27.161 ; 27.161 ; 27.161 ; 27.161 ;
+; counter_run1[4] ; counter_testl[1] ; 23.856 ; 23.856 ; 23.856 ; 23.856 ;
+; counter_run1[4] ; counter_testl[2] ; 23.591 ; 23.591 ; 23.591 ; 23.591 ;
+; counter_run1[4] ; counter_testl[3] ; 24.133 ; 24.133 ; 24.133 ; 24.133 ;
+; counter_run1[4] ; output_high[0]   ; 31.588 ; 31.556 ; 31.556 ; 31.588 ;
+; counter_run1[4] ; output_high[1]   ; 30.829 ; 30.797 ; 30.797 ; 30.829 ;
+; counter_run1[4] ; output_high[2]   ; 31.062 ; 31.030 ; 31.030 ; 31.062 ;
+; counter_run1[4] ; output_high[3]   ; 31.375 ; 31.407 ; 31.407 ; 31.375 ;
+; counter_run1[4] ; output_high[4]   ; 30.849 ; 30.817 ; 30.817 ; 30.849 ;
+; counter_run1[4] ; output_high[5]   ; 30.868 ; 30.836 ; 30.836 ; 30.868 ;
+; counter_run1[4] ; output_high[6]   ; 30.830 ; 30.798 ; 30.798 ; 30.830 ;
+; counter_run1[4] ; output_high[7]   ; 31.299 ; 31.267 ; 31.267 ; 31.299 ;
+; counter_run1[4] ; output_low[0]    ; 26.632 ; 26.632 ; 26.632 ; 26.632 ;
+; counter_run1[4] ; output_low[1]    ; 26.402 ; 26.480 ; 26.480 ; 26.402 ;
+; counter_run1[4] ; output_low[2]    ; 26.408 ; 26.486 ; 26.486 ; 26.408 ;
+; counter_run1[4] ; output_low[3]    ; 26.821 ; 26.821 ; 26.821 ; 26.821 ;
+; counter_run1[4] ; output_low[4]    ; 26.603 ; 26.681 ; 26.681 ; 26.603 ;
+; counter_run1[4] ; output_low[5]    ; 26.396 ; 26.474 ; 26.474 ; 26.396 ;
+; counter_run1[4] ; output_low[6]    ; 26.604 ; 26.682 ; 26.682 ; 26.604 ;
+; counter_run1[4] ; output_low[7]    ; 26.405 ; 26.483 ; 26.483 ; 26.405 ;
+; counter_run1[5] ; counter_test[5]  ; 8.870  ;        ;        ; 8.870  ;
+; counter_run1[5] ; counter_testh[0] ; 28.014 ; 27.982 ; 27.982 ; 28.014 ;
+; counter_run1[5] ; counter_testh[1] ; 27.972 ; 27.972 ; 27.972 ; 27.972 ;
+; counter_run1[5] ; counter_testh[2] ; 27.494 ; 27.494 ; 27.494 ; 27.494 ;
+; counter_run1[5] ; counter_testh[3] ; 27.082 ; 27.082 ; 27.082 ; 27.082 ;
+; counter_run1[5] ; counter_testl[1] ; 23.864 ; 23.864 ; 23.864 ; 23.864 ;
+; counter_run1[5] ; counter_testl[2] ; 23.599 ; 23.599 ; 23.599 ; 23.599 ;
+; counter_run1[5] ; counter_testl[3] ; 24.141 ; 24.141 ; 24.141 ; 24.141 ;
+; counter_run1[5] ; output_high[0]   ; 31.509 ; 31.477 ; 31.477 ; 31.509 ;
+; counter_run1[5] ; output_high[1]   ; 30.750 ; 30.718 ; 30.718 ; 30.750 ;
+; counter_run1[5] ; output_high[2]   ; 30.983 ; 30.951 ; 30.951 ; 30.983 ;
+; counter_run1[5] ; output_high[3]   ; 31.296 ; 31.328 ; 31.328 ; 31.296 ;
+; counter_run1[5] ; output_high[4]   ; 30.770 ; 30.738 ; 30.738 ; 30.770 ;
+; counter_run1[5] ; output_high[5]   ; 30.789 ; 30.757 ; 30.757 ; 30.789 ;
+; counter_run1[5] ; output_high[6]   ; 30.751 ; 30.719 ; 30.719 ; 30.751 ;
+; counter_run1[5] ; output_high[7]   ; 31.220 ; 31.188 ; 31.188 ; 31.220 ;
+; counter_run1[5] ; output_low[0]    ; 26.640 ; 26.640 ; 26.640 ; 26.640 ;
+; counter_run1[5] ; output_low[1]    ; 26.410 ; 26.488 ; 26.488 ; 26.410 ;
+; counter_run1[5] ; output_low[2]    ; 26.416 ; 26.494 ; 26.494 ; 26.416 ;
+; counter_run1[5] ; output_low[3]    ; 26.829 ; 26.829 ; 26.829 ; 26.829 ;
+; counter_run1[5] ; output_low[4]    ; 26.611 ; 26.689 ; 26.689 ; 26.611 ;
+; counter_run1[5] ; output_low[5]    ; 26.404 ; 26.482 ; 26.482 ; 26.404 ;
+; counter_run1[5] ; output_low[6]    ; 26.612 ; 26.690 ; 26.690 ; 26.612 ;
+; counter_run1[5] ; output_low[7]    ; 26.413 ; 26.491 ; 26.491 ; 26.413 ;
+; counter_run1[6] ; counter_test[6]  ; 9.175  ;        ;        ; 9.175  ;
+; counter_run1[6] ; counter_testh[0] ; 27.967 ; 27.935 ; 27.935 ; 27.967 ;
+; counter_run1[6] ; counter_testh[1] ; 27.925 ; 27.925 ; 27.925 ; 27.925 ;
+; counter_run1[6] ; counter_testh[2] ; 27.447 ; 27.447 ; 27.447 ; 27.447 ;
+; counter_run1[6] ; counter_testh[3] ; 27.035 ; 27.035 ; 27.035 ; 27.035 ;
+; counter_run1[6] ; counter_testl[1] ; 23.677 ; 23.677 ; 23.677 ; 23.677 ;
+; counter_run1[6] ; counter_testl[2] ; 23.412 ; 23.412 ; 23.412 ; 23.412 ;
+; counter_run1[6] ; counter_testl[3] ; 23.954 ; 23.954 ; 23.954 ; 23.954 ;
+; counter_run1[6] ; output_high[0]   ; 31.462 ; 31.430 ; 31.430 ; 31.462 ;
+; counter_run1[6] ; output_high[1]   ; 30.703 ; 30.671 ; 30.671 ; 30.703 ;
+; counter_run1[6] ; output_high[2]   ; 30.936 ; 30.904 ; 30.904 ; 30.936 ;
+; counter_run1[6] ; output_high[3]   ; 31.249 ; 31.281 ; 31.281 ; 31.249 ;
+; counter_run1[6] ; output_high[4]   ; 30.723 ; 30.691 ; 30.691 ; 30.723 ;
+; counter_run1[6] ; output_high[5]   ; 30.742 ; 30.710 ; 30.710 ; 30.742 ;
+; counter_run1[6] ; output_high[6]   ; 30.704 ; 30.672 ; 30.672 ; 30.704 ;
+; counter_run1[6] ; output_high[7]   ; 31.173 ; 31.141 ; 31.141 ; 31.173 ;
+; counter_run1[6] ; output_low[0]    ; 26.453 ; 26.453 ; 26.453 ; 26.453 ;
+; counter_run1[6] ; output_low[1]    ; 26.223 ; 26.301 ; 26.301 ; 26.223 ;
+; counter_run1[6] ; output_low[2]    ; 26.229 ; 26.307 ; 26.307 ; 26.229 ;
+; counter_run1[6] ; output_low[3]    ; 26.642 ; 26.642 ; 26.642 ; 26.642 ;
+; counter_run1[6] ; output_low[4]    ; 26.424 ; 26.502 ; 26.502 ; 26.424 ;
+; counter_run1[6] ; output_low[5]    ; 26.217 ; 26.295 ; 26.295 ; 26.217 ;
+; counter_run1[6] ; output_low[6]    ; 26.425 ; 26.503 ; 26.503 ; 26.425 ;
+; counter_run1[6] ; output_low[7]    ; 26.226 ; 26.304 ; 26.304 ; 26.226 ;
++-----------------+------------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------------+
+; Minimum Progagation Delay                                          ;
++-----------------+------------------+-------+-------+-------+-------+
+; Input Port      ; Output Port      ; RR    ; RF    ; FR    ; FF    ;
++-----------------+------------------+-------+-------+-------+-------+
+; counter_run1[0] ; counter_test[0]  ; 2.533 ;       ;       ; 2.533 ;
+; counter_run1[0] ; counter_testl[0] ; 2.776 ;       ;       ; 2.776 ;
+; counter_run1[0] ; output_low[0]    ; 3.834 ; 3.778 ; 3.778 ; 3.834 ;
+; counter_run1[0] ; output_low[1]    ; 3.130 ;       ;       ; 3.130 ;
+; counter_run1[0] ; output_low[2]    ; 3.139 ;       ;       ; 3.139 ;
+; counter_run1[0] ; output_low[3]    ; 3.337 ;       ;       ; 3.337 ;
+; counter_run1[0] ; output_low[4]    ; 3.212 ; 3.212 ; 3.212 ; 3.212 ;
+; counter_run1[0] ; output_low[5]    ;       ; 3.126 ; 3.126 ;       ;
+; counter_run1[0] ; output_low[6]    ; 3.214 ; 3.214 ; 3.214 ; 3.214 ;
+; counter_run1[0] ; output_low[7]    ; 3.136 ; 3.136 ; 3.136 ; 3.136 ;
+; counter_run1[1] ; counter_test[1]  ; 2.579 ;       ;       ; 2.579 ;
+; counter_run1[1] ; counter_testh[0] ; 5.288 ;       ;       ; 5.288 ;
+; counter_run1[1] ; counter_testl[1] ; 3.289 ; 4.549 ; 4.549 ; 3.289 ;
+; counter_run1[1] ; counter_testl[2] ; 4.617 ; 4.617 ; 4.617 ; 4.617 ;
+; counter_run1[1] ; counter_testl[3] ; 4.984 ; 4.984 ; 4.984 ; 4.984 ;
+; counter_run1[1] ; output_high[0]   ; 5.874 ; 5.898 ; 5.898 ; 5.874 ;
+; counter_run1[1] ; output_high[1]   ; 5.565 ;       ;       ; 5.565 ;
+; counter_run1[1] ; output_high[2]   ; 5.693 ;       ;       ; 5.693 ;
+; counter_run1[1] ; output_high[3]   ; 5.522 ;       ;       ; 5.522 ;
+; counter_run1[1] ; output_high[4]   ; 5.596 ; 5.596 ; 5.596 ; 5.596 ;
+; counter_run1[1] ; output_high[5]   ;       ; 5.604 ; 5.604 ;       ;
+; counter_run1[1] ; output_high[6]   ; 5.563 ; 5.563 ; 5.563 ; 5.563 ;
+; counter_run1[1] ; output_high[7]   ; 5.792 ; 5.792 ; 5.792 ; 5.792 ;
+; counter_run1[1] ; output_low[0]    ; 4.188 ; 4.241 ; 4.241 ; 4.188 ;
+; counter_run1[1] ; output_low[1]    ; 3.526 ; 3.526 ; 3.526 ; 3.526 ;
+; counter_run1[1] ; output_low[2]    ; 3.539 ; 4.799 ; 4.799 ; 3.539 ;
+; counter_run1[1] ; output_low[3]    ; 4.327 ; 4.261 ; 4.261 ; 4.327 ;
+; counter_run1[1] ; output_low[4]    ; 3.628 ; 3.628 ; 3.628 ; 3.628 ;
+; counter_run1[1] ; output_low[5]    ; 3.532 ; 4.792 ; 4.792 ; 3.532 ;
+; counter_run1[1] ; output_low[6]    ; 3.627 ; 3.627 ; 3.627 ; 3.627 ;
+; counter_run1[1] ; output_low[7]    ; 4.811 ; 3.551 ; 3.551 ; 4.811 ;
+; counter_run1[2] ; counter_test[2]  ; 4.950 ;       ;       ; 4.950 ;
+; counter_run1[2] ; counter_testh[0] ; 7.700 ; 8.875 ; 8.875 ; 7.700 ;
+; counter_run1[2] ; counter_testh[1] ; 8.528 ; 8.946 ; 8.946 ; 8.528 ;
+; counter_run1[2] ; counter_testh[2] ; 9.034 ; 9.034 ; 9.034 ; 9.034 ;
+; counter_run1[2] ; counter_testh[3] ; 8.581 ; 8.581 ; 8.581 ; 8.581 ;
+; counter_run1[2] ; counter_testl[1] ; 7.495 ; 7.495 ; 7.495 ; 7.495 ;
+; counter_run1[2] ; counter_testl[2] ; 6.215 ; 6.801 ; 6.801 ; 6.215 ;
+; counter_run1[2] ; counter_testl[3] ; 7.271 ; 7.271 ; 7.271 ; 7.271 ;
+; counter_run1[2] ; output_high[0]   ; 8.286 ; 8.310 ; 8.310 ; 8.286 ;
+; counter_run1[2] ; output_high[1]   ; 7.977 ; 8.555 ; 8.555 ; 7.977 ;
+; counter_run1[2] ; output_high[2]   ; 8.105 ; 9.078 ; 9.078 ; 8.105 ;
+; counter_run1[2] ; output_high[3]   ; 7.934 ; 8.723 ; 8.723 ; 7.934 ;
+; counter_run1[2] ; output_high[4]   ; 8.008 ; 8.008 ; 8.008 ; 8.008 ;
+; counter_run1[2] ; output_high[5]   ; 8.615 ; 8.016 ; 8.016 ; 8.615 ;
+; counter_run1[2] ; output_high[6]   ; 7.975 ; 7.975 ; 7.975 ; 7.975 ;
+; counter_run1[2] ; output_high[7]   ; 8.204 ; 8.204 ; 8.204 ; 8.204 ;
+; counter_run1[2] ; output_low[0]    ; 7.363 ; 7.306 ; 7.306 ; 7.363 ;
+; counter_run1[2] ; output_low[1]    ; 6.578 ; 6.578 ; 6.578 ; 6.578 ;
+; counter_run1[2] ; output_low[2]    ; 7.173 ; 6.587 ; 6.587 ; 7.173 ;
+; counter_run1[2] ; output_low[3]    ; 7.379 ; 7.442 ; 7.442 ; 7.379 ;
+; counter_run1[2] ; output_low[4]    ; 6.661 ; 6.661 ; 6.661 ; 6.661 ;
+; counter_run1[2] ; output_low[5]    ; 7.165 ; 6.579 ; 6.579 ; 7.165 ;
+; counter_run1[2] ; output_low[6]    ; 6.689 ; 7.275 ; 7.275 ; 6.689 ;
+; counter_run1[2] ; output_low[7]    ; 6.583 ; 6.583 ; 6.583 ; 6.583 ;
+; counter_run1[3] ; counter_test[3]  ; 5.233 ;       ;       ; 5.233 ;
+; counter_run1[3] ; counter_testh[0] ; 7.671 ; 8.453 ; 8.453 ; 7.671 ;
+; counter_run1[3] ; counter_testh[1] ; 8.154 ; 8.572 ; 8.572 ; 8.154 ;
+; counter_run1[3] ; counter_testh[2] ; 7.937 ; 8.660 ; 8.660 ; 7.937 ;
+; counter_run1[3] ; counter_testh[3] ; 8.207 ; 8.207 ; 8.207 ; 8.207 ;
+; counter_run1[3] ; counter_testl[1] ; 7.209 ; 7.209 ; 7.209 ; 7.209 ;
+; counter_run1[3] ; counter_testl[2] ; 7.096 ; 7.096 ; 7.096 ; 7.096 ;
+; counter_run1[3] ; counter_testl[3] ; 6.169 ; 6.880 ; 6.880 ; 6.169 ;
+; counter_run1[3] ; output_high[0]   ; 8.257 ; 8.281 ; 8.281 ; 8.257 ;
+; counter_run1[3] ; output_high[1]   ; 7.948 ; 8.181 ; 8.181 ; 7.948 ;
+; counter_run1[3] ; output_high[2]   ; 8.076 ; 8.374 ; 8.374 ; 8.076 ;
+; counter_run1[3] ; output_high[3]   ; 7.905 ; 8.349 ; 8.349 ; 7.905 ;
+; counter_run1[3] ; output_high[4]   ; 7.979 ; 7.979 ; 7.979 ; 7.979 ;
+; counter_run1[3] ; output_high[5]   ; 8.241 ; 7.987 ; 7.987 ; 8.241 ;
+; counter_run1[3] ; output_high[6]   ; 7.946 ; 7.946 ; 7.946 ; 7.946 ;
+; counter_run1[3] ; output_high[7]   ; 8.175 ; 8.175 ; 8.175 ; 8.175 ;
+; counter_run1[3] ; output_low[0]    ; 7.116 ; 7.023 ; 7.023 ; 7.116 ;
+; counter_run1[3] ; output_low[1]    ; 7.410 ; 6.699 ; 6.699 ; 7.410 ;
+; counter_run1[3] ; output_low[2]    ; 7.419 ; 6.708 ; 6.708 ; 7.419 ;
+; counter_run1[3] ; output_low[3]    ; 7.096 ; 7.149 ; 7.149 ; 7.096 ;
+; counter_run1[3] ; output_low[4]    ; 7.489 ; 6.778 ; 6.778 ; 7.489 ;
+; counter_run1[3] ; output_low[5]    ; 7.407 ; 6.696 ; 6.696 ; 7.407 ;
+; counter_run1[3] ; output_low[6]    ; 7.491 ; 6.780 ; 6.780 ; 7.491 ;
+; counter_run1[3] ; output_low[7]    ; 7.412 ; 6.701 ; 6.701 ; 7.412 ;
+; counter_run1[4] ; counter_test[4]  ; 5.055 ;       ;       ; 5.055 ;
+; counter_run1[4] ; counter_testh[0] ; 7.643 ; 7.926 ; 7.926 ; 7.643 ;
+; counter_run1[4] ; counter_testh[1] ; 7.655 ; 8.065 ; 8.065 ; 7.655 ;
+; counter_run1[4] ; counter_testh[2] ; 7.428 ; 7.746 ; 7.746 ; 7.428 ;
+; counter_run1[4] ; counter_testh[3] ; 7.117 ; 7.280 ; 7.280 ; 7.117 ;
+; counter_run1[4] ; counter_testl[1] ; 7.641 ; 7.641 ; 7.641 ; 7.641 ;
+; counter_run1[4] ; counter_testl[2] ; 7.528 ; 7.528 ; 7.528 ; 7.528 ;
+; counter_run1[4] ; counter_testl[3] ; 7.666 ; 7.666 ; 7.666 ; 7.666 ;
+; counter_run1[4] ; output_high[0]   ; 8.006 ; 7.906 ; 7.906 ; 8.006 ;
+; counter_run1[4] ; output_high[1]   ; 7.682 ; 7.682 ; 7.682 ; 7.682 ;
+; counter_run1[4] ; output_high[2]   ; 7.787 ; 7.865 ; 7.865 ; 7.787 ;
+; counter_run1[4] ; output_high[3]   ; 7.850 ; 7.850 ; 7.850 ; 7.850 ;
+; counter_run1[4] ; output_high[4]   ; 7.693 ; 7.693 ; 7.693 ; 7.693 ;
+; counter_run1[4] ; output_high[5]   ; 7.742 ; 7.782 ; 7.782 ; 7.742 ;
+; counter_run1[4] ; output_high[6]   ; 7.680 ; 7.680 ; 7.680 ; 7.680 ;
+; counter_run1[4] ; output_high[7]   ; 7.964 ; 7.886 ; 7.886 ; 7.964 ;
+; counter_run1[4] ; output_low[0]    ; 7.565 ; 6.996 ; 6.996 ; 7.565 ;
+; counter_run1[4] ; output_low[1]    ; 7.596 ; 7.027 ; 7.027 ; 7.596 ;
+; counter_run1[4] ; output_low[2]    ; 7.605 ; 7.036 ; 7.036 ; 7.605 ;
+; counter_run1[4] ; output_low[3]    ; 7.069 ; 7.139 ; 7.139 ; 7.069 ;
+; counter_run1[4] ; output_low[4]    ; 7.675 ; 7.106 ; 7.106 ; 7.675 ;
+; counter_run1[4] ; output_low[5]    ; 7.593 ; 7.024 ; 7.024 ; 7.593 ;
+; counter_run1[4] ; output_low[6]    ; 7.677 ; 7.108 ; 7.108 ; 7.677 ;
+; counter_run1[4] ; output_low[7]    ; 7.598 ; 7.029 ; 7.029 ; 7.598 ;
+; counter_run1[5] ; counter_test[5]  ; 5.029 ;       ;       ; 5.029 ;
+; counter_run1[5] ; counter_testh[0] ; 7.800 ; 7.985 ; 7.985 ; 7.800 ;
+; counter_run1[5] ; counter_testh[1] ; 7.739 ; 7.924 ; 7.924 ; 7.739 ;
+; counter_run1[5] ; counter_testh[2] ; 7.563 ; 7.651 ; 7.651 ; 7.563 ;
+; counter_run1[5] ; counter_testh[3] ; 7.071 ; 7.234 ; 7.234 ; 7.071 ;
+; counter_run1[5] ; counter_testl[1] ; 7.828 ; 7.828 ; 7.828 ; 7.828 ;
+; counter_run1[5] ; counter_testl[2] ; 7.663 ; 7.656 ; 7.656 ; 7.663 ;
+; counter_run1[5] ; counter_testl[3] ; 7.725 ; 7.725 ; 7.725 ; 7.725 ;
+; counter_run1[5] ; output_high[0]   ; 8.069 ; 7.990 ; 7.990 ; 8.069 ;
+; counter_run1[5] ; output_high[1]   ; 7.766 ; 7.766 ; 7.766 ; 7.766 ;
+; counter_run1[5] ; output_high[2]   ; 7.871 ; 8.000 ; 8.000 ; 7.871 ;
+; counter_run1[5] ; output_high[3]   ; 7.934 ; 7.934 ; 7.934 ; 7.934 ;
+; counter_run1[5] ; output_high[4]   ; 7.777 ; 7.777 ; 7.777 ; 7.777 ;
+; counter_run1[5] ; output_high[5]   ; 7.826 ; 7.917 ; 7.917 ; 7.826 ;
+; counter_run1[5] ; output_high[6]   ; 7.764 ; 7.764 ; 7.764 ; 7.764 ;
+; counter_run1[5] ; output_high[7]   ; 8.099 ; 7.970 ; 7.970 ; 8.099 ;
+; counter_run1[5] ; output_low[0]    ; 7.912 ; 7.701 ; 7.701 ; 7.912 ;
+; counter_run1[5] ; output_low[1]    ; 7.915 ; 7.666 ; 7.666 ; 7.915 ;
+; counter_run1[5] ; output_low[2]    ; 7.924 ; 7.675 ; 7.675 ; 7.924 ;
+; counter_run1[5] ; output_low[3]    ; 7.774 ; 7.825 ; 7.825 ; 7.774 ;
+; counter_run1[5] ; output_low[4]    ; 7.994 ; 7.745 ; 7.745 ; 7.994 ;
+; counter_run1[5] ; output_low[5]    ; 7.912 ; 7.663 ; 7.663 ; 7.912 ;
+; counter_run1[5] ; output_low[6]    ; 7.996 ; 7.747 ; 7.747 ; 7.996 ;
+; counter_run1[5] ; output_low[7]    ; 7.917 ; 7.668 ; 7.668 ; 7.917 ;
+; counter_run1[6] ; counter_test[6]  ; 5.216 ;       ;       ; 5.216 ;
+; counter_run1[6] ; counter_testh[0] ; 7.928 ; 7.924 ; 7.924 ; 7.928 ;
+; counter_run1[6] ; counter_testh[1] ; 7.465 ; 7.883 ; 7.883 ; 7.465 ;
+; counter_run1[6] ; counter_testh[2] ; 7.245 ; 7.699 ; 7.699 ; 7.245 ;
+; counter_run1[6] ; counter_testh[3] ; 7.044 ; 7.207 ; 7.207 ; 7.044 ;
+; counter_run1[6] ; counter_testl[1] ; 7.716 ; 7.716 ; 7.716 ; 7.716 ;
+; counter_run1[6] ; counter_testl[2] ; 7.413 ; 7.406 ; 7.406 ; 7.413 ;
+; counter_run1[6] ; counter_testl[3] ; 7.611 ; 7.611 ; 7.611 ; 7.611 ;
+; counter_run1[6] ; output_high[0]   ; 7.816 ; 7.716 ; 7.716 ; 7.816 ;
+; counter_run1[6] ; output_high[1]   ; 7.492 ; 7.492 ; 7.492 ; 7.492 ;
+; counter_run1[6] ; output_high[2]   ; 7.597 ; 7.682 ; 7.682 ; 7.597 ;
+; counter_run1[6] ; output_high[3]   ; 7.660 ; 7.660 ; 7.660 ; 7.660 ;
+; counter_run1[6] ; output_high[4]   ; 7.503 ; 7.503 ; 7.503 ; 7.503 ;
+; counter_run1[6] ; output_high[5]   ; 7.552 ; 7.599 ; 7.599 ; 7.552 ;
+; counter_run1[6] ; output_high[6]   ; 7.490 ; 7.490 ; 7.490 ; 7.490 ;
+; counter_run1[6] ; output_high[7]   ; 7.781 ; 7.696 ; 7.696 ; 7.781 ;
+; counter_run1[6] ; output_low[0]    ; 7.811 ; 7.578 ; 7.578 ; 7.811 ;
+; counter_run1[6] ; output_low[1]    ; 7.769 ; 7.543 ; 7.543 ; 7.769 ;
+; counter_run1[6] ; output_low[2]    ; 7.778 ; 7.552 ; 7.552 ; 7.778 ;
+; counter_run1[6] ; output_low[3]    ; 7.651 ; 7.702 ; 7.702 ; 7.651 ;
+; counter_run1[6] ; output_low[4]    ; 7.852 ; 7.622 ; 7.622 ; 7.852 ;
+; counter_run1[6] ; output_low[5]    ; 7.770 ; 7.540 ; 7.540 ; 7.770 ;
+; counter_run1[6] ; output_low[6]    ; 7.887 ; 7.624 ; 7.624 ; 7.887 ;
+; counter_run1[6] ; output_low[7]    ; 7.774 ; 7.545 ; 7.545 ; 7.774 ;
++-----------------+------------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 7     ; 7    ;
+; Unconstrained Input Port Paths  ; 151   ; 151  ;
+; Unconstrained Output Ports      ; 31    ; 31   ;
+; Unconstrained Output Port Paths ; 151   ; 151  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Tue Jun 04 15:51:47 2019
+Info: Command: quartus_sta Anzeige -c Anzeige
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Anzeige.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 468 megabytes
+    Info: Processing ended: Tue Jun 04 15:51:51 2019
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
+
+

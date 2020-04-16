@@ -1,0 +1,17 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY clockdivider IS
+  PORT (
+  quicker,slower,clk_orginal,reset:IN STD_Logic;
+  clk:OUT STD_LOGIC
+
+  );
+END clockdivider;
+
+ARCHITECTURE Behavior OF clockdivider IS
+
+
+  BEGIN 	
+	 PROCESS:PROCESS(reset,quicker,slower)

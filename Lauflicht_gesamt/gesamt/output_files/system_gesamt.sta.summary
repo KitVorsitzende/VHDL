@@ -1,0 +1,133 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'Entprell:inst5|PB'
+Slack : -2.609
+TNS   : -7.177
+
+Type  : Slow Model Setup 'clk_original'
+Slack : -2.591
+TNS   : -210.697
+
+Type  : Slow Model Setup 'clockdivider:inst11|div[0]'
+Slack : -1.684
+TNS   : -26.660
+
+Type  : Slow Model Setup 'basisfrequenz:inst|clk_basis'
+Slack : -1.429
+TNS   : -13.052
+
+Type  : Slow Model Hold 'clk_original'
+Slack : -2.776
+TNS   : -2.776
+
+Type  : Slow Model Hold 'clockdivider:inst11|div[0]'
+Slack : -1.451
+TNS   : -16.277
+
+Type  : Slow Model Hold 'basisfrequenz:inst|clk_basis'
+Slack : -0.484
+TNS   : -0.607
+
+Type  : Slow Model Hold 'Entprell:inst5|PB'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'Entprell:inst5|PB'
+Slack : -1.567
+TNS   : -6.268
+
+Type  : Slow Model Recovery 'clockdivider:inst11|div[0]'
+Slack : 0.936
+TNS   : 0.000
+
+Type  : Slow Model Removal 'clockdivider:inst11|div[0]'
+Slack : -0.422
+TNS   : -5.535
+
+Type  : Slow Model Removal 'Entprell:inst5|PB'
+Slack : 2.337
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk_original'
+Slack : -1.380
+TNS   : -102.380
+
+Type  : Slow Model Minimum Pulse Width 'clockdivider:inst11|div[0]'
+Slack : -0.500
+TNS   : -36.000
+
+Type  : Slow Model Minimum Pulse Width 'basisfrequenz:inst|clk_basis'
+Slack : -0.500
+TNS   : -16.000
+
+Type  : Slow Model Minimum Pulse Width 'Entprell:inst5|PB'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Setup 'Entprell:inst5|PB'
+Slack : -0.846
+TNS   : -2.280
+
+Type  : Fast Model Setup 'clk_original'
+Slack : -0.705
+TNS   : -49.151
+
+Type  : Fast Model Setup 'clockdivider:inst11|div[0]'
+Slack : -0.193
+TNS   : -1.047
+
+Type  : Fast Model Setup 'basisfrequenz:inst|clk_basis'
+Slack : -0.131
+TNS   : -0.314
+
+Type  : Fast Model Hold 'clk_original'
+Slack : -1.751
+TNS   : -1.751
+
+Type  : Fast Model Hold 'clockdivider:inst11|div[0]'
+Slack : -0.560
+TNS   : -2.581
+
+Type  : Fast Model Hold 'basisfrequenz:inst|clk_basis'
+Slack : -0.353
+TNS   : -1.118
+
+Type  : Fast Model Hold 'Entprell:inst5|PB'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'Entprell:inst5|PB'
+Slack : -0.709
+TNS   : -2.836
+
+Type  : Fast Model Recovery 'clockdivider:inst11|div[0]'
+Slack : 0.735
+TNS   : 0.000
+
+Type  : Fast Model Removal 'clockdivider:inst11|div[0]'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Fast Model Removal 'Entprell:inst5|PB'
+Slack : 1.589
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk_original'
+Slack : -1.380
+TNS   : -102.380
+
+Type  : Fast Model Minimum Pulse Width 'clockdivider:inst11|div[0]'
+Slack : -0.500
+TNS   : -36.000
+
+Type  : Fast Model Minimum Pulse Width 'basisfrequenz:inst|clk_basis'
+Slack : -0.500
+TNS   : -16.000
+
+Type  : Fast Model Minimum Pulse Width 'Entprell:inst5|PB'
+Slack : -0.500
+TNS   : -4.000
+
+------------------------------------------------------------

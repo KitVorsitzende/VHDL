@@ -1,0 +1,19 @@
+SUBDESIGN Faltungscodierer
+(reset:INPUT
+input1:INPUT
+clk:INPUT
+output1:OUTPUT)
+
+VARIABLE
+state:MACHINE OF BITS(phase[1..0])
+      WITH STATES(
+		     s0=B"00"
+			  s1=B"01"
+			  s2=B"10"
+			  s3=B"11");
+			  
+BEGIN
+state.clk=clk;
+state.reset=reset;
+
+		

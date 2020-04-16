@@ -1,0 +1,56 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY Lauflicht IS
+  PORT (
+  clk,reset:IN STD_Logic;
+  leds:OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+  counter:OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+  );
+END Lauflicht;
+
+ARCHITECTURE Behavior OF Lauflicht IS
+  TYPE state IS(q0,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14);
+  SIGNAL state_now,state_next:state;
+  SIGNAL i_counter:UNSIGNED(6 DOWNTO 0);
+
+  BEGIN
+    PROCESS1:PROCESS(reset,clk)
+	 BEGIN
+	   IF reset='1' THEN
+		  state_now<=q0;
+		  i_counter<="0000000";
+		ELSIF clk='1' and clk'event THEN
+		  state_now<=state_next;
+		END IF;
+	 END PROCESS;
+	 
+	 PROCESS2:PROCESS(state_now,i_counter)
+	 BEGIN
+	 counter<=STD_LOGIC_VECTOR(i_counter);
+	   CASE state_now IS
+		  WHEN q0 => leds <= "01111111"; state_next <=q1;
+		  WHEN q1 => leds <= "10111111"; state_next <=q2;
+		  WHEN q2 => leds <= "11011111"; state_next <=q3;
+		  WHEN q3 => leds <= "11101111"; state_next <=q4;
+		  WHEN q4 => leds <= "11110111"; state_next <=q5;
+		  WHEN q5 => leds <= "11111011"; state_next <=q6;
+		  WHEN q6 => leds <= "11111101"; state_next <=q7;
+		  WHEN q7 => leds <= "11111110"; state_next <=q8;
+		  WHEN q8 => leds <= "11111101"; state_next <=q9;
+		  WHEN q9 => leds <= "11111011"; state_next <=q10;
+		  WHEN q10 => leds<= "11110111"; state_next <=q11;
+		  WHEN q11 => leds<= "11101111"; state_next <=q12;
+		  WHEN q12 => leds<= "11011111"; state_next <=q13;
+		  WHEN q13 => leds<= "10111111"; state_next <=q14; 
+		  WHEN q14 => leds<= "01111111"; state_next <=q1; counter<=counter+1;
+		  
+		END CASE;
+    END PROCESS;
+	 
+
+	 
+	-- counter<=STD_LOGIC_VECTOR(i_counter);
+END Behavior;
+		 

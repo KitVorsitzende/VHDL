@@ -1,0 +1,29 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY basisfrequenz IS
+  PORT (
+  clk_orginal:IN STD_Logic;
+  clk_basis:OUT STD_LOGIC
+
+  );
+END basisfrequenz;
+
+ARCHITECTURE Behavior OF basisfrequenz IS
+  SIGNAL counter:INTEGER RANGE 1 TO 1000;  ----basis frequenz 1Hz
+
+  BEGIN 	
+	 PROCESS_basis:PROCESS(clk_orginal,counter)
+	 BEGIN  
+	  IF clk_orginal='1' and clk_orginal'event and counter<=500 THEN
+	    clk_basis<='1';
+	    counter<=counter+1;
+	  ELSIF clk_orginal='1' and clk_orginal'event and counter>500 THEN 
+	    clk_basis<='0';
+		 counter<=counter+1;
+	  ELSIF clk_orginal='1' and clk_orginal'event and counter>1000 THEN
+		 counter<=1;
+	  END IF;
+  END PROCESS;
+END Behavior;

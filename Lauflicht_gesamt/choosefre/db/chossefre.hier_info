@@ -1,0 +1,30 @@
+|chossefre
+quicker => press.IN0
+slower => press.IN1
+slower => counter~0.OUTPUTSELECT
+slower => counter~1.OUTPUTSELECT
+slower => counter~2.OUTPUTSELECT
+slower => counter~3.OUTPUTSELECT
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+clk_div[0] => Mux0.IN15
+clk_div[1] => Mux0.IN14
+clk_div[2] => Mux0.IN13
+clk_div[3] => Mux0.IN12
+clk_div[4] => Mux0.IN11
+clk_div[5] => Mux0.IN10
+clk_div[6] => Mux0.IN9
+clk_div[7] => Mux0.IN8
+clk_div[8] => Mux0.IN7
+clk_div[9] => Mux0.IN6
+clk_div[10] => Mux0.IN5
+clk_div[11] => Mux0.IN4
+clk_div[12] => Mux0.IN3
+clk_div[13] => Mux0.IN2
+clk_div[14] => Mux0.IN1
+clk_div[15] => Mux0.IN0
+clk <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, E:/DigitaleFilter/Taster/Taster.vhd
+source_file = 1, E:/DigitaleFilter/Taster/Taster.vwf
+source_file = 1, E:/DigitaleFilter/Taster/db/Taster.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Taster
+instance = comp, \change~I\, change, Taster, 1
+instance = comp, \change~clkctrl\, change~clkctrl, Taster, 1
+instance = comp, \tmp[0]~1\, tmp[0]~1, Taster, 1
+instance = comp, \tmp[0]\, tmp[0], Taster, 1
+instance = comp, \tmp[1]~0\, tmp[1]~0, Taster, 1
+instance = comp, \tmp[1]\, tmp[1], Taster, 1
+instance = comp, \filter_type[0]~I\, filter_type[0], Taster, 1
+instance = comp, \filter_type[1]~I\, filter_type[1], Taster, 1

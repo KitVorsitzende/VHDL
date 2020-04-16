@@ -1,0 +1,198 @@
+Simulator report for Faltungscodierer_gesamt
+Tue Jun 18 13:59:39 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 35 nodes     ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 814          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C50F672C6 ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                                 ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                    ;               ;
+; Vector input source                                                                        ; E:/Faltungscodierer_gesamt/Faltungscodierer_gesamt.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                   ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 35           ;
+; Total output ports checked                          ; 35           ;
+; Total output ports with complete 1/0-value coverage ; 35           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                        ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; Node Name                                                      ; Output Port Name                                               ; Output Port Type ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst1           ; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst1           ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst2           ; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst2           ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|state[0]     ; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|state[0]     ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst9           ; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst9           ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst7~0         ; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst7~0         ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|output1[1]   ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|output1[1]   ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|output1[0]   ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|output1[0]   ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|output[1]    ; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|output[1]    ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|output[0]    ; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|output[0]    ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s1           ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s1           ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s2           ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s2           ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|outputhigh~0 ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|outputhigh~0 ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s3           ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s3           ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s0           ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s0           ; regout           ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|outputhigh~1 ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|outputhigh~1 ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|outputlow~0  ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|outputlow~0  ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|outputlow~1  ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|outputlow~1  ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|Mux0~0       ; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|Mux0~0       ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|Mux1~0       ; |Faltungscodierer_gesamt|Faltungscodierer_v:inst1|Mux1~0       ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s1~0         ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s1~0         ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s2~0         ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s2~0         ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s3~0         ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s3~0         ; combout          ;
+; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s0~0         ; |Faltungscodierer_gesamt|Faltungscodierer_a:inst2|s0~0         ; combout          ;
+; |Faltungscodierer_gesamt|out_high                              ; |Faltungscodierer_gesamt|out_high                              ; padio            ;
+; |Faltungscodierer_gesamt|out_low                               ; |Faltungscodierer_gesamt|out_low                               ; padio            ;
+; |Faltungscodierer_gesamt|out_a[1]                              ; |Faltungscodierer_gesamt|out_a[1]                              ; padio            ;
+; |Faltungscodierer_gesamt|out_a[0]                              ; |Faltungscodierer_gesamt|out_a[0]                              ; padio            ;
+; |Faltungscodierer_gesamt|out_v[1]                              ; |Faltungscodierer_gesamt|out_v[1]                              ; padio            ;
+; |Faltungscodierer_gesamt|out_v[0]                              ; |Faltungscodierer_gesamt|out_v[0]                              ; padio            ;
+; |Faltungscodierer_gesamt|clock                                 ; |Faltungscodierer_gesamt|clock~corein                          ; combout          ;
+; |Faltungscodierer_gesamt|reset                                 ; |Faltungscodierer_gesamt|reset~corein                          ; combout          ;
+; |Faltungscodierer_gesamt|input                                 ; |Faltungscodierer_gesamt|input~corein                          ; combout          ;
+; |Faltungscodierer_gesamt|clock~clkctrl                         ; |Faltungscodierer_gesamt|clock~clkctrl                         ; outclk           ;
+; |Faltungscodierer_gesamt|reset~clkctrl                         ; |Faltungscodierer_gesamt|reset~clkctrl                         ; outclk           ;
+; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst1~feeder    ; |Faltungscodierer_gesamt|Faltungscodierer:inst|inst1~feeder    ; combout          ;
++----------------------------------------------------------------+----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Tue Jun 18 13:59:38 2019
+Info: Command: quartus_sim --simulation_results_format=VWF Faltungscodierer_gesamt -c Faltungscodierer_gesamt
+Info (324025): Using vector source file "E:/Faltungscodierer_gesamt/Faltungscodierer_gesamt.vwf"
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "ouput[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "ouput[1]" in design.
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is     100.00 %
+Info (328052): Number of transitions in simulation is 814
+Info (324045): Vector file Faltungscodierer_gesamt.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 375 megabytes
+    Info: Processing ended: Tue Jun 18 13:59:39 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

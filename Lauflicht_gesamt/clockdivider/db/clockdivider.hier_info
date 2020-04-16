@@ -1,0 +1,35 @@
+|clockdivider
+clk_basis => div[0].CLK
+clk_basis => div[1].CLK
+clk_basis => div[2].CLK
+clk_basis => div[3].CLK
+clk_basis => div[4].CLK
+clk_basis => div[5].CLK
+clk_basis => div[6].CLK
+clk_basis => div[7].CLK
+clk_basis => div[8].CLK
+clk_basis => div[9].CLK
+clk_basis => div[10].CLK
+clk_basis => div[11].CLK
+clk_basis => div[12].CLK
+clk_basis => div[13].CLK
+clk_basis => div[14].CLK
+clk_basis => div[15].CLK
+clk_div[0] <= div[0].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[1] <= div[1].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[2] <= div[2].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[3] <= div[3].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[4] <= div[4].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[5] <= div[5].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[6] <= div[6].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[7] <= div[7].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[8] <= div[8].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[9] <= div[9].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[10] <= div[10].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[11] <= div[11].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[12] <= div[12].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[13] <= div[13].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[14] <= div[14].DB_MAX_OUTPUT_PORT_TYPE
+clk_div[15] <= div[15].DB_MAX_OUTPUT_PORT_TYPE
+
+

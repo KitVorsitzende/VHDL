@@ -1,0 +1,33 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+
+ENTITY Taster IS
+  PORT(
+  clk,change:IN STD_LOGIC;
+  filter_type:OUT STD_LOGIC_VECTOR(1 downto 0)
+  );
+END Taster;
+
+ARCHITECTURE Behavior OF Taster IS
+  Type state IS(q0,q1,q2,q3);
+  SIGNAL state_now:state:=q0;
+  SIGNAL tmp:STD_LOGIC_VECTOR(1 downto 0);
+  
+  BEGIN
+    state_change:PROCESS(clk,change)
+    BEGIN
+      IF change='0' and rising_edge(clk) THEN
+      CASE state_now IS
+		  WHEN q0 => tmp<="00";state_now<=q1;
+		  WHEN q1 => tmp<="01";state_now<=q2;
+		  WHEN q2 => tmp<="10";state_now<=q3;
+		  WHEN q3 => tmp<="11";state_now<=q0;
+		END CASE
+		filter_type<=tmp;
+		END IF;
+	END PROCESS;
+END Behavior;
+       		
+  

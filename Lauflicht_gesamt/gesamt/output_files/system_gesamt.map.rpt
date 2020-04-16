@@ -1,0 +1,520 @@
+Analysis & Synthesis report for system_gesamt
+Sat Jun 29 00:13:56 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |system_gesamt|Lauflicht:inst2|state_now
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for Inferred Entity Instance: Anzeige:inst4|lpm_divide:Div0
+ 13. Parameter Settings for Inferred Entity Instance: Anzeige:inst4|lpm_divide:Mod1
+ 14. Parameter Settings for Inferred Entity Instance: Anzeige:inst4|lpm_divide:Mod0
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jun 29 00:13:56 2019      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; system_gesamt                              ;
+; Top-level Entity Name              ; system_gesamt                              ;
+; Family                             ; Cyclone II                                 ;
+; Total logic elements               ; 487                                        ;
+;     Total combinational functions  ; 468                                        ;
+;     Dedicated logic registers      ; 157                                        ;
+; Total registers                    ; 157                                        ;
+; Total pins                         ; 37                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C70F672C6       ;                    ;
+; Top-level entity name                                                      ; system_gesamt      ; system_gesamt      ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------+---------+
+; subsystem/chossefre.vhd          ; yes             ; User VHDL File                           ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/subsystem/chossefre.vhd      ;         ;
+; subsystem/Entprell.vhd           ; yes             ; User VHDL File                           ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/subsystem/Entprell.vhd       ;         ;
+; subsystem/basisfrequenz.vhd      ; yes             ; User VHDL File                           ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/subsystem/basisfrequenz.vhd  ;         ;
+; subsystem/Taster.vhd             ; yes             ; User VHDL File                           ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/subsystem/Taster.vhd         ;         ;
+; subsystem/Lauflicht.vhd          ; yes             ; User VHDL File                           ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/subsystem/Lauflicht.vhd      ;         ;
+; subsystem/Anzeige.vhd            ; yes             ; User VHDL File                           ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/subsystem/Anzeige.vhd        ;         ;
+; subsystem/clockdivider.vhd       ; yes             ; User VHDL File                           ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/subsystem/clockdivider.vhd   ;         ;
+; system_gesamt.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/system_gesamt.bdf            ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                             ; /home/jiayang/altera/13.0/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                             ; /home/jiayang/altera/13.0/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                             ; /home/jiayang/altera/13.0/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                             ; /home/jiayang/altera/13.0/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
+; db/lpm_divide_7so.tdf            ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/lpm_divide_7so.tdf        ;         ;
+; db/abs_divider_kbg.tdf           ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/abs_divider_kbg.tdf       ;         ;
+; db/alt_u_div_k2f.tdf             ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/alt_u_div_k2f.tdf         ;         ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/add_sub_lkc.tdf           ;         ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/add_sub_mkc.tdf           ;         ;
+; db/lpm_abs_gq9.tdf               ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/lpm_abs_gq9.tdf           ;         ;
+; db/lpm_abs_0s9.tdf               ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/lpm_abs_0s9.tdf           ;         ;
+; db/lpm_divide_38m.tdf            ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/lpm_divide_38m.tdf        ;         ;
+; db/sign_div_unsign_anh.tdf       ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/sign_div_unsign_anh.tdf   ;         ;
+; db/alt_u_div_m5f.tdf             ; yes             ; Auto-Generated Megafunction              ; /media/jiayang/64F9-8134/Lauflicht_gesamt/gesamt/db/alt_u_div_m5f.tdf         ;         ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 487          ;
+;                                             ;              ;
+; Total combinational functions               ; 468          ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 127          ;
+;     -- 3 input functions                    ; 110          ;
+;     -- <=2 input functions                  ; 231          ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 283          ;
+;     -- arithmetic mode                      ; 185          ;
+;                                             ;              ;
+; Total registers                             ; 157          ;
+;     -- Dedicated logic registers            ; 157          ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 37           ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+; Maximum fan-out node                        ; clk_original ;
+; Maximum fan-out                             ; 101          ;
+; Total fan-out                               ; 1813         ;
+; Average fan-out                             ; 2.72         ;
++---------------------------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                 ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                          ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |system_gesamt                            ; 468 (0)           ; 157 (0)      ; 0           ; 0            ; 0       ; 0         ; 37   ; 0            ; |system_gesamt                                                                                                               ;              ;
+;    |Anzeige:inst4|                        ; 229 (45)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4                                                                                                 ;              ;
+;       |lpm_divide:Div0|                   ; 53 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Div0                                                                                 ;              ;
+;          |lpm_divide_7so:auto_generated|  ; 53 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Div0|lpm_divide_7so:auto_generated                                                   ;              ;
+;             |abs_divider_kbg:divider|     ; 53 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Div0|lpm_divide_7so:auto_generated|abs_divider_kbg:divider                           ;              ;
+;                |alt_u_div_k2f:divider|    ; 53 (53)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Div0|lpm_divide_7so:auto_generated|abs_divider_kbg:divider|alt_u_div_k2f:divider     ;              ;
+;       |lpm_divide:Mod0|                   ; 109 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Mod0                                                                                 ;              ;
+;          |lpm_divide_38m:auto_generated|  ; 109 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Mod0|lpm_divide_38m:auto_generated                                                   ;              ;
+;             |sign_div_unsign_anh:divider| ; 109 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Mod0|lpm_divide_38m:auto_generated|sign_div_unsign_anh:divider                       ;              ;
+;                |alt_u_div_m5f:divider|    ; 109 (109)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Mod0|lpm_divide_38m:auto_generated|sign_div_unsign_anh:divider|alt_u_div_m5f:divider ;              ;
+;       |lpm_divide:Mod1|                   ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Mod1                                                                                 ;              ;
+;          |lpm_divide_38m:auto_generated|  ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Mod1|lpm_divide_38m:auto_generated                                                   ;              ;
+;             |sign_div_unsign_anh:divider| ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Mod1|lpm_divide_38m:auto_generated|sign_div_unsign_anh:divider                       ;              ;
+;                |alt_u_div_m5f:divider|    ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Anzeige:inst4|lpm_divide:Mod1|lpm_divide_38m:auto_generated|sign_div_unsign_anh:divider|alt_u_div_m5f:divider ;              ;
+;    |Entprell:inst5|                       ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Entprell:inst5                                                                                                ;              ;
+;    |Entprell:inst6|                       ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Entprell:inst6                                                                                                ;              ;
+;    |Entprell:inst7|                       ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Entprell:inst7                                                                                                ;              ;
+;    |Entprell:inst8|                       ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Entprell:inst8                                                                                                ;              ;
+;    |Lauflicht:inst2|                      ; 69 (69)           ; 36 (36)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|Lauflicht:inst2                                                                                               ;              ;
+;    |basisfrequenz:inst|                   ; 21 (21)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|basisfrequenz:inst                                                                                            ;              ;
+;    |chossefre:inst14|                     ; 21 (21)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|chossefre:inst14                                                                                              ;              ;
+;    |clockdivider:inst11|                  ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |system_gesamt|clockdivider:inst11                                                                                           ;              ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |system_gesamt|Lauflicht:inst2|state_now                                                                                                                                                                            ;
++---------------+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Name          ; state_now.q13 ; state_now.q12 ; state_now.q11 ; state_now.q10 ; state_now.q9 ; state_now.q8 ; state_now.q7 ; state_now.q6 ; state_now.q5 ; state_now.q4 ; state_now.q3 ; state_now.q2 ; state_now.q1 ; state_now.q0 ;
++---------------+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; state_now.q0  ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; state_now.q1  ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ;
+; state_now.q2  ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 1            ;
+; state_now.q3  ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ;
+; state_now.q4  ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 1            ;
+; state_now.q5  ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_now.q6  ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_now.q7  ; 0             ; 0             ; 0             ; 0             ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_now.q8  ; 0             ; 0             ; 0             ; 0             ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_now.q9  ; 0             ; 0             ; 0             ; 0             ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_now.q10 ; 0             ; 0             ; 0             ; 1             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_now.q11 ; 0             ; 0             ; 1             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_now.q12 ; 0             ; 1             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_now.q13 ; 1             ; 0             ; 0             ; 0             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
++---------------+---------------+---------------+---------------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 157   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 109   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 111   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Entprell:inst7|PB                      ; 27      ;
+; Entprell:inst8|PB                      ; 18      ;
+; Entprell:inst6|PB                      ; 5       ;
+; Entprell:inst5|PB                      ; 2       ;
+; Total number of inverted registers = 4 ;         ;
++----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |system_gesamt|Lauflicht:inst2|leds[7] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Anzeige:inst4|lpm_divide:Div0 ;
++------------------------+----------------+--------------------------------------+
+; Parameter Name         ; Value          ; Type                                 ;
++------------------------+----------------+--------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                              ;
+; LPM_WIDTHD             ; 5              ; Untyped                              ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                              ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                              ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                              ;
+; CBXI_PARAMETER         ; lpm_divide_7so ; Untyped                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                       ;
++------------------------+----------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Anzeige:inst4|lpm_divide:Mod1 ;
++------------------------+----------------+--------------------------------------+
+; Parameter Name         ; Value          ; Type                                 ;
++------------------------+----------------+--------------------------------------+
+; LPM_WIDTHN             ; 33             ; Untyped                              ;
+; LPM_WIDTHD             ; 32             ; Untyped                              ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                              ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                              ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                              ;
+; CBXI_PARAMETER         ; lpm_divide_38m ; Untyped                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                       ;
++------------------------+----------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Anzeige:inst4|lpm_divide:Mod0 ;
++------------------------+----------------+--------------------------------------+
+; Parameter Name         ; Value          ; Type                                 ;
++------------------------+----------------+--------------------------------------+
+; LPM_WIDTHN             ; 33             ; Untyped                              ;
+; LPM_WIDTHD             ; 32             ; Untyped                              ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                              ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                              ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                              ;
+; CBXI_PARAMETER         ; lpm_divide_38m ; Untyped                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                       ;
++------------------------+----------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:06     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Sat Jun 29 00:13:47 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off system_gesamt -c system_gesamt
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file subsystem/chossefre.vhd
+    Info (12022): Found design unit 1: chossefre-Behavior
+    Info (12023): Found entity 1: chossefre
+Info (12021): Found 2 design units, including 1 entities, in source file subsystem/Entprell.vhd
+    Info (12022): Found design unit 1: Entprell-behav
+    Info (12023): Found entity 1: Entprell
+Info (12021): Found 2 design units, including 1 entities, in source file subsystem/basisfrequenz.vhd
+    Info (12022): Found design unit 1: basisfrequenz-Behavior
+    Info (12023): Found entity 1: basisfrequenz
+Info (12021): Found 2 design units, including 1 entities, in source file subsystem/Taster.vhd
+    Info (12022): Found design unit 1: Taster-Behavior
+    Info (12023): Found entity 1: Taster
+Info (12021): Found 2 design units, including 1 entities, in source file subsystem/Lauflicht.vhd
+    Info (12022): Found design unit 1: Lauflicht-Behavior
+    Info (12023): Found entity 1: Lauflicht
+Info (12021): Found 2 design units, including 1 entities, in source file subsystem/Anzeige.vhd
+    Info (12022): Found design unit 1: Anzeige-Behavior
+    Info (12023): Found entity 1: Anzeige
+Warning (12019): Can't analyze file -- file subsystem/system_gesamt.bdf is missing
+Info (12021): Found 2 design units, including 1 entities, in source file subsystem/clockdivider.vhd
+    Info (12022): Found design unit 1: clockdivider-Behavior
+    Info (12023): Found entity 1: clockdivider
+Warning (12125): Using design file system_gesamt.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: system_gesamt
+Info (12127): Elaborating entity "system_gesamt" for the top level hierarchy
+Info (12128): Elaborating entity "Lauflicht" for hierarchy "Lauflicht:inst2"
+Info (12128): Elaborating entity "chossefre" for hierarchy "chossefre:inst14"
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(36): signal "counter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(37): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(38): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(39): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(40): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(41): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(42): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(43): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(44): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(45): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(46): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(47): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(48): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(49): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(50): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(51): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at chossefre.vhd(52): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "Taster" for hierarchy "Taster:inst3"
+Info (12128): Elaborating entity "Entprell" for hierarchy "Entprell:inst5"
+Warning (10492): VHDL Process Statement warning at Entprell.vhd(23): signal "button" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "clockdivider" for hierarchy "clockdivider:inst11"
+Info (12128): Elaborating entity "basisfrequenz" for hierarchy "basisfrequenz:inst"
+Info (12128): Elaborating entity "Anzeige" for hierarchy "Anzeige:inst4"
+Warning (10492): VHDL Process Statement warning at Anzeige.vhd(26): signal "counter_dec" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Anzeige.vhd(27): signal "counter_dec" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Anzeige.vhd(31): signal "rightnum" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Anzeige.vhd(44): signal "midnum" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer chossefre:inst14|Mux0
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Anzeige:inst4|Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Anzeige:inst4|Mod1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Anzeige:inst4|Mod0"
+Info (12130): Elaborated megafunction instantiation "Anzeige:inst4|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "Anzeige:inst4|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "5"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7so.tdf
+    Info (12023): Found entity 1: lpm_divide_7so
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_kbg.tdf
+    Info (12023): Found entity 1: abs_divider_kbg
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_k2f.tdf
+    Info (12023): Found entity 1: alt_u_div_k2f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info (12023): Found entity 1: add_sub_lkc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info (12023): Found entity 1: add_sub_mkc
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_gq9.tdf
+    Info (12023): Found entity 1: lpm_abs_gq9
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_0s9.tdf
+    Info (12023): Found entity 1: lpm_abs_0s9
+Info (12130): Elaborated megafunction instantiation "Anzeige:inst4|lpm_divide:Mod1"
+Info (12133): Instantiated megafunction "Anzeige:inst4|lpm_divide:Mod1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "33"
+    Info (12134): Parameter "LPM_WIDTHD" = "32"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_38m.tdf
+    Info (12023): Found entity 1: lpm_divide_38m
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_anh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_anh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_m5f.tdf
+    Info (12023): Found entity 1: alt_u_div_m5f
+Info (12130): Elaborated megafunction instantiation "Anzeige:inst4|lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "Anzeige:inst4|lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "33"
+    Info (12134): Parameter "LPM_WIDTHD" = "32"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "Anzeige:inst4|Add3~0"
+    Info (17048): Logic cell "Anzeige:inst4|Add3~2"
+    Info (17048): Logic cell "Anzeige:inst4|Add3~4"
+    Info (17048): Logic cell "Anzeige:inst4|Add3~6"
+    Info (17048): Logic cell "Anzeige:inst4|lpm_divide:Mod1|lpm_divide_38m:auto_generated|sign_div_unsign_anh:divider|alt_u_div_m5f:divider|op_25~26"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 528 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 24 output pins
+    Info (21061): Implemented 491 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 707 megabytes
+    Info: Processing ended: Sat Jun 29 00:13:56 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:07
+
+

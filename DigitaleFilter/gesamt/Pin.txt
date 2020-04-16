@@ -1,0 +1,56 @@
+To,                    Location
+
+input[13],             PIN_A22
+input[12],             PIN_C22
+input[11],             PIN_B23
+input[10],             PIN_A23
+input[9],              PIN_A21
+input[8],              PIN_B22
+input[7],              PIN_D13
+input[6],              PIN_B12
+input[5],              PIN_C11
+input[4],              PIN_A9
+input[3],              PIN_A8
+input[2],              PIN_B7
+input[1],              PIN_C6
+input[0],              PIN_C5
+
+output_final[13],      PIN_P6
+output_final[12],      PIN_R5
+output_final[11],      PIN_U7
+output_final[10],      PIN_P3
+output_final[9],       PIN_V6
+output_final[8],       PIN_V5
+output_final[7],       PIN_AA5
+output_final[6],       PIN_Y4
+output_final[5],       PIN_T2
+output_final[4],       PIN_U3
+output_final[3],       PIN_AD3
+output_final[2],       PIN_AE3
+output_final[1],       PIN_AA1
+output_final[0],       PIN_AB1
+
+clk,                   PIN_N25
+
+change,                PIN_AE14
+
+
+output_high[7],        PIN_Y21
+output_high[6],        PIN_T7
+output_high[5],        PIN_AB23
+output_high[4],        PIN_Y5
+output_high[3],        PIN_E1
+output_high[2],        PIN_U1
+output_high[1],        PIN_W21
+output_high[0],        PIN_V3
+
+output_low[7],         PIN_K2
+output_low[6],         PIN_U25
+output_low[5],         PIN_AA3
+output_low[4],         PIN_V1
+output_low[3],         PIN_V7
+output_low[2],         PIN_U23
+output_low[1],         PIN_AC2
+output_low[0],         PIN_P7
+
+

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jun 18 13:55:40 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : Faltungscodierer_gesamt
+Top-level Entity Name : Faltungscodierer_gesamt
+Family : Cyclone II
+Device : EP2C50F672C6
+Timing Models : Final
+Total logic elements : 15 / 50,528 ( < 1 % )
+    Total combinational functions : 12 / 50,528 ( < 1 % )
+    Dedicated logic registers : 11 / 50,528 ( < 1 % )
+Total registers : 11
+Total pins : 9 / 450 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 0 / 594,432 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 172 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

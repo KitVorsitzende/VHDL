@@ -1,0 +1,1264 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 1000.0;
+	SIMULATION_TIME = 1000.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 10.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+USER_TYPE("|Lauflicht|state_now")
+{
+	VALUES = "state_now.q0", "state_now.q1", "state_now.q2", "state_now.q3", "state_now.q4", "state_now.q5", "state_now.q6", "state_now.q7", "state_now.q8", "state_now.q9", "state_now.q10", "state_now.q11", "state_now.q12", "state_now.q13";
+}
+
+SIGNAL("clk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("reset")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("leds")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("leds[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "leds";
+}
+
+SIGNAL("leds[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "leds";
+}
+
+SIGNAL("leds[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "leds";
+}
+
+SIGNAL("leds[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "leds";
+}
+
+SIGNAL("leds[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "leds";
+}
+
+SIGNAL("leds[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "leds";
+}
+
+SIGNAL("leds[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "leds";
+}
+
+SIGNAL("leds[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "leds";
+}
+
+SIGNAL("state_now")
+{
+	VALUE_TYPE = ENUM;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = MACHINE;
+	PARENT = "";
+	ENUM_NAME = "|Lauflicht|state_now";
+}
+
+SIGNAL("stop")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("module")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("module[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "module";
+}
+
+SIGNAL("module[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "module";
+}
+
+SIGNAL("module[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "module";
+}
+
+SIGNAL("module[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "module";
+}
+
+SIGNAL("module[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "module";
+}
+
+SIGNAL("module[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "module";
+}
+
+SIGNAL("module[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "module";
+}
+
+SIGNAL("module[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "module";
+}
+
+SIGNAL("counter_run")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 7;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("counter_run[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "counter_run";
+}
+
+SIGNAL("counter_run[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "counter_run";
+}
+
+SIGNAL("counter_run[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "counter_run";
+}
+
+SIGNAL("counter_run[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "counter_run";
+}
+
+SIGNAL("counter_run[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "counter_run";
+}
+
+SIGNAL("counter_run[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "counter_run";
+}
+
+SIGNAL("counter_run[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "counter_run";
+}
+
+TRANSITION_LIST("clk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 200;
+			LEVEL 0 FOR 2.5;
+			LEVEL 1 FOR 2.5;
+		}
+	}
+}
+
+TRANSITION_LIST("reset")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 20.0;
+		LEVEL 1 FOR 60.0;
+		LEVEL 0 FOR 920.0;
+	}
+}
+
+TRANSITION_LIST("leds[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 2.5;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 75.0;
+		NODE
+		{
+			REPEAT = 8;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 65.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 105.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 65.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 32.5;
+	}
+}
+
+TRANSITION_LIST("leds[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 7.5;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 75.0;
+		NODE
+		{
+			REPEAT = 8;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 55.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 5.0;
+		}
+		LEVEL 1 FOR 45.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 55.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+		}
+		LEVEL 0 FOR 27.5;
+	}
+}
+
+TRANSITION_LIST("leds[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 75.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 45.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 15.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 45.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 55.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 45.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 15.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 22.5;
+	}
+}
+
+TRANSITION_LIST("leds[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 17.5;
+		LEVEL 1 FOR 65.0;
+		LEVEL 0 FOR 15.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 25.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 35.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 65.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 35.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 25.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 17.5;
+	}
+}
+
+TRANSITION_LIST("leds[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 102.5;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 35.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 75.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 35.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 12.5;
+	}
+}
+
+TRANSITION_LIST("leds[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 107.5;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 15.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 45.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 15.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 85.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 15.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 45.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 7.5;
+	}
+}
+
+TRANSITION_LIST("leds[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 112.5;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 55.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 95.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 55.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 2.5;
+	}
+}
+
+TRANSITION_LIST("leds[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 117.5;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 65.0;
+		}
+		LEVEL 1 FOR 5.0;
+		LEVEL 0 FOR 105.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 65.0;
+		}
+		LEVEL 1 FOR 2.5;
+	}
+}
+
+TRANSITION_LIST("state_now")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL state_now.q0 FOR 2.5;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 2.5;
+		LEVEL state_now.q0 FOR 62.5;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 45.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 5.0;
+		LEVEL state_now.q9 FOR 5.0;
+		LEVEL state_now.q10 FOR 5.0;
+		LEVEL state_now.q11 FOR 5.0;
+		LEVEL state_now.q12 FOR 5.0;
+		LEVEL state_now.q13 FOR 5.0;
+		LEVEL state_now.q0 FOR 5.0;
+		LEVEL state_now.q1 FOR 5.0;
+		LEVEL state_now.q2 FOR 5.0;
+		LEVEL state_now.q3 FOR 5.0;
+		LEVEL state_now.q4 FOR 5.0;
+		LEVEL state_now.q5 FOR 5.0;
+		LEVEL state_now.q6 FOR 5.0;
+		LEVEL state_now.q7 FOR 5.0;
+		LEVEL state_now.q8 FOR 2.5;
+	}
+}
+
+TRANSITION_LIST("stop")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 650.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 310.0;
+	}
+}
+
+TRANSITION_LIST("module[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("module[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("module[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("module[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("module[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("module[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("module[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("module[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("counter_run[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 222.5;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 140.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 180.0;
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 37.5;
+	}
+}
+
+TRANSITION_LIST("counter_run[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 152.5;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 70.0;
+			LEVEL 0 FOR 70.0;
+		}
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 110.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 70.0;
+		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 37.5;
+	}
+}
+
+TRANSITION_LIST("counter_run[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("counter_run[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("counter_run[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 642.5;
+		LEVEL 1 FOR 357.5;
+	}
+}
+
+TRANSITION_LIST("counter_run[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 362.5;
+		LEVEL 1 FOR 280.0;
+		LEVEL 0 FOR 320.0;
+		LEVEL 1 FOR 37.5;
+	}
+}
+
+TRANSITION_LIST("counter_run[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "clk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "module";
+	EXPAND_STATUS = EXPANDED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+	CHILDREN = 2, 3, 4, 5, 6, 7, 8, 9;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "module[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "module[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "module[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "module[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "module[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "module[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "module[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "module[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 1;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "reset";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "stop";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "state_now";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "leds";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+	CHILDREN = 14, 15, 16, 17, 18, 19, 20, 21;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "leds[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "leds[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "leds[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "leds[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "leds[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "leds[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "leds[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 20;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "leds[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 21;
+	TREE_LEVEL = 1;
+	PARENT = 13;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "counter_run";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 22;
+	TREE_LEVEL = 0;
+	CHILDREN = 23, 24, 25, 26, 27, 28, 29;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "counter_run[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 23;
+	TREE_LEVEL = 1;
+	PARENT = 22;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "counter_run[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 24;
+	TREE_LEVEL = 1;
+	PARENT = 22;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "counter_run[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 25;
+	TREE_LEVEL = 1;
+	PARENT = 22;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "counter_run[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 26;
+	TREE_LEVEL = 1;
+	PARENT = 22;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "counter_run[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 1;
+	PARENT = 22;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "counter_run[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 28;
+	TREE_LEVEL = 1;
+	PARENT = 22;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "counter_run[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 29;
+	TREE_LEVEL = 1;
+	PARENT = 22;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;

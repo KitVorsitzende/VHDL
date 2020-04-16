@@ -1,0 +1,468 @@
+Simulator report for Lauflicht
+Mon Jun 24 23:30:44 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 219 nodes    ;
+; Simulation Coverage         ;      58.45 % ;
+; Total Number of Transitions ; 4968         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                            ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                          ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                       ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                             ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                              ;               ;
+; Vector input source                                                                        ; /media/jiayang/64F9-8134/Lauflicht_gesamt/Lauflicht/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                               ; On            ;
+; Check outputs                                                                              ; Off                                                              ; Off           ;
+; Report simulation coverage                                                                 ; On                                                               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                               ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                               ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                               ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                              ; Off           ;
+; Detect glitches                                                                            ; Off                                                              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                              ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                             ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      58.45 % ;
+; Total nodes checked                                 ; 219          ;
+; Total output ports checked                          ; 219          ;
+; Total output ports with complete 1/0-value coverage ; 128          ;
+; Total output ports with no 1/0-value coverage       ; 85           ;
+; Total output ports with no 1-value coverage         ; 85           ;
+; Total output ports with no 0-value coverage         ; 91           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                        ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |Lauflicht|counter_run[2]~reg0 ; |Lauflicht|counter_run[2]~reg0 ; regout           ;
+; |Lauflicht|leds~8              ; |Lauflicht|leds~8              ; out0             ;
+; |Lauflicht|leds~9              ; |Lauflicht|leds~9              ; out0             ;
+; |Lauflicht|leds~10             ; |Lauflicht|leds~10             ; out0             ;
+; |Lauflicht|leds~11             ; |Lauflicht|leds~11             ; out0             ;
+; |Lauflicht|leds~12             ; |Lauflicht|leds~12             ; out0             ;
+; |Lauflicht|leds~13             ; |Lauflicht|leds~13             ; out0             ;
+; |Lauflicht|counter_run[1]~reg0 ; |Lauflicht|counter_run[1]~reg0 ; regout           ;
+; |Lauflicht|counter_run[0]~reg0 ; |Lauflicht|counter_run[0]~reg0 ; regout           ;
+; |Lauflicht|i_counter~4         ; |Lauflicht|i_counter~4         ; out              ;
+; |Lauflicht|i_counter~5         ; |Lauflicht|i_counter~5         ; out              ;
+; |Lauflicht|counter_run[0]~0    ; |Lauflicht|counter_run[0]~0    ; out              ;
+; |Lauflicht|i_counter~6         ; |Lauflicht|i_counter~6         ; out              ;
+; |Lauflicht|state_now.q0~0      ; |Lauflicht|state_now.q0~0      ; out              ;
+; |Lauflicht|state_now.q1~0      ; |Lauflicht|state_now.q1~0      ; out              ;
+; |Lauflicht|state_now.q2~0      ; |Lauflicht|state_now.q2~0      ; out              ;
+; |Lauflicht|state_now.q3~0      ; |Lauflicht|state_now.q3~0      ; out              ;
+; |Lauflicht|state_now.q4~0      ; |Lauflicht|state_now.q4~0      ; out              ;
+; |Lauflicht|state_now.q5~0      ; |Lauflicht|state_now.q5~0      ; out              ;
+; |Lauflicht|state_now.q6~0      ; |Lauflicht|state_now.q6~0      ; out              ;
+; |Lauflicht|state_now.q7~0      ; |Lauflicht|state_now.q7~0      ; out              ;
+; |Lauflicht|state_now.q8~0      ; |Lauflicht|state_now.q8~0      ; out              ;
+; |Lauflicht|state_now.q9~0      ; |Lauflicht|state_now.q9~0      ; out              ;
+; |Lauflicht|state_now.q10~0     ; |Lauflicht|state_now.q10~0     ; out              ;
+; |Lauflicht|state_now.q11~0     ; |Lauflicht|state_now.q11~0     ; out              ;
+; |Lauflicht|state_now.q12~0     ; |Lauflicht|state_now.q12~0     ; out              ;
+; |Lauflicht|state_now.q13~0     ; |Lauflicht|state_now.q13~0     ; out              ;
+; |Lauflicht|leds[7]~0           ; |Lauflicht|leds[7]~0           ; out              ;
+; |Lauflicht|leds[6]~1           ; |Lauflicht|leds[6]~1           ; out              ;
+; |Lauflicht|leds[5]~2           ; |Lauflicht|leds[5]~2           ; out              ;
+; |Lauflicht|leds[4]~3           ; |Lauflicht|leds[4]~3           ; out              ;
+; |Lauflicht|leds[3]~4           ; |Lauflicht|leds[3]~4           ; out              ;
+; |Lauflicht|leds[2]~5           ; |Lauflicht|leds[2]~5           ; out              ;
+; |Lauflicht|leds[1]~6           ; |Lauflicht|leds[1]~6           ; out              ;
+; |Lauflicht|leds[0]~7           ; |Lauflicht|leds[0]~7           ; out              ;
+; |Lauflicht|counter_run[2]~5    ; |Lauflicht|counter_run[2]~5    ; out              ;
+; |Lauflicht|counter_run[1]~6    ; |Lauflicht|counter_run[1]~6    ; out              ;
+; |Lauflicht|leds[0]~reg0        ; |Lauflicht|leds[0]~reg0        ; regout           ;
+; |Lauflicht|leds[1]~reg0        ; |Lauflicht|leds[1]~reg0        ; regout           ;
+; |Lauflicht|leds[2]~reg0        ; |Lauflicht|leds[2]~reg0        ; regout           ;
+; |Lauflicht|leds[3]~reg0        ; |Lauflicht|leds[3]~reg0        ; regout           ;
+; |Lauflicht|leds[4]~reg0        ; |Lauflicht|leds[4]~reg0        ; regout           ;
+; |Lauflicht|leds[5]~reg0        ; |Lauflicht|leds[5]~reg0        ; regout           ;
+; |Lauflicht|leds[6]~reg0        ; |Lauflicht|leds[6]~reg0        ; regout           ;
+; |Lauflicht|leds[7]~reg0        ; |Lauflicht|leds[7]~reg0        ; regout           ;
+; |Lauflicht|i_counter[0]        ; |Lauflicht|i_counter[0]        ; regout           ;
+; |Lauflicht|i_counter[1]        ; |Lauflicht|i_counter[1]        ; regout           ;
+; |Lauflicht|i_counter[2]        ; |Lauflicht|i_counter[2]        ; regout           ;
+; |Lauflicht|state_now.q13       ; |Lauflicht|state_now.q13       ; regout           ;
+; |Lauflicht|state_now.q12       ; |Lauflicht|state_now.q12       ; regout           ;
+; |Lauflicht|state_now.q11       ; |Lauflicht|state_now.q11       ; regout           ;
+; |Lauflicht|state_now.q10       ; |Lauflicht|state_now.q10       ; regout           ;
+; |Lauflicht|state_now.q9        ; |Lauflicht|state_now.q9        ; regout           ;
+; |Lauflicht|state_now.q8        ; |Lauflicht|state_now.q8        ; regout           ;
+; |Lauflicht|state_now.q7        ; |Lauflicht|state_now.q7        ; regout           ;
+; |Lauflicht|state_now.q6        ; |Lauflicht|state_now.q6        ; regout           ;
+; |Lauflicht|state_now.q5        ; |Lauflicht|state_now.q5        ; regout           ;
+; |Lauflicht|state_now.q4        ; |Lauflicht|state_now.q4        ; regout           ;
+; |Lauflicht|state_now.q3        ; |Lauflicht|state_now.q3        ; regout           ;
+; |Lauflicht|state_now.q2        ; |Lauflicht|state_now.q2        ; regout           ;
+; |Lauflicht|state_now.q1        ; |Lauflicht|state_now.q1        ; regout           ;
+; |Lauflicht|state_now.q0        ; |Lauflicht|state_now.q0        ; regout           ;
+; |Lauflicht|clk                 ; |Lauflicht|clk                 ; out              ;
+; |Lauflicht|reset               ; |Lauflicht|reset               ; out              ;
+; |Lauflicht|stop                ; |Lauflicht|stop                ; out              ;
+; |Lauflicht|leds[0]             ; |Lauflicht|leds[0]             ; pin_out          ;
+; |Lauflicht|leds[1]             ; |Lauflicht|leds[1]             ; pin_out          ;
+; |Lauflicht|leds[2]             ; |Lauflicht|leds[2]             ; pin_out          ;
+; |Lauflicht|leds[3]             ; |Lauflicht|leds[3]             ; pin_out          ;
+; |Lauflicht|leds[4]             ; |Lauflicht|leds[4]             ; pin_out          ;
+; |Lauflicht|leds[5]             ; |Lauflicht|leds[5]             ; pin_out          ;
+; |Lauflicht|leds[6]             ; |Lauflicht|leds[6]             ; pin_out          ;
+; |Lauflicht|leds[7]             ; |Lauflicht|leds[7]             ; pin_out          ;
+; |Lauflicht|counter_run[0]      ; |Lauflicht|counter_run[0]      ; pin_out          ;
+; |Lauflicht|counter_run[1]      ; |Lauflicht|counter_run[1]      ; pin_out          ;
+; |Lauflicht|counter_run[2]      ; |Lauflicht|counter_run[2]      ; pin_out          ;
+; |Lauflicht|state_now~0         ; |Lauflicht|state_now~0         ; out0             ;
+; |Lauflicht|state_now~1         ; |Lauflicht|state_now~1         ; out0             ;
+; |Lauflicht|state_now.q0~1      ; |Lauflicht|state_now.q0~1      ; out0             ;
+; |Lauflicht|Selector0~0         ; |Lauflicht|Selector0~0         ; out0             ;
+; |Lauflicht|state_now.q1~1      ; |Lauflicht|state_now.q1~1      ; out0             ;
+; |Lauflicht|leds~15             ; |Lauflicht|leds~15             ; out0             ;
+; |Lauflicht|state_now.q2~1      ; |Lauflicht|state_now.q2~1      ; out0             ;
+; |Lauflicht|leds~17             ; |Lauflicht|leds~17             ; out0             ;
+; |Lauflicht|state_now.q3~1      ; |Lauflicht|state_now.q3~1      ; out0             ;
+; |Lauflicht|leds~19             ; |Lauflicht|leds~19             ; out0             ;
+; |Lauflicht|state_now.q4~1      ; |Lauflicht|state_now.q4~1      ; out0             ;
+; |Lauflicht|leds~21             ; |Lauflicht|leds~21             ; out0             ;
+; |Lauflicht|state_now.q5~1      ; |Lauflicht|state_now.q5~1      ; out0             ;
+; |Lauflicht|leds~23             ; |Lauflicht|leds~23             ; out0             ;
+; |Lauflicht|state_now.q6~1      ; |Lauflicht|state_now.q6~1      ; out0             ;
+; |Lauflicht|leds~25             ; |Lauflicht|leds~25             ; out0             ;
+; |Lauflicht|state_now.q7~1      ; |Lauflicht|state_now.q7~1      ; out0             ;
+; |Lauflicht|Selector0~1         ; |Lauflicht|Selector0~1         ; out0             ;
+; |Lauflicht|state_now.q8~1      ; |Lauflicht|state_now.q8~1      ; out0             ;
+; |Lauflicht|leds~27             ; |Lauflicht|leds~27             ; out0             ;
+; |Lauflicht|state_now.q9~1      ; |Lauflicht|state_now.q9~1      ; out0             ;
+; |Lauflicht|leds~29             ; |Lauflicht|leds~29             ; out0             ;
+; |Lauflicht|state_now.q10~1     ; |Lauflicht|state_now.q10~1     ; out0             ;
+; |Lauflicht|leds~31             ; |Lauflicht|leds~31             ; out0             ;
+; |Lauflicht|state_now.q11~1     ; |Lauflicht|state_now.q11~1     ; out0             ;
+; |Lauflicht|leds~33             ; |Lauflicht|leds~33             ; out0             ;
+; |Lauflicht|state_now.q12~1     ; |Lauflicht|state_now.q12~1     ; out0             ;
+; |Lauflicht|leds~35             ; |Lauflicht|leds~35             ; out0             ;
+; |Lauflicht|state_now.q13~1     ; |Lauflicht|state_now.q13~1     ; out0             ;
+; |Lauflicht|leds~37             ; |Lauflicht|leds~37             ; out0             ;
+; |Lauflicht|state_now~5         ; |Lauflicht|state_now~5         ; out0             ;
+; |Lauflicht|state_now~9         ; |Lauflicht|state_now~9         ; out0             ;
+; |Lauflicht|Selector0~2         ; |Lauflicht|Selector0~2         ; out0             ;
+; |Lauflicht|Selector0~10        ; |Lauflicht|Selector0~10        ; out0             ;
+; |Lauflicht|Selector1~0         ; |Lauflicht|Selector1~0         ; out0             ;
+; |Lauflicht|Selector1~7         ; |Lauflicht|Selector1~7         ; out0             ;
+; |Lauflicht|Selector2~0         ; |Lauflicht|Selector2~0         ; out0             ;
+; |Lauflicht|Selector2~6         ; |Lauflicht|Selector2~6         ; out0             ;
+; |Lauflicht|Selector3~0         ; |Lauflicht|Selector3~0         ; out0             ;
+; |Lauflicht|Selector3~5         ; |Lauflicht|Selector3~5         ; out0             ;
+; |Lauflicht|Selector4~0         ; |Lauflicht|Selector4~0         ; out0             ;
+; |Lauflicht|Selector4~4         ; |Lauflicht|Selector4~4         ; out0             ;
+; |Lauflicht|Selector5~0         ; |Lauflicht|Selector5~0         ; out0             ;
+; |Lauflicht|Selector5~3         ; |Lauflicht|Selector5~3         ; out0             ;
+; |Lauflicht|Selector6~0         ; |Lauflicht|Selector6~0         ; out0             ;
+; |Lauflicht|Selector6~2         ; |Lauflicht|Selector6~2         ; out0             ;
+; |Lauflicht|Selector7~0         ; |Lauflicht|Selector7~0         ; out0             ;
+; |Lauflicht|Selector7~1         ; |Lauflicht|Selector7~1         ; out0             ;
+; |Lauflicht|Add0~0              ; |Lauflicht|Add0~0              ; out0             ;
+; |Lauflicht|Add0~1              ; |Lauflicht|Add0~1              ; out0             ;
+; |Lauflicht|Add0~2              ; |Lauflicht|Add0~2              ; out0             ;
+; |Lauflicht|Add0~3              ; |Lauflicht|Add0~3              ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |Lauflicht|i_counter~0         ; |Lauflicht|i_counter~0         ; out              ;
+; |Lauflicht|i_counter~1         ; |Lauflicht|i_counter~1         ; out              ;
+; |Lauflicht|i_counter~2         ; |Lauflicht|i_counter~2         ; out              ;
+; |Lauflicht|counter_run[6]~1    ; |Lauflicht|counter_run[6]~1    ; out              ;
+; |Lauflicht|counter_run[5]~2    ; |Lauflicht|counter_run[5]~2    ; out              ;
+; |Lauflicht|counter_run[4]~3    ; |Lauflicht|counter_run[4]~3    ; out              ;
+; |Lauflicht|counter_run[4]~reg0 ; |Lauflicht|counter_run[4]~reg0 ; regout           ;
+; |Lauflicht|counter_run[5]~reg0 ; |Lauflicht|counter_run[5]~reg0 ; regout           ;
+; |Lauflicht|counter_run[6]~reg0 ; |Lauflicht|counter_run[6]~reg0 ; regout           ;
+; |Lauflicht|i_counter[4]        ; |Lauflicht|i_counter[4]        ; regout           ;
+; |Lauflicht|i_counter[5]        ; |Lauflicht|i_counter[5]        ; regout           ;
+; |Lauflicht|i_counter[6]        ; |Lauflicht|i_counter[6]        ; regout           ;
+; |Lauflicht|module[0]           ; |Lauflicht|module[0]           ; out              ;
+; |Lauflicht|module[1]           ; |Lauflicht|module[1]           ; out              ;
+; |Lauflicht|module[2]           ; |Lauflicht|module[2]           ; out              ;
+; |Lauflicht|module[3]           ; |Lauflicht|module[3]           ; out              ;
+; |Lauflicht|module[4]           ; |Lauflicht|module[4]           ; out              ;
+; |Lauflicht|module[5]           ; |Lauflicht|module[5]           ; out              ;
+; |Lauflicht|module[6]           ; |Lauflicht|module[6]           ; out              ;
+; |Lauflicht|module[7]           ; |Lauflicht|module[7]           ; out              ;
+; |Lauflicht|counter_run[4]      ; |Lauflicht|counter_run[4]      ; pin_out          ;
+; |Lauflicht|counter_run[5]      ; |Lauflicht|counter_run[5]      ; pin_out          ;
+; |Lauflicht|counter_run[6]      ; |Lauflicht|counter_run[6]      ; pin_out          ;
+; |Lauflicht|Selector0~3         ; |Lauflicht|Selector0~3         ; out0             ;
+; |Lauflicht|Selector0~4         ; |Lauflicht|Selector0~4         ; out0             ;
+; |Lauflicht|Selector0~5         ; |Lauflicht|Selector0~5         ; out0             ;
+; |Lauflicht|Selector0~6         ; |Lauflicht|Selector0~6         ; out0             ;
+; |Lauflicht|Selector0~7         ; |Lauflicht|Selector0~7         ; out0             ;
+; |Lauflicht|Selector0~8         ; |Lauflicht|Selector0~8         ; out0             ;
+; |Lauflicht|Selector0~9         ; |Lauflicht|Selector0~9         ; out0             ;
+; |Lauflicht|Selector1~1         ; |Lauflicht|Selector1~1         ; out0             ;
+; |Lauflicht|Selector1~2         ; |Lauflicht|Selector1~2         ; out0             ;
+; |Lauflicht|Selector1~3         ; |Lauflicht|Selector1~3         ; out0             ;
+; |Lauflicht|Selector1~4         ; |Lauflicht|Selector1~4         ; out0             ;
+; |Lauflicht|Selector1~5         ; |Lauflicht|Selector1~5         ; out0             ;
+; |Lauflicht|Selector1~6         ; |Lauflicht|Selector1~6         ; out0             ;
+; |Lauflicht|Selector1~8         ; |Lauflicht|Selector1~8         ; out0             ;
+; |Lauflicht|Selector2~1         ; |Lauflicht|Selector2~1         ; out0             ;
+; |Lauflicht|Selector2~2         ; |Lauflicht|Selector2~2         ; out0             ;
+; |Lauflicht|Selector2~3         ; |Lauflicht|Selector2~3         ; out0             ;
+; |Lauflicht|Selector2~4         ; |Lauflicht|Selector2~4         ; out0             ;
+; |Lauflicht|Selector2~5         ; |Lauflicht|Selector2~5         ; out0             ;
+; |Lauflicht|Selector2~7         ; |Lauflicht|Selector2~7         ; out0             ;
+; |Lauflicht|Selector2~8         ; |Lauflicht|Selector2~8         ; out0             ;
+; |Lauflicht|Selector3~1         ; |Lauflicht|Selector3~1         ; out0             ;
+; |Lauflicht|Selector3~2         ; |Lauflicht|Selector3~2         ; out0             ;
+; |Lauflicht|Selector3~3         ; |Lauflicht|Selector3~3         ; out0             ;
+; |Lauflicht|Selector3~4         ; |Lauflicht|Selector3~4         ; out0             ;
+; |Lauflicht|Selector3~6         ; |Lauflicht|Selector3~6         ; out0             ;
+; |Lauflicht|Selector3~7         ; |Lauflicht|Selector3~7         ; out0             ;
+; |Lauflicht|Selector3~8         ; |Lauflicht|Selector3~8         ; out0             ;
+; |Lauflicht|Selector4~1         ; |Lauflicht|Selector4~1         ; out0             ;
+; |Lauflicht|Selector4~2         ; |Lauflicht|Selector4~2         ; out0             ;
+; |Lauflicht|Selector4~3         ; |Lauflicht|Selector4~3         ; out0             ;
+; |Lauflicht|Selector4~5         ; |Lauflicht|Selector4~5         ; out0             ;
+; |Lauflicht|Selector4~6         ; |Lauflicht|Selector4~6         ; out0             ;
+; |Lauflicht|Selector4~7         ; |Lauflicht|Selector4~7         ; out0             ;
+; |Lauflicht|Selector4~8         ; |Lauflicht|Selector4~8         ; out0             ;
+; |Lauflicht|Selector5~1         ; |Lauflicht|Selector5~1         ; out0             ;
+; |Lauflicht|Selector5~2         ; |Lauflicht|Selector5~2         ; out0             ;
+; |Lauflicht|Selector5~4         ; |Lauflicht|Selector5~4         ; out0             ;
+; |Lauflicht|Selector5~5         ; |Lauflicht|Selector5~5         ; out0             ;
+; |Lauflicht|Selector5~6         ; |Lauflicht|Selector5~6         ; out0             ;
+; |Lauflicht|Selector5~7         ; |Lauflicht|Selector5~7         ; out0             ;
+; |Lauflicht|Selector5~8         ; |Lauflicht|Selector5~8         ; out0             ;
+; |Lauflicht|Selector6~1         ; |Lauflicht|Selector6~1         ; out0             ;
+; |Lauflicht|Selector6~3         ; |Lauflicht|Selector6~3         ; out0             ;
+; |Lauflicht|Selector6~4         ; |Lauflicht|Selector6~4         ; out0             ;
+; |Lauflicht|Selector6~5         ; |Lauflicht|Selector6~5         ; out0             ;
+; |Lauflicht|Selector6~6         ; |Lauflicht|Selector6~6         ; out0             ;
+; |Lauflicht|Selector6~7         ; |Lauflicht|Selector6~7         ; out0             ;
+; |Lauflicht|Selector6~8         ; |Lauflicht|Selector6~8         ; out0             ;
+; |Lauflicht|Selector7~2         ; |Lauflicht|Selector7~2         ; out0             ;
+; |Lauflicht|Selector7~3         ; |Lauflicht|Selector7~3         ; out0             ;
+; |Lauflicht|Selector7~4         ; |Lauflicht|Selector7~4         ; out0             ;
+; |Lauflicht|Selector7~5         ; |Lauflicht|Selector7~5         ; out0             ;
+; |Lauflicht|Selector7~6         ; |Lauflicht|Selector7~6         ; out0             ;
+; |Lauflicht|Selector7~7         ; |Lauflicht|Selector7~7         ; out0             ;
+; |Lauflicht|Selector7~8         ; |Lauflicht|Selector7~8         ; out0             ;
+; |Lauflicht|Add0~5              ; |Lauflicht|Add0~5              ; out0             ;
+; |Lauflicht|Add0~6              ; |Lauflicht|Add0~6              ; out0             ;
+; |Lauflicht|Add0~7              ; |Lauflicht|Add0~7              ; out0             ;
+; |Lauflicht|Add0~8              ; |Lauflicht|Add0~8              ; out0             ;
+; |Lauflicht|Add0~9              ; |Lauflicht|Add0~9              ; out0             ;
+; |Lauflicht|Add0~10             ; |Lauflicht|Add0~10             ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |Lauflicht|counter_run[3]~reg0 ; |Lauflicht|counter_run[3]~reg0 ; regout           ;
+; |Lauflicht|i_counter~0         ; |Lauflicht|i_counter~0         ; out              ;
+; |Lauflicht|i_counter~1         ; |Lauflicht|i_counter~1         ; out              ;
+; |Lauflicht|i_counter~2         ; |Lauflicht|i_counter~2         ; out              ;
+; |Lauflicht|i_counter~3         ; |Lauflicht|i_counter~3         ; out              ;
+; |Lauflicht|counter_run[6]~1    ; |Lauflicht|counter_run[6]~1    ; out              ;
+; |Lauflicht|counter_run[5]~2    ; |Lauflicht|counter_run[5]~2    ; out              ;
+; |Lauflicht|counter_run[4]~3    ; |Lauflicht|counter_run[4]~3    ; out              ;
+; |Lauflicht|counter_run[3]~4    ; |Lauflicht|counter_run[3]~4    ; out              ;
+; |Lauflicht|counter_run[4]~reg0 ; |Lauflicht|counter_run[4]~reg0 ; regout           ;
+; |Lauflicht|counter_run[5]~reg0 ; |Lauflicht|counter_run[5]~reg0 ; regout           ;
+; |Lauflicht|counter_run[6]~reg0 ; |Lauflicht|counter_run[6]~reg0 ; regout           ;
+; |Lauflicht|i_counter[3]        ; |Lauflicht|i_counter[3]        ; regout           ;
+; |Lauflicht|i_counter[4]        ; |Lauflicht|i_counter[4]        ; regout           ;
+; |Lauflicht|i_counter[5]        ; |Lauflicht|i_counter[5]        ; regout           ;
+; |Lauflicht|i_counter[6]        ; |Lauflicht|i_counter[6]        ; regout           ;
+; |Lauflicht|module[0]           ; |Lauflicht|module[0]           ; out              ;
+; |Lauflicht|module[1]           ; |Lauflicht|module[1]           ; out              ;
+; |Lauflicht|module[2]           ; |Lauflicht|module[2]           ; out              ;
+; |Lauflicht|module[3]           ; |Lauflicht|module[3]           ; out              ;
+; |Lauflicht|module[4]           ; |Lauflicht|module[4]           ; out              ;
+; |Lauflicht|module[5]           ; |Lauflicht|module[5]           ; out              ;
+; |Lauflicht|module[6]           ; |Lauflicht|module[6]           ; out              ;
+; |Lauflicht|module[7]           ; |Lauflicht|module[7]           ; out              ;
+; |Lauflicht|counter_run[3]      ; |Lauflicht|counter_run[3]      ; pin_out          ;
+; |Lauflicht|counter_run[4]      ; |Lauflicht|counter_run[4]      ; pin_out          ;
+; |Lauflicht|counter_run[5]      ; |Lauflicht|counter_run[5]      ; pin_out          ;
+; |Lauflicht|counter_run[6]      ; |Lauflicht|counter_run[6]      ; pin_out          ;
+; |Lauflicht|Selector0~3         ; |Lauflicht|Selector0~3         ; out0             ;
+; |Lauflicht|Selector0~4         ; |Lauflicht|Selector0~4         ; out0             ;
+; |Lauflicht|Selector0~5         ; |Lauflicht|Selector0~5         ; out0             ;
+; |Lauflicht|Selector0~6         ; |Lauflicht|Selector0~6         ; out0             ;
+; |Lauflicht|Selector0~7         ; |Lauflicht|Selector0~7         ; out0             ;
+; |Lauflicht|Selector0~8         ; |Lauflicht|Selector0~8         ; out0             ;
+; |Lauflicht|Selector0~9         ; |Lauflicht|Selector0~9         ; out0             ;
+; |Lauflicht|Selector1~1         ; |Lauflicht|Selector1~1         ; out0             ;
+; |Lauflicht|Selector1~2         ; |Lauflicht|Selector1~2         ; out0             ;
+; |Lauflicht|Selector1~3         ; |Lauflicht|Selector1~3         ; out0             ;
+; |Lauflicht|Selector1~4         ; |Lauflicht|Selector1~4         ; out0             ;
+; |Lauflicht|Selector1~5         ; |Lauflicht|Selector1~5         ; out0             ;
+; |Lauflicht|Selector1~6         ; |Lauflicht|Selector1~6         ; out0             ;
+; |Lauflicht|Selector1~8         ; |Lauflicht|Selector1~8         ; out0             ;
+; |Lauflicht|Selector2~1         ; |Lauflicht|Selector2~1         ; out0             ;
+; |Lauflicht|Selector2~2         ; |Lauflicht|Selector2~2         ; out0             ;
+; |Lauflicht|Selector2~3         ; |Lauflicht|Selector2~3         ; out0             ;
+; |Lauflicht|Selector2~4         ; |Lauflicht|Selector2~4         ; out0             ;
+; |Lauflicht|Selector2~5         ; |Lauflicht|Selector2~5         ; out0             ;
+; |Lauflicht|Selector2~7         ; |Lauflicht|Selector2~7         ; out0             ;
+; |Lauflicht|Selector2~8         ; |Lauflicht|Selector2~8         ; out0             ;
+; |Lauflicht|Selector3~1         ; |Lauflicht|Selector3~1         ; out0             ;
+; |Lauflicht|Selector3~2         ; |Lauflicht|Selector3~2         ; out0             ;
+; |Lauflicht|Selector3~3         ; |Lauflicht|Selector3~3         ; out0             ;
+; |Lauflicht|Selector3~4         ; |Lauflicht|Selector3~4         ; out0             ;
+; |Lauflicht|Selector3~6         ; |Lauflicht|Selector3~6         ; out0             ;
+; |Lauflicht|Selector3~7         ; |Lauflicht|Selector3~7         ; out0             ;
+; |Lauflicht|Selector3~8         ; |Lauflicht|Selector3~8         ; out0             ;
+; |Lauflicht|Selector4~1         ; |Lauflicht|Selector4~1         ; out0             ;
+; |Lauflicht|Selector4~2         ; |Lauflicht|Selector4~2         ; out0             ;
+; |Lauflicht|Selector4~3         ; |Lauflicht|Selector4~3         ; out0             ;
+; |Lauflicht|Selector4~5         ; |Lauflicht|Selector4~5         ; out0             ;
+; |Lauflicht|Selector4~6         ; |Lauflicht|Selector4~6         ; out0             ;
+; |Lauflicht|Selector4~7         ; |Lauflicht|Selector4~7         ; out0             ;
+; |Lauflicht|Selector4~8         ; |Lauflicht|Selector4~8         ; out0             ;
+; |Lauflicht|Selector5~1         ; |Lauflicht|Selector5~1         ; out0             ;
+; |Lauflicht|Selector5~2         ; |Lauflicht|Selector5~2         ; out0             ;
+; |Lauflicht|Selector5~4         ; |Lauflicht|Selector5~4         ; out0             ;
+; |Lauflicht|Selector5~5         ; |Lauflicht|Selector5~5         ; out0             ;
+; |Lauflicht|Selector5~6         ; |Lauflicht|Selector5~6         ; out0             ;
+; |Lauflicht|Selector5~7         ; |Lauflicht|Selector5~7         ; out0             ;
+; |Lauflicht|Selector5~8         ; |Lauflicht|Selector5~8         ; out0             ;
+; |Lauflicht|Selector6~1         ; |Lauflicht|Selector6~1         ; out0             ;
+; |Lauflicht|Selector6~3         ; |Lauflicht|Selector6~3         ; out0             ;
+; |Lauflicht|Selector6~4         ; |Lauflicht|Selector6~4         ; out0             ;
+; |Lauflicht|Selector6~5         ; |Lauflicht|Selector6~5         ; out0             ;
+; |Lauflicht|Selector6~6         ; |Lauflicht|Selector6~6         ; out0             ;
+; |Lauflicht|Selector6~7         ; |Lauflicht|Selector6~7         ; out0             ;
+; |Lauflicht|Selector6~8         ; |Lauflicht|Selector6~8         ; out0             ;
+; |Lauflicht|Selector7~2         ; |Lauflicht|Selector7~2         ; out0             ;
+; |Lauflicht|Selector7~3         ; |Lauflicht|Selector7~3         ; out0             ;
+; |Lauflicht|Selector7~4         ; |Lauflicht|Selector7~4         ; out0             ;
+; |Lauflicht|Selector7~5         ; |Lauflicht|Selector7~5         ; out0             ;
+; |Lauflicht|Selector7~6         ; |Lauflicht|Selector7~6         ; out0             ;
+; |Lauflicht|Selector7~7         ; |Lauflicht|Selector7~7         ; out0             ;
+; |Lauflicht|Selector7~8         ; |Lauflicht|Selector7~8         ; out0             ;
+; |Lauflicht|Add0~4              ; |Lauflicht|Add0~4              ; out0             ;
+; |Lauflicht|Add0~5              ; |Lauflicht|Add0~5              ; out0             ;
+; |Lauflicht|Add0~6              ; |Lauflicht|Add0~6              ; out0             ;
+; |Lauflicht|Add0~7              ; |Lauflicht|Add0~7              ; out0             ;
+; |Lauflicht|Add0~8              ; |Lauflicht|Add0~8              ; out0             ;
+; |Lauflicht|Add0~9              ; |Lauflicht|Add0~9              ; out0             ;
+; |Lauflicht|Add0~10             ; |Lauflicht|Add0~10             ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Mon Jun 24 23:30:43 2019
+Info: Command: quartus_sim --simulation_results_format=VWF Lauflicht -c Lauflicht
+Info (324025): Using vector source file "/media/jiayang/64F9-8134/Lauflicht_gesamt/Lauflicht/Waveform.vwf"
+Warning (328016): Wrong node type and/or width for node "|Lauflicht|state_now" in vector source file. Node in design is of type Enum and of width 1, but node in vector source file is of type 9-Level and of width 1.
+Warning (328018): Signal name "|Lauflicht|state_now" changed to enum type
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      58.45 %
+Info (328052): Number of transitions in simulation is 4968
+Info (324045): Vector file Lauflicht.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 656 megabytes
+    Info: Processing ended: Mon Jun 24 23:30:44 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

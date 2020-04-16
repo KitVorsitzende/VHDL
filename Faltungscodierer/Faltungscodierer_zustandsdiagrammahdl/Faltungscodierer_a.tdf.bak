@@ -1,0 +1,39 @@
+SUBDESIGN Faltungscodierer_a
+(reset:INPUT;
+input1:INPUT;
+clk:INPUT;
+output1[1..0]:OUTPUT;
+)
+
+VARIABLE
+ss:MACHINE OF BITS(q1,q0) 
+WITH STATES(
+           s0=B"00",
+			  s1=B"01",
+			  s2=B"10",
+			  s3=B"11"	
+		     );	  
+outputhigh:NODE;
+outputlow:NODE;
+BEGIN
+  ss.clk=clk;
+  ss.reset=reset;
+  output1[1]=DFF(outputhigh,clk,VCC,VCC);
+  output1[0]=DFF(outputlow,clk,VCC,VCC); 
+  
+  TABLE
+  %current                         next%
+  %state    input    output        state%
+  ss,    input1 ,clk      =>outputhigh,outputlow,  ss;
+  
+  s0,       0    ,1       =>0,0,                   s0;
+  s0,       1    ,1       =>1,1,                   s1;
+  s1,       0    ,1       =>1,0,                   s2;
+  s1,       1    ,1       =>0,1,                   s3;
+  s2,       0    ,1       =>1,1,                   s0;
+  s2,       1    ,1       =>0,0,                   s1;
+  s3,       0    ,1       =>0,1,                   s2;
+  s3,       1    ,1       =>1,0,                   s3;
+  END TABLE;
+END;
+		

@@ -1,0 +1,105 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+# Date created = 16:19:44  June 04, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		system_gesamt_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C70F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY system_gesamt
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:19:44  JUNE 04, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_N25 -to clk_original
+set_location_assignment PIN_AE14 -to taster1
+set_location_assignment PIN_AE22 -to taster2
+set_location_assignment PIN_AE16 -to taster3
+set_location_assignment PIN_AC18 -to taster4
+set_location_assignment PIN_AC13 -to dip_schalter[7]
+set_location_assignment PIN_A19 -to dip_schalter[6]
+set_location_assignment PIN_C21 -to dip_schalter[5]
+set_location_assignment PIN_C23 -to dip_schalter[4]
+set_location_assignment PIN_AF4 -to dip_schalter[3]
+set_location_assignment PIN_AC20 -to dip_schalter[2]
+set_location_assignment PIN_AE18 -to dip_schalter[1]
+set_location_assignment PIN_AE19 -to dip_schalter[0]
+set_location_assignment PIN_AA7 -to leds[7]
+set_location_assignment PIN_AA6 -to leds[6]
+set_location_assignment PIN_AB4 -to leds[5]
+set_location_assignment PIN_AC3 -to leds[4]
+set_location_assignment PIN_E22 -to leds[3]
+set_location_assignment PIN_F20 -to leds[2]
+set_location_assignment PIN_B3 -to leds[1]
+set_location_assignment PIN_E5 -to leds[0]
+set_location_assignment PIN_Y21 -to output_high[7]
+set_location_assignment PIN_T7 -to output_high[6]
+set_location_assignment PIN_AB23 -to output_high[5]
+set_location_assignment PIN_Y5 -to output_high[4]
+set_location_assignment PIN_E1 -to output_high[3]
+set_location_assignment PIN_U1 -to output_high[2]
+set_location_assignment PIN_W21 -to output_high[1]
+set_location_assignment PIN_V3 -to output_high[0]
+set_location_assignment PIN_K2 -to output_low[7]
+set_location_assignment PIN_U25 -to output_low[6]
+set_location_assignment PIN_AA3 -to output_low[5]
+set_location_assignment PIN_V1 -to output_low[4]
+set_location_assignment PIN_V7 -to output_low[3]
+set_location_assignment PIN_U23 -to output_low[2]
+set_location_assignment PIN_AC2 -to output_low[1]
+set_location_assignment PIN_P7 -to output_low[0]
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Lauflicht_gesamt/gesamt/output_files/Waveform.vwf"
+set_global_assignment -name VHDL_FILE subsystem/basisfrequenz.vhd
+set_global_assignment -name VHDL_FILE subsystem/Taster.vhd
+set_global_assignment -name VHDL_FILE subsystem/Lauflicht.vhd
+set_global_assignment -name VHDL_FILE subsystem/clockdivider.vhd
+set_global_assignment -name VHDL_FILE subsystem/Anzeige.vhd
+set_global_assignment -name BDF_FILE subsystem/system_gesamt.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

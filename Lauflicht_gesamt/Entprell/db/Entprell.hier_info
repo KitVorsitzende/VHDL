@@ -1,0 +1,46 @@
+|Entprell
+clk => PB~reg0.CLK
+clk => tmp[19].CLK
+clk => tmp[18].CLK
+clk => tmp[17].CLK
+clk => tmp[16].CLK
+clk => tmp[15].CLK
+clk => tmp[14].CLK
+clk => tmp[13].CLK
+clk => tmp[12].CLK
+clk => tmp[11].CLK
+clk => tmp[10].CLK
+clk => tmp[9].CLK
+clk => tmp[8].CLK
+clk => tmp[7].CLK
+clk => tmp[6].CLK
+clk => tmp[5].CLK
+clk => tmp[4].CLK
+clk => tmp[3].CLK
+clk => tmp[2].CLK
+clk => tmp[1].CLK
+clk => tmp[0].CLK
+button => PB~reg0.PRESET
+button => tmp[19].ACLR
+button => tmp[18].ACLR
+button => tmp[17].ACLR
+button => tmp[16].ACLR
+button => tmp[15].ACLR
+button => tmp[14].ACLR
+button => tmp[13].ACLR
+button => tmp[12].ACLR
+button => tmp[11].ACLR
+button => tmp[10].ACLR
+button => tmp[9].ACLR
+button => tmp[8].ACLR
+button => tmp[7].ACLR
+button => tmp[6].ACLR
+button => tmp[5].ACLR
+button => tmp[4].ACLR
+button => tmp[3].ACLR
+button => tmp[2].ACLR
+button => tmp[1].ACLR
+button => tmp[0].ACLR
+PB <= PB~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

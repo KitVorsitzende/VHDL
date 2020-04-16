@@ -1,0 +1,64 @@
+|Faltungscodierer_gesamt
+out_high <= Faltungscodierer:inst.out_high
+input => Faltungscodierer:inst.code_input
+input => Faltungscodierer_a:inst2.input1
+input => Faltungscodierer_v:inst1.input
+clock => Faltungscodierer:inst.takt
+clock => Faltungscodierer_a:inst2.clk
+clock => Faltungscodierer_v:inst1.clk
+reset => Faltungscodierer:inst.reset
+reset => Faltungscodierer_a:inst2.reset
+reset => Faltungscodierer_v:inst1.reset
+out_low <= Faltungscodierer:inst.out_low
+out_a[0] <= Faltungscodierer_a:inst2.output1[0]
+out_a[1] <= Faltungscodierer_a:inst2.output1[1]
+out_v[0] <= Faltungscodierer_v:inst1.output[0]
+out_v[1] <= Faltungscodierer_v:inst1.output[1]
+
+
+|Faltungscodierer_gesamt|Faltungscodierer:inst
+out_low <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+reset => inst3.IN0
+takt => inst.CLK
+takt => inst2.CLK
+takt => inst1.CLK
+code_input => inst.DATAIN
+out_high <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+out1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Faltungscodierer_gesamt|Faltungscodierer_a:inst2
+reset => ss.IN1
+input1 => _.IN0
+input1 => outputhigh.IN1
+input1 => _.IN0
+input1 => outputlow.IN1
+input1 => _.IN0
+input1 => _.IN1
+input1 => _.IN0
+input1 => outputhigh.IN1
+clk => $00001.CLK
+clk => $00002.CLK
+clk => ss.IN1
+output1[0] <= $00002.DB_MAX_OUTPUT_PORT_TYPE
+output1[1] <= $00001.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Faltungscodierer_gesamt|Faltungscodierer_v:inst1
+reset => output[0]~reg0.ACLR
+reset => output[1]~reg0.ACLR
+reset => state[0].ACLR
+reset => state[1].ACLR
+input => Mux0.IN8
+input => Mux1.IN4
+input => state[0].DATAIN
+clk => output[0]~reg0.CLK
+clk => output[1]~reg0.CLK
+clk => state[0].CLK
+clk => state[1].CLK
+output[0] <= output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

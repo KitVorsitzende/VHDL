@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Hochpass">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_add_sub3:inst15|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_meh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_constant3:inst16|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_6e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_constant4:inst17|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_be6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_constant5:inst18|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_6e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_mult3:inst11|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_i1h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_mult3:inst11|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:booth_adder_right" CBX_FILE_NAME="add_sub_0lf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_mult4:inst12|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_i1h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_mult4:inst12|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:booth_adder_right" CBX_FILE_NAME="add_sub_0lf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_mult5:inst13|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_i1h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_mult5:inst13|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:booth_adder_right" CBX_FILE_NAME="add_sub_0lf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Hochpass|lpm_add_sub2:inst14|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_meh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

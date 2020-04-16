@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Jun 19 01:39:51 2019
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : Lauflicht
+Top-level Entity Name : Lauflicht
+Family : Cyclone II
+Device : EP2C70F672C6
+Timing Models : Final
+Total logic elements : 78 / 68,416 ( < 1 % )
+    Total combinational functions : 69 / 68,416 ( < 1 % )
+    Dedicated logic registers : 36 / 68,416 ( < 1 % )
+Total registers : 36
+Total pins : 26 / 422 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,152,000 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 300 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

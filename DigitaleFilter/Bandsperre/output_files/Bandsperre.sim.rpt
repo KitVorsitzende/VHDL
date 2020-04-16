@@ -1,0 +1,418 @@
+Simulator report for Bandsperre
+Mon Jul 22 00:19:34 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 134 nodes    ;
+; Simulation Coverage         ;       3.01 % ;
+; Total Number of Transitions ; 113          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                        ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                              ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                               ;               ;
+; Vector input source                                                                        ; /media/jiayang/64F9-8134/DigitaleFilter/Bandsperre/Bandsperre.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                ; On            ;
+; Check outputs                                                                              ; Off                                                               ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                               ; Off           ;
+; Detect glitches                                                                            ; Off                                                               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                               ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       3.01 % ;
+; Total nodes checked                                 ; 134          ;
+; Total output ports checked                          ; 133          ;
+; Total output ports with complete 1/0-value coverage ; 4            ;
+; Total output ports with no 1/0-value coverage       ; 121          ;
+; Total output ports with no 1-value coverage         ; 121          ;
+; Total output ports with no 0-value coverage         ; 129          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                      ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |Bandsperre|y_output[11]~reg0 ; |Bandsperre|y_output[11]~reg0 ; regout           ;
+; |Bandsperre|clk               ; |Bandsperre|clk               ; out              ;
+; |Bandsperre|y_output[11]      ; |Bandsperre|y_output[11]      ; pin_out          ;
+; |Bandsperre|Add1~52           ; |Bandsperre|Add1~52           ; out0             ;
++-------------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |Bandsperre|y_output[13]~reg0         ; |Bandsperre|y_output[13]~reg0         ; regout           ;
+; |Bandsperre|y_output[10]~reg0         ; |Bandsperre|y_output[10]~reg0         ; regout           ;
+; |Bandsperre|y_output[9]~reg0          ; |Bandsperre|y_output[9]~reg0          ; regout           ;
+; |Bandsperre|y_output[8]~reg0          ; |Bandsperre|y_output[8]~reg0          ; regout           ;
+; |Bandsperre|y_output[7]~reg0          ; |Bandsperre|y_output[7]~reg0          ; regout           ;
+; |Bandsperre|y_output[6]~reg0          ; |Bandsperre|y_output[6]~reg0          ; regout           ;
+; |Bandsperre|y_output[5]~reg0          ; |Bandsperre|y_output[5]~reg0          ; regout           ;
+; |Bandsperre|y_output[4]~reg0          ; |Bandsperre|y_output[4]~reg0          ; regout           ;
+; |Bandsperre|y_output[3]~reg0          ; |Bandsperre|y_output[3]~reg0          ; regout           ;
+; |Bandsperre|y_output[2]~reg0          ; |Bandsperre|y_output[2]~reg0          ; regout           ;
+; |Bandsperre|y_output[1]~reg0          ; |Bandsperre|y_output[1]~reg0          ; regout           ;
+; |Bandsperre|y_output[0]~reg0          ; |Bandsperre|y_output[0]~reg0          ; regout           ;
+; |Bandsperre|x_input[1]                ; |Bandsperre|x_input[1]                ; out              ;
+; |Bandsperre|x_input[2]                ; |Bandsperre|x_input[2]                ; out              ;
+; |Bandsperre|x_input[3]                ; |Bandsperre|x_input[3]                ; out              ;
+; |Bandsperre|x_input[4]                ; |Bandsperre|x_input[4]                ; out              ;
+; |Bandsperre|x_input[5]                ; |Bandsperre|x_input[5]                ; out              ;
+; |Bandsperre|x_input[6]                ; |Bandsperre|x_input[6]                ; out              ;
+; |Bandsperre|x_input[7]                ; |Bandsperre|x_input[7]                ; out              ;
+; |Bandsperre|x_input[8]                ; |Bandsperre|x_input[8]                ; out              ;
+; |Bandsperre|x_input[9]                ; |Bandsperre|x_input[9]                ; out              ;
+; |Bandsperre|x_input[10]               ; |Bandsperre|x_input[10]               ; out              ;
+; |Bandsperre|x_input[11]               ; |Bandsperre|x_input[11]               ; out              ;
+; |Bandsperre|x_input[13]               ; |Bandsperre|x_input[13]               ; out              ;
+; |Bandsperre|y_output[0]               ; |Bandsperre|y_output[0]               ; pin_out          ;
+; |Bandsperre|y_output[1]               ; |Bandsperre|y_output[1]               ; pin_out          ;
+; |Bandsperre|y_output[2]               ; |Bandsperre|y_output[2]               ; pin_out          ;
+; |Bandsperre|y_output[3]               ; |Bandsperre|y_output[3]               ; pin_out          ;
+; |Bandsperre|y_output[4]               ; |Bandsperre|y_output[4]               ; pin_out          ;
+; |Bandsperre|y_output[5]               ; |Bandsperre|y_output[5]               ; pin_out          ;
+; |Bandsperre|y_output[6]               ; |Bandsperre|y_output[6]               ; pin_out          ;
+; |Bandsperre|y_output[7]               ; |Bandsperre|y_output[7]               ; pin_out          ;
+; |Bandsperre|y_output[8]               ; |Bandsperre|y_output[8]               ; pin_out          ;
+; |Bandsperre|y_output[9]               ; |Bandsperre|y_output[9]               ; pin_out          ;
+; |Bandsperre|y_output[10]              ; |Bandsperre|y_output[10]              ; pin_out          ;
+; |Bandsperre|y_output[13]              ; |Bandsperre|y_output[13]              ; pin_out          ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[0]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[0]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[1]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[1]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[2]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[2]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[3]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[3]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[4]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[4]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[5]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[5]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[6]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[6]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[7]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[7]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[8]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[8]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[9]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[9]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[10] ; |Bandsperre|DFF_14_bit_1:dff2|tmp[10] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[12] ; |Bandsperre|DFF_14_bit_1:dff2|tmp[12] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[13] ; |Bandsperre|DFF_14_bit_1:dff2|tmp[13] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[0]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[0]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[1]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[1]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[2]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[2]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[3]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[3]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[4]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[4]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[5]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[5]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[6]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[6]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[7]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[7]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[8]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[8]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[9]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[9]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[10] ; |Bandsperre|DFF_14_bit_1:dff1|tmp[10] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[12] ; |Bandsperre|DFF_14_bit_1:dff1|tmp[12] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[13] ; |Bandsperre|DFF_14_bit_1:dff1|tmp[13] ; regout           ;
+; |Bandsperre|Add1~0                    ; |Bandsperre|Add1~0                    ; out0             ;
+; |Bandsperre|Add1~1                    ; |Bandsperre|Add1~1                    ; out0             ;
+; |Bandsperre|Add1~2                    ; |Bandsperre|Add1~2                    ; out0             ;
+; |Bandsperre|Add1~3                    ; |Bandsperre|Add1~3                    ; out0             ;
+; |Bandsperre|Add1~4                    ; |Bandsperre|Add1~4                    ; out0             ;
+; |Bandsperre|Add1~5                    ; |Bandsperre|Add1~5                    ; out0             ;
+; |Bandsperre|Add1~6                    ; |Bandsperre|Add1~6                    ; out0             ;
+; |Bandsperre|Add1~7                    ; |Bandsperre|Add1~7                    ; out0             ;
+; |Bandsperre|Add1~8                    ; |Bandsperre|Add1~8                    ; out0             ;
+; |Bandsperre|Add1~9                    ; |Bandsperre|Add1~9                    ; out0             ;
+; |Bandsperre|Add1~10                   ; |Bandsperre|Add1~10                   ; out0             ;
+; |Bandsperre|Add1~11                   ; |Bandsperre|Add1~11                   ; out0             ;
+; |Bandsperre|Add1~12                   ; |Bandsperre|Add1~12                   ; out0             ;
+; |Bandsperre|Add1~13                   ; |Bandsperre|Add1~13                   ; out0             ;
+; |Bandsperre|Add1~14                   ; |Bandsperre|Add1~14                   ; out0             ;
+; |Bandsperre|Add1~15                   ; |Bandsperre|Add1~15                   ; out0             ;
+; |Bandsperre|Add1~16                   ; |Bandsperre|Add1~16                   ; out0             ;
+; |Bandsperre|Add1~17                   ; |Bandsperre|Add1~17                   ; out0             ;
+; |Bandsperre|Add1~18                   ; |Bandsperre|Add1~18                   ; out0             ;
+; |Bandsperre|Add1~19                   ; |Bandsperre|Add1~19                   ; out0             ;
+; |Bandsperre|Add1~20                   ; |Bandsperre|Add1~20                   ; out0             ;
+; |Bandsperre|Add1~21                   ; |Bandsperre|Add1~21                   ; out0             ;
+; |Bandsperre|Add1~22                   ; |Bandsperre|Add1~22                   ; out0             ;
+; |Bandsperre|Add1~23                   ; |Bandsperre|Add1~23                   ; out0             ;
+; |Bandsperre|Add1~24                   ; |Bandsperre|Add1~24                   ; out0             ;
+; |Bandsperre|Add1~25                   ; |Bandsperre|Add1~25                   ; out0             ;
+; |Bandsperre|Add1~26                   ; |Bandsperre|Add1~26                   ; out0             ;
+; |Bandsperre|Add1~27                   ; |Bandsperre|Add1~27                   ; out0             ;
+; |Bandsperre|Add1~28                   ; |Bandsperre|Add1~28                   ; out0             ;
+; |Bandsperre|Add1~29                   ; |Bandsperre|Add1~29                   ; out0             ;
+; |Bandsperre|Add1~30                   ; |Bandsperre|Add1~30                   ; out0             ;
+; |Bandsperre|Add1~31                   ; |Bandsperre|Add1~31                   ; out0             ;
+; |Bandsperre|Add1~32                   ; |Bandsperre|Add1~32                   ; out0             ;
+; |Bandsperre|Add1~33                   ; |Bandsperre|Add1~33                   ; out0             ;
+; |Bandsperre|Add1~34                   ; |Bandsperre|Add1~34                   ; out0             ;
+; |Bandsperre|Add1~35                   ; |Bandsperre|Add1~35                   ; out0             ;
+; |Bandsperre|Add1~36                   ; |Bandsperre|Add1~36                   ; out0             ;
+; |Bandsperre|Add1~37                   ; |Bandsperre|Add1~37                   ; out0             ;
+; |Bandsperre|Add1~38                   ; |Bandsperre|Add1~38                   ; out0             ;
+; |Bandsperre|Add1~39                   ; |Bandsperre|Add1~39                   ; out0             ;
+; |Bandsperre|Add1~40                   ; |Bandsperre|Add1~40                   ; out0             ;
+; |Bandsperre|Add1~41                   ; |Bandsperre|Add1~41                   ; out0             ;
+; |Bandsperre|Add1~42                   ; |Bandsperre|Add1~42                   ; out0             ;
+; |Bandsperre|Add1~43                   ; |Bandsperre|Add1~43                   ; out0             ;
+; |Bandsperre|Add1~44                   ; |Bandsperre|Add1~44                   ; out0             ;
+; |Bandsperre|Add1~45                   ; |Bandsperre|Add1~45                   ; out0             ;
+; |Bandsperre|Add1~46                   ; |Bandsperre|Add1~46                   ; out0             ;
+; |Bandsperre|Add1~47                   ; |Bandsperre|Add1~47                   ; out0             ;
+; |Bandsperre|Add1~48                   ; |Bandsperre|Add1~48                   ; out0             ;
+; |Bandsperre|Add1~49                   ; |Bandsperre|Add1~49                   ; out0             ;
+; |Bandsperre|Add1~50                   ; |Bandsperre|Add1~50                   ; out0             ;
+; |Bandsperre|Add1~51                   ; |Bandsperre|Add1~51                   ; out0             ;
+; |Bandsperre|Add1~54                   ; |Bandsperre|Add1~54                   ; out0             ;
+; |Bandsperre|Add1~56                   ; |Bandsperre|Add1~56                   ; out0             ;
+; |Bandsperre|Add1~58                   ; |Bandsperre|Add1~58                   ; out0             ;
+; |Bandsperre|Add1~59                   ; |Bandsperre|Add1~59                   ; out0             ;
+; |Bandsperre|Add1~60                   ; |Bandsperre|Add1~60                   ; out0             ;
+; |Bandsperre|Add1~61                   ; |Bandsperre|Add1~61                   ; out0             ;
+; |Bandsperre|Add1~62                   ; |Bandsperre|Add1~62                   ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |Bandsperre|y_output[13]~reg0         ; |Bandsperre|y_output[13]~reg0         ; regout           ;
+; |Bandsperre|y_output[12]~reg0         ; |Bandsperre|y_output[12]~reg0         ; regout           ;
+; |Bandsperre|y_output[10]~reg0         ; |Bandsperre|y_output[10]~reg0         ; regout           ;
+; |Bandsperre|y_output[9]~reg0          ; |Bandsperre|y_output[9]~reg0          ; regout           ;
+; |Bandsperre|y_output[8]~reg0          ; |Bandsperre|y_output[8]~reg0          ; regout           ;
+; |Bandsperre|y_output[7]~reg0          ; |Bandsperre|y_output[7]~reg0          ; regout           ;
+; |Bandsperre|y_output[6]~reg0          ; |Bandsperre|y_output[6]~reg0          ; regout           ;
+; |Bandsperre|y_output[5]~reg0          ; |Bandsperre|y_output[5]~reg0          ; regout           ;
+; |Bandsperre|y_output[4]~reg0          ; |Bandsperre|y_output[4]~reg0          ; regout           ;
+; |Bandsperre|y_output[3]~reg0          ; |Bandsperre|y_output[3]~reg0          ; regout           ;
+; |Bandsperre|y_output[2]~reg0          ; |Bandsperre|y_output[2]~reg0          ; regout           ;
+; |Bandsperre|y_output[1]~reg0          ; |Bandsperre|y_output[1]~reg0          ; regout           ;
+; |Bandsperre|y_output[0]~reg0          ; |Bandsperre|y_output[0]~reg0          ; regout           ;
+; |Bandsperre|x_input[1]                ; |Bandsperre|x_input[1]                ; out              ;
+; |Bandsperre|x_input[2]                ; |Bandsperre|x_input[2]                ; out              ;
+; |Bandsperre|x_input[3]                ; |Bandsperre|x_input[3]                ; out              ;
+; |Bandsperre|x_input[4]                ; |Bandsperre|x_input[4]                ; out              ;
+; |Bandsperre|x_input[5]                ; |Bandsperre|x_input[5]                ; out              ;
+; |Bandsperre|x_input[6]                ; |Bandsperre|x_input[6]                ; out              ;
+; |Bandsperre|x_input[7]                ; |Bandsperre|x_input[7]                ; out              ;
+; |Bandsperre|x_input[8]                ; |Bandsperre|x_input[8]                ; out              ;
+; |Bandsperre|x_input[9]                ; |Bandsperre|x_input[9]                ; out              ;
+; |Bandsperre|x_input[10]               ; |Bandsperre|x_input[10]               ; out              ;
+; |Bandsperre|x_input[11]               ; |Bandsperre|x_input[11]               ; out              ;
+; |Bandsperre|x_input[12]               ; |Bandsperre|x_input[12]               ; out              ;
+; |Bandsperre|x_input[13]               ; |Bandsperre|x_input[13]               ; out              ;
+; |Bandsperre|y_output[0]               ; |Bandsperre|y_output[0]               ; pin_out          ;
+; |Bandsperre|y_output[1]               ; |Bandsperre|y_output[1]               ; pin_out          ;
+; |Bandsperre|y_output[2]               ; |Bandsperre|y_output[2]               ; pin_out          ;
+; |Bandsperre|y_output[3]               ; |Bandsperre|y_output[3]               ; pin_out          ;
+; |Bandsperre|y_output[4]               ; |Bandsperre|y_output[4]               ; pin_out          ;
+; |Bandsperre|y_output[5]               ; |Bandsperre|y_output[5]               ; pin_out          ;
+; |Bandsperre|y_output[6]               ; |Bandsperre|y_output[6]               ; pin_out          ;
+; |Bandsperre|y_output[7]               ; |Bandsperre|y_output[7]               ; pin_out          ;
+; |Bandsperre|y_output[8]               ; |Bandsperre|y_output[8]               ; pin_out          ;
+; |Bandsperre|y_output[9]               ; |Bandsperre|y_output[9]               ; pin_out          ;
+; |Bandsperre|y_output[10]              ; |Bandsperre|y_output[10]              ; pin_out          ;
+; |Bandsperre|y_output[12]              ; |Bandsperre|y_output[12]              ; pin_out          ;
+; |Bandsperre|y_output[13]              ; |Bandsperre|y_output[13]              ; pin_out          ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[0]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[0]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[1]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[1]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[2]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[2]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[3]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[3]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[4]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[4]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[5]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[5]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[6]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[6]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[7]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[7]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[8]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[8]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[9]  ; |Bandsperre|DFF_14_bit_1:dff2|tmp[9]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[10] ; |Bandsperre|DFF_14_bit_1:dff2|tmp[10] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[11] ; |Bandsperre|DFF_14_bit_1:dff2|tmp[11] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[12] ; |Bandsperre|DFF_14_bit_1:dff2|tmp[12] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff2|tmp[13] ; |Bandsperre|DFF_14_bit_1:dff2|tmp[13] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[0]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[0]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[1]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[1]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[2]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[2]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[3]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[3]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[4]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[4]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[5]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[5]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[6]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[6]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[7]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[7]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[8]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[8]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[9]  ; |Bandsperre|DFF_14_bit_1:dff1|tmp[9]  ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[10] ; |Bandsperre|DFF_14_bit_1:dff1|tmp[10] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[11] ; |Bandsperre|DFF_14_bit_1:dff1|tmp[11] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[12] ; |Bandsperre|DFF_14_bit_1:dff1|tmp[12] ; regout           ;
+; |Bandsperre|DFF_14_bit_1:dff1|tmp[13] ; |Bandsperre|DFF_14_bit_1:dff1|tmp[13] ; regout           ;
+; |Bandsperre|Add1~0                    ; |Bandsperre|Add1~0                    ; out0             ;
+; |Bandsperre|Add1~1                    ; |Bandsperre|Add1~1                    ; out0             ;
+; |Bandsperre|Add1~2                    ; |Bandsperre|Add1~2                    ; out0             ;
+; |Bandsperre|Add1~3                    ; |Bandsperre|Add1~3                    ; out0             ;
+; |Bandsperre|Add1~4                    ; |Bandsperre|Add1~4                    ; out0             ;
+; |Bandsperre|Add1~5                    ; |Bandsperre|Add1~5                    ; out0             ;
+; |Bandsperre|Add1~6                    ; |Bandsperre|Add1~6                    ; out0             ;
+; |Bandsperre|Add1~7                    ; |Bandsperre|Add1~7                    ; out0             ;
+; |Bandsperre|Add1~8                    ; |Bandsperre|Add1~8                    ; out0             ;
+; |Bandsperre|Add1~9                    ; |Bandsperre|Add1~9                    ; out0             ;
+; |Bandsperre|Add1~10                   ; |Bandsperre|Add1~10                   ; out0             ;
+; |Bandsperre|Add1~11                   ; |Bandsperre|Add1~11                   ; out0             ;
+; |Bandsperre|Add1~12                   ; |Bandsperre|Add1~12                   ; out0             ;
+; |Bandsperre|Add1~13                   ; |Bandsperre|Add1~13                   ; out0             ;
+; |Bandsperre|Add1~14                   ; |Bandsperre|Add1~14                   ; out0             ;
+; |Bandsperre|Add1~15                   ; |Bandsperre|Add1~15                   ; out0             ;
+; |Bandsperre|Add1~16                   ; |Bandsperre|Add1~16                   ; out0             ;
+; |Bandsperre|Add1~17                   ; |Bandsperre|Add1~17                   ; out0             ;
+; |Bandsperre|Add1~18                   ; |Bandsperre|Add1~18                   ; out0             ;
+; |Bandsperre|Add1~19                   ; |Bandsperre|Add1~19                   ; out0             ;
+; |Bandsperre|Add1~20                   ; |Bandsperre|Add1~20                   ; out0             ;
+; |Bandsperre|Add1~21                   ; |Bandsperre|Add1~21                   ; out0             ;
+; |Bandsperre|Add1~22                   ; |Bandsperre|Add1~22                   ; out0             ;
+; |Bandsperre|Add1~23                   ; |Bandsperre|Add1~23                   ; out0             ;
+; |Bandsperre|Add1~24                   ; |Bandsperre|Add1~24                   ; out0             ;
+; |Bandsperre|Add1~25                   ; |Bandsperre|Add1~25                   ; out0             ;
+; |Bandsperre|Add1~26                   ; |Bandsperre|Add1~26                   ; out0             ;
+; |Bandsperre|Add1~27                   ; |Bandsperre|Add1~27                   ; out0             ;
+; |Bandsperre|Add1~28                   ; |Bandsperre|Add1~28                   ; out0             ;
+; |Bandsperre|Add1~29                   ; |Bandsperre|Add1~29                   ; out0             ;
+; |Bandsperre|Add1~30                   ; |Bandsperre|Add1~30                   ; out0             ;
+; |Bandsperre|Add1~31                   ; |Bandsperre|Add1~31                   ; out0             ;
+; |Bandsperre|Add1~32                   ; |Bandsperre|Add1~32                   ; out0             ;
+; |Bandsperre|Add1~33                   ; |Bandsperre|Add1~33                   ; out0             ;
+; |Bandsperre|Add1~34                   ; |Bandsperre|Add1~34                   ; out0             ;
+; |Bandsperre|Add1~35                   ; |Bandsperre|Add1~35                   ; out0             ;
+; |Bandsperre|Add1~36                   ; |Bandsperre|Add1~36                   ; out0             ;
+; |Bandsperre|Add1~37                   ; |Bandsperre|Add1~37                   ; out0             ;
+; |Bandsperre|Add1~38                   ; |Bandsperre|Add1~38                   ; out0             ;
+; |Bandsperre|Add1~39                   ; |Bandsperre|Add1~39                   ; out0             ;
+; |Bandsperre|Add1~40                   ; |Bandsperre|Add1~40                   ; out0             ;
+; |Bandsperre|Add1~41                   ; |Bandsperre|Add1~41                   ; out0             ;
+; |Bandsperre|Add1~42                   ; |Bandsperre|Add1~42                   ; out0             ;
+; |Bandsperre|Add1~43                   ; |Bandsperre|Add1~43                   ; out0             ;
+; |Bandsperre|Add1~44                   ; |Bandsperre|Add1~44                   ; out0             ;
+; |Bandsperre|Add1~45                   ; |Bandsperre|Add1~45                   ; out0             ;
+; |Bandsperre|Add1~46                   ; |Bandsperre|Add1~46                   ; out0             ;
+; |Bandsperre|Add1~47                   ; |Bandsperre|Add1~47                   ; out0             ;
+; |Bandsperre|Add1~48                   ; |Bandsperre|Add1~48                   ; out0             ;
+; |Bandsperre|Add1~49                   ; |Bandsperre|Add1~49                   ; out0             ;
+; |Bandsperre|Add1~50                   ; |Bandsperre|Add1~50                   ; out0             ;
+; |Bandsperre|Add1~51                   ; |Bandsperre|Add1~51                   ; out0             ;
+; |Bandsperre|Add1~53                   ; |Bandsperre|Add1~53                   ; out0             ;
+; |Bandsperre|Add1~54                   ; |Bandsperre|Add1~54                   ; out0             ;
+; |Bandsperre|Add1~55                   ; |Bandsperre|Add1~55                   ; out0             ;
+; |Bandsperre|Add1~56                   ; |Bandsperre|Add1~56                   ; out0             ;
+; |Bandsperre|Add1~57                   ; |Bandsperre|Add1~57                   ; out0             ;
+; |Bandsperre|Add1~58                   ; |Bandsperre|Add1~58                   ; out0             ;
+; |Bandsperre|Add1~59                   ; |Bandsperre|Add1~59                   ; out0             ;
+; |Bandsperre|Add1~60                   ; |Bandsperre|Add1~60                   ; out0             ;
+; |Bandsperre|Add1~61                   ; |Bandsperre|Add1~61                   ; out0             ;
+; |Bandsperre|Add1~62                   ; |Bandsperre|Add1~62                   ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Mon Jul 22 00:19:34 2019
+Info: Command: quartus_sim --simulation_results_format=VWF Bandsperre -c Bandsperre
+Info (324025): Using vector source file "/media/jiayang/64F9-8134/DigitaleFilter/Bandsperre/Bandsperre.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 70.0 ns on register "|Bandsperre|y_output[11]~reg0"
+Warning (324036): Found clock-sensitive change during active clock edge at time 70.0 ns on register "|Bandsperre|DFF_14_bit_1:dff1|tmp[11]"
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       3.01 %
+Info (328052): Number of transitions in simulation is 113
+Info (324045): Vector file Bandsperre.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 656 megabytes
+    Info: Processing ended: Mon Jul 22 00:19:34 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

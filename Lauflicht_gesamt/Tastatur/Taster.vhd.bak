@@ -1,0 +1,13 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY Lauflicht IS
+  PORT (
+  clk,reset,stop:IN STD_Logic;
+  module:IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+  leds:OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+  counter:OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
+ 
+  );
+END Lauflicht;
