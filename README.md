@@ -3,9 +3,9 @@
 This is the practice course @KIT Praktikum Schaltungsdesign mit FPGA
 https://www.ims.kit.edu/324_143.php
 
-Ziele:
+## Ziele:
 Im Praktikum "Systeme mit programmierbarer Logik“ soll der praktische Umgang mit ASICs, ihrer Programmierung und dem abschließenden Funktionstest der entworfenen Logikfunktionen auf Hardware-Niveau vermittelt werden. 
-Inhalt:
+## Inhalt:
 Einführung in die integrierte Entwicklungsumgebung Quartus II anhand der Erstellung von Faltungscodierern
 Erstellung von Simulationsstimuli und Vergleich der Simulationsergebnisse der erstellten Codierer.
 Programmieren des Logikbausteins unter Berücksichtigung der speziellen Hardware  
